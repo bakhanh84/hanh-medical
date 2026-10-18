@@ -1,0 +1,2756 @@
+{
+  "patient": {
+    "name": "NGUYỄN TUYẾT HẠNH",
+    "birth_year": 1953,
+    "age": 73,
+    "gender": "Nữ",
+    "address": "343/15 Tô Hiến Thành, Hòa Hưng, TP.HCM",
+    "email": "tuyethanh.tonnu@gmail.com",
+    "phone": "0908188364",
+    "avatar_url": "",
+    "primary_diagnosis": "Ung thư biểu mô tuyến thùy trên phổi trái giai đoạn IV (cT4N3M1) di căn xương đa ổ rộng, tổn thương gan đa ổ; Tiền sử huyết khối bán phần động mạch phổi phải (nhánh S3, S9, S10)",
+    "secondary_diagnoses": [
+      "Suy thận mạn (CKD) giai đoạn 3b (eGFR dao động 33.7 - 72 mL/min, có tổn thương đạm niệu)",
+      "Tràn dịch màng ngoài tim mạn tính (dày 6 - 23mm, không chèn ép tim cấp, chức năng tâm thu tốt LVEF 61 - 76%)",
+      "Tiền sử huyết khối bán phần động mạch phổi phải nhánh S9-S10 và S3 (D-Dimer từng tăng 1533 ng/mL)",
+      "Tăng huyết áp - Bệnh tim thiếu máu cục bộ xơ vữa mạch vành",
+      "Thiếu máu hồng cầu nhỏ nhược sắc mạn tính do bệnh mạn tính / thiếu sắt",
+      "Rối loạn lipid máu hỗn hợp",
+      "Polyp túi mật 3mm & Nhân giáp hai thùy nhỏ",
+      "Đa polyp đại trực tràng đã cắt trọn qua nội soi (12/2024, GPB: U tuyến ống lành tính)"
+    ],
+    "molecular_profile": {
+      "gene_test_date": "2025-07-21",
+      "facility": "Gene Solutions Lab",
+      "panel_22_genes": "Âm tính (Không đột biến EGFR Exon 19 del, L858R, T790M; Không dung hợp ALK, ROS1, RET, NTRK)",
+      "ctdna_status": "Dương tính (+)",
+      "tumor_fraction_tf": 0.05,
+      "somatic_mutation": "TP53 (R248W)",
+      "clinical_note": "Do âm tính đột biến gen điều trị đích thông thường (EGFR, ALK), bệnh nhân được chỉ định phác đồ hóa trị bước 1 phối hợp thuốc kháng thể kháng sinh mạch Mvasi và thuốc chống hủy xương Zoledronic acid."
+    },
+    "treatment_status": "Đã hoàn thành trọn vẹn 6 chu kỳ hóa trị tấn công (Mvasi + Alimta + Carboplatin + Zoledronic acid) từ 09/08/2025 đến 18/12/2025. Đáp ứng: U phổi gom từ 28mm xuống 20x17mm, dịch màng tim giảm từ 23mm xuống 11mm. Tạm dừng hóa chất từ tháng 01/2026 để bảo tồn chức năng thận và nâng đỡ thể trạng. Hiện đang điều trị bảo tồn tim mạch - thận ổn định; eGFR hồi phục lên 55 mL/min (09/2026)."
+  },
+  "records": [
+    {
+      "id": "rec_20241025_vietsin",
+      "date": "2024-10-25",
+      "facility": "Phòng khám Chuyên khoa Việt Sin",
+      "doctor": "BS.CKII. Đỗ Anh Chiến",
+      "type": "orthopedics",
+      "title": "Khám Chuyên Khoa Chấn Thương Chỉnh Hình & Cơ Xương Khớp (Lần 3)",
+      "summary": "Mã BN: 001837. Chẩn đoán: Gãy liên mấu chuyển xương đùi trái, Thoái hóa khớp gối (THKG) độ 3-4, Loãng xương nặng (đây là biến chứng gãy xương bệnh lý sớm do ung thư phổi di căn xương đùi trái). Khởi đầu dùng thuốc chống hủy xương BONVIVA 150mg (Ibandronic acid), kèm Arbol 100mg, NextG Cal PM, Matirex, Vitamin D3 200.000 UI. Lời dặn: Đi nạng không chịu lực chân trái.",
+      "details": {
+        "examination_round": "Lần khám: 3 (Mã BN: 001837, Đơn thuốc số: 313654). Địa chỉ: 7A/120 Thành Thái, P14, Q10, TPHCM.",
+        "clinical_diagnosis": "Gãy liên mấu chuyển xương đùi trái, Thoái hóa khớp gối G3-4, Loãng xương nặng.",
+        "clinical_significance": "Mốc khám ghi nhận sớm biến chứng xương khớp trước khi phát hiện K phổi nguyên phát. Tổn thương gãy liên mấu chuyển xương đùi trái được xác định lại trên phim CT ngày 24/12/2024 là tổn thương di căn đặc xương thứ phát từ K phổi T4N3M1.",
+        "doctor_instructions": "Đi nạng không chịu lực chân trái. Hẹn tái khám ngày 23/11/2024."
+      },
+      "diagnosis": "Gãy liên mấu chuyển xương đùi trái (S72.1) - Thoái hóa khớp gối độ 3-4 (M17) - Loãng xương nặng (M81.9)",
+      "medications": [
+        {
+          "name": "BONVIVA 150mg (Ibandronic Acid)",
+          "dosage": "1 viên/tháng (Uống trước ăn sáng 30 phút với 1 cốc nước đầy)",
+          "purpose": "Thuốc chống hủy xương nhóm Bisphosphonate điều trị loãng xương & bảo tồn xương"
+        },
+        {
+          "name": "ARBOL 100mg (Aceclofenac)",
+          "dosage": "Ngày 2 lần, mỗi lần 1 viên sau ăn (Tổng 60 viên)",
+          "purpose": "Kháng viêm giảm đau cơ xương khớp"
+        },
+        {
+          "name": "NextG Cal PM (Australia)",
+          "dosage": "Ngày 2 lần, mỗi lần 1 viên sau ăn (Tổng 60 viên)",
+          "purpose": "Bổ sung Canxi & Phospho hữu cơ tự nhiên tái tạo xương"
+        },
+        {
+          "name": "MATIREX",
+          "dosage": "Ngày 2 lần, mỗi lần 1 viên sau ăn (Tổng 60 viên)",
+          "purpose": "Thuốc giãn cơ, giảm co cứng vùng đùi và khớp gối"
+        },
+        {
+          "name": "Vitamin D3 B.O.N 200.000 UI",
+          "dosage": "Uống 1 ống duy nhất sau ăn",
+          "purpose": "Bổ sung Vitamin D3 liều cao tăng hấp thu Canxi"
+        }
+      ],
+      "metrics": {
+        "fracture_site": "Liên mấu chuyển xương đùi trái",
+        "knee_osteoarthritis_grade": "3-4"
+      },
+      "pdf_file": "rec_20241025_vietsin.pdf",
+      "pdf_url": "/pdfs/rec_20241025_vietsin.pdf",
+      "gdrive_url": "",
+      "documents": [
+        {
+          "name": "Đơn thuốc & Phiếu khám CK Chấn Thương Chỉnh Hình",
+          "category": "prescription",
+          "icon": "💊",
+          "pdf_file": "rec_20241025_vietsin.pdf",
+          "pdf_url": "/pdfs/rec_20241025_vietsin.pdf",
+          "badge": "Đơn thuốc & Phiếu khám"
+        }
+      ]
+    },
+    {
+      "id": "rec_20241121_vietsin",
+      "date": "2024-11-21",
+      "facility": "Phòng khám Chuyên khoa Việt Sin",
+      "doctor": "BS.CKII. Đỗ Anh Chiến",
+      "type": "orthopedics",
+      "title": "Tái Khám Cơ Xương Khớp & Điều Trị Chống Hủy Xương Khớp Háng (Lần 4)",
+      "summary": "Mã BN: 001837. Lần khám: 4. Tái khám theo dõi gãy liên mấu chuyển xương đùi trái, THKG G3-4, Loãng xương. Tiếp tục duy trì phác đồ chống hủy xương BONVIVA 150mg (Ibandronic acid), Arbol 100mg, NextG Cal PM, Matirex. Lời dặn: Bắt đầu tập đi nạng chịu lực chân trái 10 - 20%. Hẹn tái khám: 23/12/2024.",
+      "details": {
+        "examination_round": "Lần khám: 4 (Mã BN: 001837, Đơn thuốc số: 316072).",
+        "clinical_progress": "Sau 1 tháng điều trị Bonviva và giảm đau, bệnh nhân đỡ đau nhức khớp háng, chuyển sang giai đoạn tập đi nạng chịu một phần trọng lực (10-20%).",
+        "doctor_instructions": "Đi nạng chịu lực chân trái 10-20%. Tái khám ngày 23/12/2024."
+      },
+      "diagnosis": "Gãy liên mấu chuyển xương đùi trái (S72.1) - Thoái hóa khớp gối độ 3-4 (M17) - Loãng xương nặng (M81.9)",
+      "medications": [
+        {
+          "name": "BONVIVA 150mg (Ibandronic Acid)",
+          "dosage": "1 viên/tháng (Uống trước ăn sáng 30 phút)",
+          "purpose": "Thuốc chống hủy xương nhóm Bisphosphonate"
+        },
+        {
+          "name": "ARBOL 100mg",
+          "dosage": "Ngày 2 lần, mỗi lần 1 viên sau ăn (60 viên)",
+          "purpose": "Kháng viêm giảm đau"
+        },
+        {
+          "name": "NextG Cal PM (Australia)",
+          "dosage": "Ngày 2 lần, mỗi lần 1 viên sau ăn (60 viên)",
+          "purpose": "Bổ sung Canxi hữu cơ"
+        },
+        {
+          "name": "MATIREX",
+          "dosage": "Ngày 2 lần, mỗi lần 1 viên sau ăn (60 viên)",
+          "purpose": "Giãn cơ"
+        }
+      ],
+      "metrics": {
+        "weight_bearing_pct": 20
+      },
+      "pdf_file": "rec_20241121_vietsin.pdf",
+      "pdf_url": "/pdfs/rec_20241121_vietsin.pdf",
+      "gdrive_url": "",
+      "documents": [
+        {
+          "name": "Đơn thuốc & Phiếu khám Tái khám Cơ Xương Khớp",
+          "category": "prescription",
+          "icon": "💊",
+          "pdf_file": "rec_20241121_vietsin.pdf",
+          "pdf_url": "/pdfs/rec_20241121_vietsin.pdf",
+          "badge": "Đơn thuốc & Phiếu khám"
+        }
+      ]
+    },
+    {
+      "id": "rec_20241217",
+      "date": "2024-12-17",
+      "facility": "Phòng khám Bệnh viện Đại học Y Dược 1",
+      "doctor": "ThS.BS. Trần Nhựt Thị Ánh Phượng & BS.CKI. Lê Minh",
+      "type": "endoscopy",
+      "title": "Nội Soi Tiêu Hóa (Dạ Dày - Đại Trực Tràng) & Cắt Trọn Polyp Toàn Diện",
+      "summary": "Nội soi thực quản - dạ dày - tá tràng phát hiện GERD độ A, viêm teo niêm mạc hang vị C1 (Kimura). Nội soi đại trực tràng phát hiện đa polyp 4-10mm ở đại tràng lên, sigma, trực tràng; đã cắt trọn toàn bộ qua thòng lọng điện. Kết quả GPB Medpadiag: Tuyến ống loạn sản nhẹ (tubular/tubulo-villous adenoma low-grade) lành tính.",
+      "details": {
+        "esophago_gastro": "Thực quản: Niêm mạc có vài vết trợt < 5mm (GERD LA-A). Dạ dày: Niêm mạc hang vị teo nhẹ (C1 theo phân loại Kimura-Takemoto). Môn vị tròn đều, hành tá tràng thông suốt.",
+        "colonoscopy": "Đại tràng lên: Polyp cuống d#6mm, đã cắt trọn. Đại tràng sigma: 2 polyp d#4-10mm, đã cắt trọn. Trực tràng: Polyp d#5mm, đã cắt trọn. Lòng đại tràng sạch, không chảy máu sau cắt.",
+        "pathology": "Xét nghiệm GPB Medpadiag (BS.CKI. Phan Thị Thùy Dung): U tuyến ống loạn sản biểu mô độ thấp (Tubular adenoma with low grade dysplasia), các diện cắt không còn tế bào u, lành tính."
+      },
+      "diagnosis": "Đa polyp đại trực tràng đã cắt trọn qua nội soi (K63.5) - Viêm trào ngược dạ dày thực quản (K21.9) - Viêm teo dạ dày C1 (K29.4)",
+      "metrics": {
+        "polyp_count": 4,
+        "max_polyp_size_mm": 10
+      },
+      "pdf_file": "rec_20241217.pdf",
+      "pdf_url": "/pdfs/rec_20241217.pdf",
+      "gdrive_url": "",
+      "documents": [
+        {
+          "name": "Kết quả Nội soi dạ dày & Đại trực tràng cắt Polyp",
+          "category": "endoscopy",
+          "icon": "🔬",
+          "pdf_file": "rec_20241217.pdf",
+          "pdf_url": "/pdfs/rec_20241217.pdf",
+          "badge": "Hình ảnh nội soi"
+        },
+        {
+          "name": "Kết quả Giải phẫu bệnh Polyp đại tràng (U tuyến ống)",
+          "category": "pathology",
+          "icon": "📄",
+          "pdf_file": "rec_20241217.pdf",
+          "pdf_url": "/pdfs/rec_20241217.pdf",
+          "badge": "Giải phẫu bệnh"
+        }
+      ]
+    },
+    {
+      "id": "rec_20241224_er",
+      "date": "2024-12-24",
+      "facility": "Bệnh viện Đại học Y Dược TP.HCM (Khoa Cấp Cứu)",
+      "doctor": "ThS.BS. Nguyễn Thị Kim Ngân, BS.CKI. Nguyễn Anh Kiệt & BS. Nguyễn Khánh Quang",
+      "type": "emergency",
+      "title": "Hồ Sơ Cấp Cứu BV ĐH Y Dược: Chẩn Đoán Xác Định K Phổi T4N3M1 Di Căn Đa Ổ",
+      "summary": "Nhập cấp cứu BV ĐHYD do mệt mỏi, khó thở, đau ngực trái lan lưng. Kết quả CT-scan phát hiện K phổi T4N3M1 di căn xương, gan đa ổ, hạch ổ bụng, tràn dịch màng ngoài tim, thuyên tắc bán phần ĐM phổi phải S9-S10. Xử trí tiêm Enoxaparin 6000 UI, Esomeprazol và chuyển viện cấp cứu sang BV Chợ Rẫy.",
+      "details": {
+        "Hồ sơ bệnh án": "Số hồ sơ: N24-0364075 | Số nhập viện: 25-0001102 | Vào viện: 12:11 24/12/2024 - Ra viện: 23:28 24/12/2024",
+        "Chẩn đoán ra viện": "Thuyên tắc bán phần động mạch phổi phải nhánh S9, S10 (I26.9); Tràn dịch màng ngoài tim nghĩ ác tính (I31.3); K phổi trái giai đoạn T4N3M1 di căn xương, di căn gan đa ổ, hạch ổ bụng (C34.9); Đa polyp đại tràng đã cắt trọn qua nội soi (17/12/2024) (GPB: U tuyến ống) (K63.5); GERD (K21.9); Viêm dạ dày (K29.6); Thiếu máu hồng cầu nhỏ nhược sắc nhẹ (D50.0).",
+        "Xét nghiệm cấp cứu": "WBC: 10.0 10^9/L, NEU%: 72.0%, Hb: 105 g/L, MCV: 66.1 fL, MCH: 21.1 pg, PLT: 274 10^9/L.",
+        "Kết quả CT Scan ngực": "Khối choán chỗ thùy trên phổi trái nghĩ K (T4N3M1); vài nốt đặc rải rác hai phổi nghĩ thứ phát; nhiều nốt đặc xương rải rác cột sống ngực, xương sườn, xương ức, xương vai trái; Huyết khối bán phần ĐM phổi phải nhánh S9, S10; Tràn dịch màng ngoài tim; nhân giáp thùy trái.",
+        "Kết quả CT Scan bụng": "Tổn thương gan đa ổ nghĩ thứ phát; nhiều hạch dọc động mạch chủ bụng theo dõi hạch thứ phát; thoái hóa + vẹo trái cột sống thắt lưng; nhiều ổ đặc xương rải rác đốt sống thắt lưng, xương chậu, xương đùi trái.",
+        "Xử trí cấp cứu ban đầu": "Esomeprazol 40mg lọ tiêm TM, Glucose 10% 500ml chai truyền TM, Enoxaparin 6000 UI tiêm dưới da lúc 22h30 ngày 24/12/2024.",
+        "Bác sĩ điều trị & Khoa": "BS điều trị: ThS.BS. Nguyễn Thị Kim Ngân; TL Trưởng khoa: BS.CKI. Nguyễn Anh Kiệt (A21-094); Thủ trưởng: BS. Nguyễn Khánh Quang (A17-027)."
+      },
+      "diagnosis": "K phổi trái giai đoạn T4N3M1 di căn xương đa ổ, di căn gan đa ổ, hạch ổ bụng (C34.9) - Thuyên tắc bán phần động mạch phổi phải nhánh phân thùy S9, S10 (I26.9) - Tràn dịch màng ngoài tim trong bệnh ác tính (I31.3) - Thiếu máu hồng cầu nhỏ nhược sắc mức độ nhẹ (D50.0)",
+      "metrics": {
+        "tumor_primary_size_mm": 62,
+        "pericardial_effusion_mm": 8
+      },
+      "medications": [
+        {
+          "name": "Enoxaparin (Lovenox) 6000 UI",
+          "dosage": "01 bơm tiêm dưới da lúc 22h30 24/12/2024",
+          "purpose": "Chống đông điều trị huyết khối thuyên tắc bán phần ĐM phổi"
+        },
+        {
+          "name": "Esomeprazol 40mg",
+          "dosage": "01 lọ tiêm tĩnh mạch",
+          "purpose": "Bảo vệ dạ dày, giảm trào ngược"
+        },
+        {
+          "name": "Glucose 10% 500ml",
+          "dosage": "01 chai truyền tĩnh mạch",
+          "purpose": "Hỗ trợ năng lượng & thể tích tuần hoàn"
+        }
+      ],
+      "pdf_file": "20241224.pdf",
+      "pdf_url": "/pdfs/rec_20241224_er_summary.pdf",
+      "gdrive_url": "",
+      "documents": [
+        {
+          "name": "Bản tóm tắt hồ sơ bệnh án Cấp cứu - BV ĐH Y Dược",
+          "category": "emergency",
+          "icon": "🏥",
+          "pdf_file": "20241224.pdf",
+          "pdf_url": "/pdfs/rec_20241224_er_summary.pdf",
+          "badge": "Tóm tắt bệnh án ĐHYD"
+        },
+        {
+          "name": "Giấy chuyển tuyến Cấp cứu PK ĐHYD 1 sang ĐHYD Cơ sở 1",
+          "category": "emergency",
+          "icon": "📋",
+          "pdf_file": "Scanned 26 Sep 2026 at 10:45:54.pdf",
+          "pdf_url": "/pdfs/rec_20241224_chuyentuyen_dhyd.pdf",
+          "badge": "Giấy chuyển viện cấp cứu"
+        },
+        {
+          "name": "Kết quả MSCT Lồng ngực - Bụng có cản quang Cấp cứu",
+          "category": "imaging",
+          "icon": "🩻",
+          "pdf_file": "medical_record_dau_tien_202412.pdf",
+          "pdf_url": "/pdfs/medical_record_dau_tien_202412.pdf",
+          "badge": "CT Scan ngực - bụng Cấp cứu"
+        }
+      ]
+    },
+    {
+      "id": "rec_20241224_pk",
+      "date": "2024-12-24",
+      "facility": "Phòng khám Bệnh viện Đại học Y Dược 1",
+      "doctor": "BS.CKII. Đặng Lê Minh Trí (Tim Mạch & Chuyển viện) & BS.CKI. Văn Châu Quý Vinh (Siêu âm tim)",
+      "type": "cardio",
+      "title": "Siêu Âm Tim Doppler, Xét Nghiệm Máu Toàn Diện & Chuyển Viện Cấp Cứu",
+      "summary": "Tái khám sau 1 tuần mệt mỏi, khó thở và nặng ngực. Siêu âm tim Doppler phát hiện tràn dịch màng ngoài tim dmax 10mm (EF 78%). Xét nghiệm máu ghi nhận eGFR 75.14 mL/min (thận tốt), Creatinine 0.80 mg/dL, Hb 9.9 g/dL, WBC 8.53, PLT 282, Ferritin 308 ng/mL. Siêu âm bụng tổn thương gan đa ổ và tràn dịch màng phổi trái. Lập Giấy chuyển tuyến số 0045/2024/GCT sang Cấp cứu BV ĐHYD TP.HCM.",
+      "details": {
+        "echocardiogram": "Tràn dịch màng ngoài tim dmax #10mm (lượng trung bình, không chèn ép tim cấp). Phân suất tống máu thất trái LVEF (Teichholz) 78%. Hở van hai lá 1.5/4, hở van ba lá 1/4.",
+        "hematology": "Bạch cầu WBC 8.53 x10^9/L (NEU 77.61%), Hồng cầu RBC 4.93 x10^12/L, Hemoglobin Hb 9.9 g/dL (99 g/L), Hct 31.2%, MCV 63.3 fL (hồng cầu nhỏ nhược sắc), Tiểu cầu PLT 282 x10^9/L bình thường.",
+        "biochemistry": "Ure 18.4 mg/dL (3.07 mmol/L), Creatinine 0.80 mg/dL (70.73 umol/L), Độ lọc cầu thận eGFR (MDRD) 75.14 mL/min/1.73m2 (chức năng thận ban đầu rất tốt). Men gan: AST 20.84 U/L, ALT 14.27 U/L, GGT 45.93 U/L. Ferritin: 308 ng/mL (tăng phản ứng viêm/u).",
+        "carotid_doppler": "Xơ vữa rải rác thành ĐM cảnh chung hai bên không gây hẹp có ý nghĩa huyết động.",
+        "abdomen_ultrasound": "Tổn thương đa ổ rải rác nhu mô gan nghi thứ phát; Tràn dịch màng phổi trái lượng nhiều; Dịch màng ngoài tim #10mm.",
+        "referral_letter": "Giấy chuyển tuyến số 0045/2024/GCT lúc 11:20 ngày 24/12/2024 sang Cấp cứu BV ĐHYD TP.HCM do tràn dịch đa màng và tổn thương gan đa ổ."
+      },
+      "diagnosis": "Tràn dịch màng ngoài tim (I31.3) - Tổn thương đa ổ ở gan nghi thứ phát (K76) - Tràn dịch màng phổi trái (J90) - Hở van hai lá 1.5/4 (I34.0) - Thiếu máu nhẹ (D64.9)",
+      "metrics": {
+        "pericardial_effusion_mm": 10,
+        "lvef": 78,
+        "wbc": 8.53,
+        "neu_pct": 77.6,
+        "lym_pct": 17.8,
+        "rbc": 4.93,
+        "hb": 9.9,
+        "hct": 31.2,
+        "mcv": 63.3,
+        "mch": 20.1,
+        "plt": 282,
+        "glucose": 5.41,
+        "creatinine": 0.8,
+        "creatinine_mg": 0.8,
+        "creatinine_umol": 70.73,
+        "egfr": 75.14,
+        "urea": 18.4,
+        "ast": 20.84,
+        "alt": 14.27,
+        "ggt": 45.93,
+        "ferritin": 308
+      },
+      "lab_results": {
+        "WBC": {
+          "val": 8.53,
+          "unit": "10^9/L",
+          "ref": "3.9 - 10.0",
+          "status": "normal"
+        },
+        "NEU_pct": {
+          "val": 77.6,
+          "unit": "%",
+          "ref": "45 - 75",
+          "status": "high"
+        },
+        "LYM_pct": {
+          "val": 17.8,
+          "unit": "%",
+          "ref": "20 - 45",
+          "status": "low"
+        },
+        "RBC": {
+          "val": 4.93,
+          "unit": "10^12/L",
+          "ref": "3.9 - 5.5",
+          "status": "normal"
+        },
+        "Hb": {
+          "val": 9.9,
+          "unit": "g/dL",
+          "ref": "12.0 - 17.5",
+          "status": "low"
+        },
+        "Hct": {
+          "val": 31.2,
+          "unit": "%",
+          "ref": "35 - 53",
+          "status": "low"
+        },
+        "MCV": {
+          "val": 63.3,
+          "unit": "fL",
+          "ref": "78 - 100",
+          "status": "low"
+        },
+        "MCH": {
+          "val": 20.1,
+          "unit": "pg",
+          "ref": "26.7 - 32.5",
+          "status": "low"
+        },
+        "PLT": {
+          "val": 282,
+          "unit": "10^9/L",
+          "ref": "150 - 450",
+          "status": "normal"
+        },
+        "Urea": {
+          "val": 18.4,
+          "unit": "mg/dL",
+          "ref": "15 - 49",
+          "status": "normal"
+        },
+        "Creatinine": {
+          "val": 0.8,
+          "unit": "mg/dL",
+          "ref": "0.5 - 1.1",
+          "status": "normal"
+        },
+        "eGFR": {
+          "val": 75.14,
+          "unit": "mL/min/1.73m²",
+          "ref": ">= 60",
+          "status": "normal"
+        },
+        "SGOT_AST": {
+          "val": 20.84,
+          "unit": "U/L",
+          "ref": "< 40",
+          "status": "normal"
+        },
+        "SGPT_ALT": {
+          "val": 14.27,
+          "unit": "U/L",
+          "ref": "< 40",
+          "status": "normal"
+        },
+        "GGT": {
+          "val": 45.93,
+          "unit": "U/L",
+          "ref": "< 50",
+          "status": "normal"
+        },
+        "Ferritin": {
+          "val": 308,
+          "unit": "ng/mL",
+          "ref": "13 - 150",
+          "status": "high"
+        }
+      },
+      "pdf_file": "rec_20241224_pk.pdf",
+      "pdf_url": "/pdfs/rec_20241224_pk.pdf",
+      "gdrive_url": "",
+      "documents": [
+        {
+          "name": "Kết quả Siêu âm Doppler tim & X-quang phổi",
+          "category": "ultrasound",
+          "icon": "🫀",
+          "pdf_file": "rec_20241224_pk.pdf",
+          "pdf_url": "/pdfs/rec_20241224_pk.pdf",
+          "badge": "Siêu âm tim & X-quang"
+        },
+        {
+          "name": "Kết quả Xét nghiệm máu toàn diện Cấp cứu",
+          "category": "lab",
+          "icon": "🩸",
+          "pdf_file": "rec_20241224_pk.pdf",
+          "pdf_url": "/pdfs/rec_20241224_pk.pdf",
+          "badge": "Xét nghiệm máu"
+        }
+      ]
+    },
+    {
+      "id": "rec_20241228_choray",
+      "date": "2024-12-28",
+      "facility": "Bệnh viện Chợ Rẫy (Khoa Điều Trị Giảm Nhẹ - Trung Tâm Ung Bướu)",
+      "doctor": "ThS.BS. Trần Lý Mỹ Châu, BS.CKII. Trần Song Toàn, TS.BS. Lê Quốc Hùng & BS. Nguyễn Tuấn Nhật",
+      "type": "oncology",
+      "title": "Hồ Sơ Ra Viện, Đơn Thuốc & Giấy Hẹn Khám BV Chợ Rẫy",
+      "summary": "Nhập viện cấp cứu sau phát hiện K phổi T di căn xương, gan, hạch và huyết khối ĐM phổi phải. Xuất viện ổn định với phác đồ Kháng đông (Xarelto 15mg x 2), Corticoid (Medrol 4mg), Nexipraz 40mg, Itomed 50mg và Phosphalugel.",
+      "details": {
+        "Mã hồ sơ lưu trữ": "Số lưu trữ: 2240139967 | Mã y tế: 248587127 | Thẻ BHYT: HT3790100047288 (hạn đến 31/12/2026)",
+        "Thời gian điều trị": "Vào viện: 01 giờ 11 phút, 25/12/2024 - Ra viện: 11 giờ 00 phút, 28/12/2024 (Khoa Điều Trị Giảm Nhẹ - TT Ung Bướu)",
+        "Chẩn đoán ra viện (Mã ICD-10)": "C34.9 - U ác của khí quản hoặc phổi, không đặc hiệu (U ác phổi trái di căn xương, gan, hạch); I26.9 - Thuyên tắc phổi không có tâm phế cấp (Thuyên tắc bán phần động mạch phổi phải); K21.9 - Bệnh trào ngược dạ dày - thực quản không có viêm thực quản.",
+        "Phương pháp điều trị": "Kháng đông - Corticoid - PPI - Chống nôn.",
+        "Toa thuốc xuất viện (5 khoản)": "1. Methylprednisolone (Medrol 4mg): 10 viên (Sáng 7h 1v sau ăn)\n2. Esomeprazol (Nexipraz 40mg): 10 viên (Sáng 7h 1v trước ăn 30p)\n3. Itopride HCl (Itomed 50mg): 10 viên (Tối 21h 1v)\n4. Rivaroxaban (Xarelto 15mg): 20 viên (Sáng 7h 1v, Chiều 17h 1v uống trong/sau ăn)\n5. Phosphalugel 20g: 20 gói (Sáng 7h 1 gói, Chiều 17h 1 gói)",
+        "Kế hoạch & Lời dặn": "Hẹn tái khám ngày 07/01/2025 tại Phòng khám Ung Bướu - Trung tâm Ung Bướu BV Chợ Rẫy hoặc đến bất kỳ lúc nào nếu có dấu hiệu bất thường.",
+        "Bác sĩ điều trị & Trưởng khoa": "BS điều trị: ThS.BS. Trần Lý Mỹ Châu (VC 2021-004672); Trưởng khoa: BS.CKII. Trần Song Toàn (A23 - CR10-3087); Trực lãnh đạo: TS.BS. Lê Quốc Hùng; Bác sĩ kê đơn: BS. Nguyễn Tuấn Nhật (CCHN: 008072/BĐ-CCHN)."
+      },
+      "metrics": {},
+      "pdf_file": "20241228 (2).pdf",
+      "pdf_url": "/pdfs/rec_20241228_choray_discharge.pdf",
+      "documents": [
+        {
+          "name": "Giấy ra viện Khoa Điều Trị Giảm Nhẹ - BV Chợ Rẫy",
+          "category": "discharge",
+          "icon": "🏥",
+          "pdf_file": "20241228 (2).pdf",
+          "pdf_url": "/pdfs/rec_20241228_choray_discharge.pdf",
+          "badge": "Giấy ra viện BV Chợ Rẫy"
+        },
+        {
+          "name": "Đơn thuốc xuất viện (Xarelto 15mg x 2, Medrol...) - BV Chợ Rẫy",
+          "category": "prescription",
+          "icon": "💊",
+          "pdf_file": "20241228 (1).pdf",
+          "pdf_url": "/pdfs/rec_20241228_choray_prescription.pdf",
+          "badge": "Đơn thuốc BV Chợ Rẫy"
+        },
+        {
+          "name": "Giấy hẹn khám lại Phòng khám Ung Bướu - BV Chợ Rẫy",
+          "category": "appointment",
+          "icon": "📋",
+          "pdf_file": "20241228.pdf",
+          "pdf_url": "/pdfs/rec_20241228_choray_appointment.pdf",
+          "badge": "Giấy hẹn khám BV Chợ Rẫy"
+        }
+      ]
+    },
+    {
+      "id": "rec_20250102_xahinh175",
+      "date": "2025-01-02",
+      "facility": "Bệnh viện Quân Y 175 (Khoa Y Học Hạt Nhân A20.5)",
+      "doctor": "BS. Tảo Thanh Nam & BS. Cao Văn Khánh",
+      "type": "imaging",
+      "title": "Xạ Hình Xương Toàn Thân Spect Gamma (Tc99m-MDP)",
+      "summary": "Xạ hình xương toàn thân ghi nhận nhiều ổ tăng hấp thu phóng xạ rải rác toàn bộ hệ xương: xương sọ, ức, cột sống, sườn, vai, chậu, đùi (T). Kết luận hình ảnh K phổi di căn nhiều xương.",
+      "details": {
+        "Hồ sơ bệnh án": "Số BA: 25000425 | Số phiếu PT/TT: 25.T.0000370 | Người bệnh: NGUYỄN TUYẾT HẠNH (1953) - Dịch vụ",
+        "Khoa thực hiện": "A20.5 - Khoa Y học hạt nhân - Bệnh viện Quân Y 175",
+        "Chẩn đoán y khoa": "K PHỔI (Ung thư phổi di căn xương đa ổ)",
+        "Tên phẫu thuật / thủ thuật": "19.0174.1866 - Xạ hình xương với 99mTc-MDP",
+        "Kỹ thuật xạ hình": "Chụp xạ hình hệ thống xương toàn thân ở thời điểm 180 phút sau khi tiêm tĩnh mạch 20 mCi Tc99m-MDP, tư thế thẳng trước và thẳng sau bằng máy Spect Gamma, collimator LEHR.",
+        "Mô tả kết quả xạ hình": "Nhiều ổ tăng hấp thu phóng xạ nhiều xương: xương hộp sọ, xương ức, xương cột sống, nhiều xương sườn - xương vai hai bên, xương chậu, xương đùi (T). Tập trung phóng xạ tại mô mềm cơ thể bình thường, phù hợp sinh lý. Thấy rõ bóng thận trên xạ hình.",
+        "Kết luận": "HÌNH ẢNH K DI CĂN NHIỀU XƯƠNG (Chỉ định phối hợp thuốc chống hủy xương Zoledronic acid 4mg / Denosumab)."
+      },
+      "metrics": {},
+      "pdf_file": "20250102.pdf",
+      "pdf_url": "/pdfs/rec_20250102_xahinh175_scintigraphy.pdf",
+      "documents": [
+        {
+          "name": "Kết quả Xạ hình xương Spect Gamma (Tc99m-MDP) - BV 175",
+          "category": "imaging",
+          "icon": "🦴",
+          "pdf_file": "20250102.pdf",
+          "pdf_url": "/pdfs/rec_20250102_xahinh175_scintigraphy.pdf",
+          "badge": "Xạ hình xương BV 175"
+        },
+        {
+          "name": "Phiếu chỉ định Nội soi phế quản sinh thiết - BV 115",
+          "category": "endoscopy",
+          "icon": "📋",
+          "pdf_file": "Scanned 26 Sep 2026 at 10:47:09.pdf",
+          "pdf_url": "/pdfs/rec_20250102_chidin_noisoi_115.pdf",
+          "badge": "Chỉ định nội soi BV 115"
+        },
+        {
+          "name": "Phiếu tường trình Thủ thuật Nội soi phế quản - BV 115",
+          "category": "endoscopy",
+          "icon": "🫁",
+          "pdf_file": "Scanned 26 Sep 2026 at 10:47:53.pdf",
+          "pdf_url": "/pdfs/rec_20250102_tuongtrinh_noisoi_115.pdf",
+          "badge": "Tường trình thủ thuật 115"
+        }
+      ]
+    },
+    {
+      "id": "rec_20250106_noisoi115",
+      "date": "2025-01-06",
+      "facility": "Bệnh viện Nhân Dân 115 (Khoa Hô Hấp & Giải Phẫu Bệnh)",
+      "doctor": "BS.CKII. Lê Thị Xuân Mai, TS.BS. Nguyễn Vũ Thiện",
+      "type": "pathology",
+      "title": "Nội Soi Phế Quản Sinh Thiết & Xét Nghiệm Tế Bào Học",
+      "summary": "Nội soi phế quản ghi nhận cựa LC1 thùy trên phổi trái phù nề tăng sinh mạch. Sinh thiết xuyên vách và tế bào học dịch rửa cho kết quả mô viêm mạn tính xơ hóa (chưa bắt được tế bào ác tính ở vị trí bấm).",
+      "details": {
+        "Nội soi phế quản (02/01/2025)": "Nội soi qua mũi (P). Hai dây thanh bình thường, khí quản hồng, carina thông thoáng. Phế quản (P) thông thoáng. Phế quản (T): thùy dưới thông thoáng, thùy trên cựa LC1 phù nề tăng sinh mạch máu. Sinh thiết xuyên vách B1,2 (T) và bơm rửa dịch.",
+        "GPB mô sinh thiết (Mã 33/2025)": "03 mẩu mô nhỏ trắng xám. Vi thể: mẩu mô phủ bởi biểu mô hô hấp xơ hóa, xâm nhập viêm mạn tính, không thấy tế bào ác tính.",
+        "GPB dịch rửa phế quản (Mã 34/2025)": "Dịch # 5ml màu đỏ, ly tâm phết lame có hồng cầu, bạch cầu đơn nhân, tế bào trung mạc. Không thấy tế bào ác tính.",
+        "Kết luận": "Phù nề tăng sinh mạch cựa LC1; Phù hợp mô viêm mạn tính."
+      },
+      "metrics": {},
+      "pdf_file": "Scanned 26 Sep 2026 at 10:48:30.pdf",
+      "pdf_url": "/pdfs/rec_20250106_gpb_sinhthiet_115.pdf",
+      "documents": [
+        {
+          "name": "Kết quả GPB sinh thiết phế quản (Mã 33/2025) - BV 115",
+          "category": "pathology",
+          "icon": "🔬",
+          "pdf_file": "Scanned 26 Sep 2026 at 10:48:30.pdf",
+          "pdf_url": "/pdfs/rec_20250106_gpb_sinhthiet_115.pdf",
+          "badge": "GPB mô sinh thiết"
+        },
+        {
+          "name": "Kết quả GPB dịch rửa phế quản (Mã 34/2025) - BV 115",
+          "category": "pathology",
+          "icon": "🧪",
+          "pdf_file": "Scanned 26 Sep 2026 at 10:49:28.pdf",
+          "pdf_url": "/pdfs/rec_20250106_gpb_dichrua_115.pdf",
+          "badge": "GPB dịch rửa tế bào"
+        },
+        {
+          "name": "Phiếu chỉ định GPB tế bào học BV 115",
+          "category": "pathology",
+          "icon": "📋",
+          "pdf_file": "Scanned 26 Sep 2026 at 10:50:14.pdf",
+          "pdf_url": "/pdfs/rec_20250106_chidin_gpb_115.pdf",
+          "badge": "Phiếu chỉ định GPB"
+        }
+      ]
+    },
+    {
+      "id": "rec_20250312",
+      "date": "2025-03-12",
+      "facility": "Phòng khám Đa Khoa Quốc Tế Việt Healthcare",
+      "doctor": "BS. CKI. Đặng Văn Anh Kiệt (BS chỉ định: BS.CKII. Nguyễn Ngọc Anh)",
+      "type": "imaging",
+      "title": "MSCT Lồng Ngực - Bụng Có Cản Quang (Chẩn đoán ban đầu)",
+      "summary": "Phát hiện tổn thương u thùy trên phổi trái S3 kèm huyết khối bán phần động mạch phổi nhánh S3, di căn xương đa ổ, tổn thương gan hạ phân thùy V, VI, tràn dịch màng ngoài tim 13mm.",
+      "details": {
+        "lungs": "Mảng xẹp phổi phân thùy S3 thùy trên phổi (T), bắt thuốc mạnh, có ổ bắt thuốc kém trong vùng xẹp kích thước # 10x15mm. Tổn thương kính mờ, dày vách liên tiểu thùy thùy trên phổi (T). Vài dải xơ xẹp rải rác thùy giữa, thùy lưỡi, thùy dưới phổi (T). Vài nốt nhỏ dạng đặc thùy giữa, thùy dưới (P) d <= 5mm.",
+        "vascular": "Huyết khối bán phần động mạch phổi nhánh phân thùy S3 thùy trên phổi (T).",
+        "lymph_nodes": "Vài hạch trung thất, rốn phổi hai bên < 7mm, bắt thuốc mạnh không đồng nhất. Hạch cạnh tâm vị d # 7mm.",
+        "pericardium_pleura": "Tràn dịch màng ngoài tim d <= 13mm (dịch đậm độ thấp); ít dịch màng phổi (T).",
+        "bones": "Tổn thương đặc xương rải rác xương vai, xương đòn, xương sườn hai bên, các đốt sống ngực, thắt lưng -> Di căn đặc xương.",
+        "abdomen": "Tổn thương gan hạ phân thùy V, VI d < 1.3cm bắt thuốc kém; Nhân giáp hai thùy d <= 6mm."
+      },
+      "conclusion": "Mảng xẹp phổi S3 phổi T nghĩ u phổi; Huyết khối bán phần ĐM phổi nhánh S3; Hạch trung thất, rốn phổi 2 bên, hạch cạnh tâm vị; Tổn thương gan, xương khả năng di căn; Tràn dịch màng ngoài tim; Ít dịch màng phổi T.",
+      "metrics": {
+        "tumor_primary_size_mm": 15,
+        "pericardial_effusion_mm": 13
+      },
+      "pdf_file": "Medical Hạnh - CT Ngực bụng - 20250312.pdf",
+      "pdf_url": "/pdfs/Medical%20Ha%CC%A3nh%20-%20CT%20Ngu%CC%9B%CC%A3c%20bu%CC%A3ng%20-%2020250312.pdf",
+      "gdrive_url": "",
+      "documents": [
+        {
+          "name": "Phiếu kết quả MSCT Lồng ngực có cản quang (Có QR PACS) - PK Việt Healthcare",
+          "category": "imaging",
+          "icon": "🩻",
+          "pdf_file": "Scanned 26 Sep 2026 at 21:12:27.pdf",
+          "pdf_url": "/pdfs/rec_20250312_msct_nguc_viethealthcare.pdf",
+          "badge": "MSCT Ngực (Có QR PACS)"
+        },
+        {
+          "name": "Tập kết quả MSCT Lồng ngực - Bụng tổng hợp - PK Việt Healthcare",
+          "category": "imaging",
+          "icon": "📑",
+          "pdf_file": "Medical Hạnh - CT Ngực bụng - 20250312.pdf",
+          "pdf_url": "/pdfs/Medical%20H%E1%BA%A1nh%20-%20CT%20Ng%E1%BB%B1c%20b%E1%BB%A5ng%20-%2020250312.pdf",
+          "badge": "Tập kết quả tổng hợp"
+        },
+        {
+          "name": "CT Scan Lồng Ngực Phát Hiện Tổn Thương (12/03/2025) (Mã QR Tra Cứu Trực Tuyến)",
+          "category": "pacs",
+          "icon": "🫁",
+          "pdf_file": "https://bom.so/GeA47x",
+          "pdf_url": "https://bom.so/GeA47x",
+          "is_qr_doc": true,
+          "badge": "PACS DICOM QR",
+          "qr_code": "https://bom.so/GeA47x",
+          "qr_img": "/generated_qr/qr_ct_nguc_20250312.png"
+        },
+        {
+          "name": "CT Scan Ổ Bụng (12/03/2025) (Mã QR Tra Cứu Trực Tuyến)",
+          "category": "pacs",
+          "icon": "🩺",
+          "pdf_file": "https://bom.so/m4rh18",
+          "pdf_url": "https://bom.so/m4rh18",
+          "is_qr_doc": true,
+          "badge": "PACS DICOM QR",
+          "qr_code": "https://bom.so/m4rh18",
+          "qr_img": "/generated_qr/qr_ct_bung_20250312.png"
+        }
+      ],
+      "qr_data": {
+        "type": "pacs",
+        "title": "Tra cứu phim MSCT Ngực (12/03/2025) trên PACS Việt Healthcare",
+        "url": "https://bom.so/m4rh18"
+      }
+    },
+    {
+      "id": "rec_20250510",
+      "date": "2025-05-10",
+      "facility": "Phòng khám Đa Khoa Quốc Tế Việt Healthcare",
+      "doctor": "ThS. BS. Nguyễn Hoàng Thảo (BS chỉ định: BS.CKII. Nguyễn Ngọc Anh)",
+      "type": "imaging",
+      "title": "MRI Sọ Não - Mạch Não - Xoang (Tầm soát di căn hệ TKTW)",
+      "summary": "Hình ảnh sọ não và mạch máu nội sọ hoàn toàn bình thường, chưa ghi nhận dấu hiệu u hay tổn thương di căn não màng não.",
+      "details": {
+        "brain_parenchyma": "Hình dạng và cấu trúc tín hiệu nhu mô chất xám vỏ não, chất trắng, các nhân xám trung ương hai bên, thể chai trong giới hạn bình thường.",
+        "posterior_fossa": "Hình dạng và tín hiệu cuống não, cầu não, hành não và bán cầu tiểu não hai bên bình thường.",
+        "ventricles": "Cấu trúc đường giữa không lệch. Hệ thống não thất trên và dưới lều bình thường.",
+        "vessels": "Không thấy bất thường tín hiệu các động mạch lớn nội sọ trên phim."
+      },
+      "conclusion": "Hình ảnh MRI sọ não trong giới hạn bình thường.",
+      "metrics": {},
+      "pdf_file": "Medical Hạnh - CT Ngực bụng - 20250312.pdf",
+      "pdf_url": "/pdfs/Medical%20Ha%CC%A3nh%20-%20CT%20Ngu%CC%9B%CC%A3c%20bu%CC%A3ng%20-%2020250312.pdf",
+      "gdrive_url": "",
+      "documents": [
+        {
+          "name": "Phiếu kết quả MRI Sọ Não - Mạch Não - Xoang (Có QR PACS) - PK Việt Healthcare",
+          "category": "imaging",
+          "icon": "🧠",
+          "pdf_file": "Scanned 26 Sep 2026 at 21:10:39.pdf",
+          "pdf_url": "/pdfs/rec_20250510_mri_nao_viethealthcare.pdf",
+          "badge": "MRI Sọ Não (Có QR PACS)"
+        },
+        {
+          "name": "Tập kết quả MRI Sọ Não tổng hợp - PK Việt Healthcare",
+          "category": "imaging",
+          "icon": "📑",
+          "pdf_file": "Medical Hạnh - CT Ngực bụng - 20250312.pdf",
+          "pdf_url": "/pdfs/Medical%20H%E1%BA%A1nh%20-%20CT%20Ng%E1%BB%B1c%20b%E1%BB%A5ng%20-%2020250312.pdf",
+          "badge": "Tập kết quả tổng hợp"
+        }
+      ],
+      "qr_data": {
+        "type": "pacs",
+        "title": "Tra cứu phim MRI Sọ Não - Mạch Não (10/05/2025) trên PACS Việt Healthcare",
+        "url": "https://bom.so/GeA47x"
+      }
+    },
+    {
+      "id": "rec_20250721_genesolutions",
+      "date": "2025-07-21",
+      "facility": "Gene Solutions Lab (Tư vấn: BS.CKII. Nguyễn Ngọc Anh)",
+      "doctor": "TS. Nguyễn Hoài Nghĩa, PGS.TS.BS. Đỗ Thị Thanh Thủy",
+      "type": "molecular",
+      "title": "Xét Nghiệm Gen K-Track BO: Đột Biến Đích & Sinh Thiết Lỏng ctDNA",
+      "summary": "Không phát hiện đột biến điều trị đích (EGFR, ALK, ROS1... âm tính). Sinh thiết lỏng ctDNA DƯƠNG TÍNH (+), tỷ lệ TF 0.05%, phát hiện đột biến TP53 (R248W). Xác lập phác đồ hóa trị toàn thân kết hợp thuốc kháng sinh mạch Mvasi.",
+      "details": {
+        "Panel 22 gen trúng đích": "Âm tính - Không phát hiện đột biến gen EGFR (Exon 19 del, L858R, T790M), KRAS, ALK, ROS1, BRAF, MET, RET, NTRK, PIK3CA, HER2...",
+        "Khảo sát tồn dư khối u ctDNA": "DƯƠNG TÍNH (+) - Tumor Fraction TF: 0.05%, phát hiện biến đổi ctDNA toàn hệ gen (Genome-wide ctDNA features).",
+        "Đột biến xô-ma (Somatic Mutation)": "Phát hiện đột biến gene TP53: R248W.",
+        "Ý nghĩa quyết định điều trị": "Không có chỉ định dùng thuốc nhắm trúng đích TKI đơn thuần (Tagrisso). Bệnh nhân được hội chẩn bước vào phác đồ hóa trị phối hợp chuẩn: Bevacizumab (Mvasi) + Pemetrexed (Alimta) + Carboplatin kết hợp Zoledronic acid."
+      },
+      "metrics": {
+        "ctdna_tf_percent": 0.05
+      },
+      "pdf_file": "Scanned 26 Sep 2026 at 10:54:06.pdf",
+      "pdf_url": "/pdfs/rec_20250721_genesolutions_ctdna.pdf",
+      "documents": [
+        {
+          "name": "Kết quả Xét nghiệm ctDNA & Đột biến TP53 R248W - Gene Solutions",
+          "category": "molecular",
+          "icon": "🧬",
+          "pdf_file": "Scanned 26 Sep 2026 at 10:54:06.pdf",
+          "pdf_url": "/pdfs/rec_20250721_genesolutions_ctdna.pdf",
+          "badge": "Sinh thiết lỏng ctDNA"
+        },
+        {
+          "name": "Kết quả Khảo sát 22 Gen nhắm trúng đích - Gene Solutions",
+          "category": "molecular",
+          "icon": "🔬",
+          "pdf_file": "Scanned 26 Sep 2026 at 10:54:36.pdf",
+          "pdf_url": "/pdfs/rec_20250721_genesolutions_panel.pdf",
+          "badge": "Panel 22 Gen đích"
+        }
+      ]
+    },
+    {
+      "id": "rec_20250729",
+      "date": "2025-07-29",
+      "facility": "Phòng khám Đa Khoa Đại Phước",
+      "doctor": "BS. CK1 Trương Thị Phương Yến",
+      "type": "imaging",
+      "title": "CT-Scan Toàn Diện (Sọ Não - Ngực - Bụng Có Cản Quang)",
+      "summary": "Khối u S3 phổi T kích thước 15x22x28mm bờ tua gai; Tràn dịch màng ngoài tim tăng nhiều lên 23mm; Di căn xương cột sống, chậu, đùi, sọ; Chưa di căn nhu mô não.",
+      "details": {
+        "chest": "Tổn thương nốt bờ tua gai S3 phổi (T) d# 15x22x28mm, bắt thuốc cản quang không đồng nhất. Tổn thương nốt nhỏ S1-2 phổi (T) d# 6mm. Xơ rải rác phổi T và thùy dưới phổi P. Vài hạch nhỏ trung thất d <= 7mm.",
+        "pericardium": "Tràn dịch màng ngoài tim lượng nhiều, bề dày dmax # 23mm (cảnh báo lâm sàng nguy cơ chèn ép tim).",
+        "abdomen": "Ổ nhỏ đậm độ thấp gan HPT V d# 5mm, bắt thuốc kém rõ (quá nhỏ để xác định bản chất).",
+        "bones": "Các ổ đặc xương rải rác đốt sống ngực, lưng - cùng, xương chậu, xương sườn, xương ức, bả vai, đầu xương cánh tay, đầu xương đùi (thứ phát).",
+        "brain": "Không thấy tổn thương bắt thuốc bất thường nhu mô não, màng não. Các ổ đặc xương sọ trán hai bên, chẩm (P) d <= 5mm."
+      },
+      "conclusion": "Tổn thương nốt bờ tua gai S3 phổi T -> TD u phổi; Vài hạch nhỏ trung thất; Tràn dịch màng ngoài tim lượng nhiều (23mm); Tổn thương đặc xương rải rác xương sườn, cột sống ngực, thắt lưng, chậu, đùi, sọ -> thứ phát.",
+      "metrics": {
+        "tumor_primary_size_mm": 28,
+        "pericardial_effusion_mm": 23
+      },
+      "pdf_file": "Medical Hạnh - CT Ngực bụng Mri não - 20250729.pdf",
+      "pdf_url": "/pdfs/Medical%20Ha%CC%A3nh%20-%20CT%20Ngu%CC%9B%CC%A3c%20bu%CC%A3ng%20Mri%20na%CC%83o%20-%2020250729.pdf",
+      "gdrive_url": "",
+      "documents": [
+        {
+          "name": "Kết quả CT-scan Sọ não có cản quang - PK Đại Phước",
+          "category": "imaging",
+          "icon": "🧠",
+          "pdf_file": "Scanned 26 Sep 2026 at 21:09:48.pdf",
+          "pdf_url": "/pdfs/rec_20250729_ct_sonao_daiphuoc.pdf",
+          "badge": "CT Sọ não Đại Phước"
+        },
+        {
+          "name": "Kết quả CT-scan Ngực có cản quang (U phổi 28mm, dịch tim 23mm) - PK Đại Phước",
+          "category": "imaging",
+          "icon": "🩻",
+          "pdf_file": "Scanned 26 Sep 2026 at 21:11:22.pdf",
+          "pdf_url": "/pdfs/rec_20250729_ct_nguc_daiphuoc.pdf",
+          "badge": "CT Ngực Đại Phước"
+        },
+        {
+          "name": "Kết quả CT-scan Bụng có cản quang (Gan HPT V 5mm, đặc xương chậu đùi) - PK Đại Phước",
+          "category": "imaging",
+          "icon": "🩺",
+          "pdf_file": "Scanned 26 Sep 2026 at 21:11:41.pdf",
+          "pdf_url": "/pdfs/rec_20250729_ct_bung_daiphuoc.pdf",
+          "badge": "CT Bụng Đại Phước"
+        },
+        {
+          "name": "Tập kết quả CT-Scan Toàn thân tổng hợp (5 trang) - PK Đại Phước",
+          "category": "imaging",
+          "icon": "📑",
+          "pdf_file": "Medical Hạnh - CT Ngực bụng Mri não - 20250729.pdf",
+          "pdf_url": "/pdfs/Medical%20H%E1%BA%A1nh%20-%20CT%20Ng%E1%BB%B1c%20b%E1%BB%A5ng%20Mri%20n%C3%A3o%20-%2020250729.pdf",
+          "badge": "Tập CT toàn thân 5 trang"
+        }
+      ]
+    },
+    {
+      "id": "rec_20250809_hoatri_dot1",
+      "date": "2025-08-09",
+      "facility": "Trung tâm Ung Bướu (BS Điều trị: BS.CKII. Nguyễn Ngọc Anh)",
+      "doctor": "BS.CKII. Nguyễn Ngọc Anh (SĐT: 0903910081)",
+      "type": "chemotherapy",
+      "title": "Khởi Trị Hóa Chất Chu Kỳ 1 (Mvasi + Alimta + Carboplatin)",
+      "summary": "Bắt đầu chu kỳ hóa chất tấn công đợt 1. Thể trạng bệnh nhân 50kg, huyết áp 110/70 mmHg, mạch 91 l/p. Xuất hiện tác dụng phụ nhẹ: loét miệng, khô miệng, nám da, táo bón.",
+      "details": {
+        "Thể trạng & Sinh hiệu": "Cân nặng 50kg, Chiều cao 150cm, Huyết áp 110/70 mmHg, Mạch 91 lần/phút.",
+        "Phác đồ truyền tĩnh mạch": "1. Mvasi (Bevacizumab) 400mg tiêm truyền;\n2. Alimta (Pemetrexed) 500mg tiêm truyền;\n3. Carboplatin 300mg tiêm truyền.",
+        "Tác dụng phụ gặp phải": "Táo bón, loét miệng, khô miệng, sạm da mặt, ngứa ran nhẹ tay chân cổ, đau nhức cơ hàm.",
+        "Dặn dò": "Ăn uống đầy đủ, nghỉ ngơi hợp lý. Hẹn tái khám đợt 2 ngày 30/08/2025."
+      },
+      "metrics": {
+        "weight_kg": 50
+      },
+      "pdf_file": "Scanned 26 Sep 2026 at 11:18:31.pdf",
+      "pdf_url": "/pdfs/rec_202508_202512_so_hoatri_6dot.pdf",
+      "documents": [
+        {
+          "name": "Sổ theo dõi Hóa chất Chu kỳ 1 (Mvasi + Alimta + Carboplatin)",
+          "category": "chemotherapy",
+          "icon": "📖",
+          "pdf_file": "Scanned 26 Sep 2026 at 11:18:31.pdf",
+          "pdf_url": "/pdfs/rec_202508_202512_so_hoatri_6dot.pdf",
+          "badge": "Sổ theo dõi hóa trị Đợt 1"
+        }
+      ]
+    },
+    {
+      "id": "rec_20250821",
+      "date": "2025-08-21",
+      "facility": "Trung tâm Y khoa Medic Hòa Hảo",
+      "doctor": "Khoa Xét nghiệm Medic",
+      "type": "lab",
+      "title": "Xét Nghiệm Máu & Sinh Hóa Gan Thận Định Kỳ",
+      "summary": "WBC 7.2, Hb 9.4 g/dL (thiếu máu nhẹ), Creatinine 1.03 mg/dL, eGFR 58 mL/min (suy giảm chức năng thận nhẹ CKD giai đoạn 3a), Urea 29.50 mg/dL, PLT 198, Men gan AST 21.2 / ALT 16.7, GGT tăng nhẹ 37.7 U/L.",
+      "lab_results": {
+        "WBC": {
+          "val": 7.2,
+          "unit": "10^9/L",
+          "ref": "4.0 - 10.5",
+          "status": "normal"
+        },
+        "NEU_pct": {
+          "val": 37.2,
+          "unit": "%",
+          "ref": "40 - 74",
+          "status": "low"
+        },
+        "LYM_pct": {
+          "val": 48.8,
+          "unit": "%",
+          "ref": "19 - 48",
+          "status": "normal"
+        },
+        "MONO_pct": {
+          "val": 11.6,
+          "unit": "%",
+          "ref": "3 - 9",
+          "status": "high"
+        },
+        "EOS_pct": {
+          "val": 2.0,
+          "unit": "%",
+          "ref": "0 - 7",
+          "status": "normal"
+        },
+        "BASO_pct": {
+          "val": 0.4,
+          "unit": "%",
+          "ref": "0 - 1.5",
+          "status": "normal"
+        },
+        "NEU_abs": {
+          "val": 2.7,
+          "unit": "10^9/L",
+          "ref": "1.7 - 7.0",
+          "status": "normal"
+        },
+        "LYM_abs": {
+          "val": 3.5,
+          "unit": "10^9/L",
+          "ref": "1.0 - 4.0",
+          "status": "normal"
+        },
+        "MONO_abs": {
+          "val": 0.8,
+          "unit": "10^9/L",
+          "ref": "0.1 - 1.0",
+          "status": "normal"
+        },
+        "EOS_abs": {
+          "val": 0.1,
+          "unit": "10^9/L",
+          "ref": "0 - 0.5",
+          "status": "normal"
+        },
+        "BASO_abs": {
+          "val": 0.0,
+          "unit": "10^9/L",
+          "ref": "0 - 0.2",
+          "status": "normal"
+        },
+        "RBC": {
+          "val": 4.42,
+          "unit": "10^12/L",
+          "ref": "3.80 - 5.60",
+          "status": "normal"
+        },
+        "Hb": {
+          "val": 9.4,
+          "unit": "g/dL",
+          "ref": "12.0 - 18.0",
+          "status": "low"
+        },
+        "Hct": {
+          "val": 29.7,
+          "unit": "%",
+          "ref": "35 - 52",
+          "status": "low"
+        },
+        "MCV": {
+          "val": 67.4,
+          "unit": "fL",
+          "ref": "80 - 100",
+          "status": "low"
+        },
+        "MCH": {
+          "val": 21.4,
+          "unit": "pg",
+          "ref": "26 - 32",
+          "status": "low"
+        },
+        "MCHC": {
+          "val": 31.7,
+          "unit": "g/dL",
+          "ref": "32 - 36",
+          "status": "low"
+        },
+        "RDW": {
+          "val": 17.8,
+          "unit": "%",
+          "ref": "11.0 - 15.7",
+          "status": "high"
+        },
+        "PLT": {
+          "val": 198,
+          "unit": "10^9/L",
+          "ref": "150 - 400",
+          "status": "normal"
+        },
+        "MPV": {
+          "val": 8.4,
+          "unit": "fL",
+          "ref": "6.30 - 12.0",
+          "status": "normal"
+        },
+        "Total_Protein": {
+          "val": 6.59,
+          "unit": "g/dL",
+          "ref": "6 - 8",
+          "status": "normal"
+        },
+        "Albumin": {
+          "val": 4.16,
+          "unit": "g/dL",
+          "ref": "3.60 - 5.0",
+          "status": "normal"
+        },
+        "Urea": {
+          "val": 29.5,
+          "unit": "mg/dL",
+          "ref": "15 - 49",
+          "status": "normal"
+        },
+        "Creatinine": {
+          "val": 1.03,
+          "unit": "mg/dL",
+          "ref": "0.5 - 1.1",
+          "status": "normal"
+        },
+        "eGFR": {
+          "val": 58,
+          "unit": "mL/min/1.73m²",
+          "ref": ">= 90",
+          "status": "low"
+        },
+        "GGT": {
+          "val": 37.7,
+          "unit": "U/L",
+          "ref": "< 36",
+          "status": "high"
+        },
+        "SGOT_AST": {
+          "val": 21.2,
+          "unit": "U/L",
+          "ref": "< 35",
+          "status": "normal"
+        },
+        "SGPT_ALT": {
+          "val": 16.7,
+          "unit": "U/L",
+          "ref": "< 30",
+          "status": "normal"
+        }
+      },
+      "pdf_file": "2250821143062_NGUYEN TUYET HANH_20250821.pdf",
+      "pdf_url": "/pdfs/2250821143062_NGUYEN%20TUYET%20HANH_20250821.pdf",
+      "gdrive_url": "",
+      "metrics": {
+        "egfr": 58,
+        "creatinine": 1.03,
+        "urea": 29.5,
+        "hb": 9.4,
+        "wbc": 7.2,
+        "plt": 198,
+        "ast": 21.2,
+        "alt": 16.7,
+        "ggt": 37.7
+      },
+      "documents": [
+        {
+          "name": "Phiếu xét nghiệm Máu & Sinh hóa Gan Thận - Medic Hòa Hảo",
+          "category": "lab",
+          "icon": "🩸",
+          "pdf_file": "2250821143062_NGUYEN TUYET HANH_20250821.pdf",
+          "pdf_url": "/pdfs/2250821143062_NGUYEN%20TUYET%20HANH_20250821.pdf",
+          "badge": "Xét nghiệm máu Medic"
+        },
+        {
+          "name": "Tra Cứu Xét Nghiệm Máu Sau Hóa Trị Đợt 1 (21/08/2025) (Mã QR Tra Cứu Trực Tuyến)",
+          "category": "laboratory",
+          "icon": "🧪",
+          "pdf_file": "http://nthsoft.vn:88/H/?p=8373723/210825/XetNghiem&u=ggYtw9TZXwajp3tIUm/NlA==",
+          "pdf_url": "http://nthsoft.vn:88/H/?p=8373723/210825/XetNghiem&u=ggYtw9TZXwajp3tIUm/NlA==",
+          "is_qr_doc": true,
+          "badge": "LIS ONLINE QR",
+          "qr_code": "http://nthsoft.vn:88/H/?p=8373723/210825/XetNghiem&u=ggYtw9TZXwajp3tIUm/NlA==",
+          "qr_img": "/generated_qr/qr_xn_20250821.png"
+        }
+      ],
+      "qr_data": {
+        "qr_id": "qr_xn_20250821",
+        "title": "Tra Cứu Xét Nghiệm Trực Tuyến NTH Soft (21/08/2025)",
+        "url": "http://nthsoft.vn:88/H/?p=8373723/210825/XetNghiem&u=ggYtw9TZXwajp3tIUm/NlA==",
+        "qr_img": "/generated_qr/qr_xn_20250821.png",
+        "type": "laboratory"
+      }
+    },
+    {
+      "id": "rec_20250830_hoatri_dot2",
+      "date": "2025-08-30",
+      "facility": "Trung tâm Ung Bướu",
+      "doctor": "BS.CKII. Nguyễn Ngọc Anh",
+      "type": "chemotherapy",
+      "title": "Hóa Trị Chu Kỳ 2 & Bắt Đầu Điều Trị Chống Hủy Xương",
+      "summary": "Truyền hóa trị chu kỳ 2 và kết hợp thuốc chống hủy xương Zoledronic acid. Thể trạng 49kg, HA 130/80 mmHg. Xuất hiện nhức đầu, loét miệng nhiệt lưỡi, đau cơ xương hàm mặt.",
+      "details": {
+        "Thể trạng & Sinh hiệu": "Cân nặng 49kg, HA 130/80 mmHg, Mạch 72 lần/phút.",
+        "Phác đồ truyền": "Mvasi 400mg + Alimta 500mg + Carboplatin 300mg + Zoledronic acid tiêm truyền (chống hủy xương di căn).",
+        "Tác dụng phụ": "Nhức đầu, đau nhức cơ xương hàm mặt, táo bón, loét miệng nhiệt lưỡi, da nám.",
+        "Dặn dò": "Ăn uống đầy đủ, uống nhiều nước cam, bổ sung nước để cải thiện táo bón. Hẹn đợt 3 ngày 20/09/2025."
+      },
+      "metrics": {
+        "weight_kg": 49
+      },
+      "pdf_file": "Scanned 26 Sep 2026 at 11:18:31.pdf",
+      "pdf_url": "/pdfs/rec_202508_202512_so_hoatri_6dot.pdf",
+      "documents": [
+        {
+          "name": "Sổ theo dõi Hóa chất Chu kỳ 2 & Zoledronic acid",
+          "category": "chemotherapy",
+          "icon": "📖",
+          "pdf_file": "Scanned 26 Sep 2026 at 11:18:31.pdf",
+          "pdf_url": "/pdfs/rec_202508_202512_so_hoatri_6dot.pdf",
+          "badge": "Sổ theo dõi hóa trị Đợt 2"
+        }
+      ]
+    },
+    {
+      "id": "rec_20250920_hoatri_dot3",
+      "date": "2025-09-20",
+      "facility": "Trung tâm Ung Bướu",
+      "doctor": "BS.CKII. Nguyễn Ngọc Anh",
+      "type": "chemotherapy",
+      "title": "Hóa Trị Chu Kỳ 3 (Sụt Cân Còn 46kg & Mệt Mỏi)",
+      "summary": "Truyền hóa trị chu kỳ 3. Thể trạng sụt xuống 46kg (giảm 4kg). Xuất hiện tác dụng phụ tích lũy: mệt mỏi, nhức đầu, buồn nôn, đau mắt, nhiệt miệng khô môi.",
+      "details": {
+        "Thể trạng & Sinh hiệu": "Cân nặng 46kg, HA 130/75 mmHg, Mạch 89 lần/phút.",
+        "Phác đồ truyền": "Mvasi 400mg + Alimta 500mg + Carboplatin 300mg tiêm truyền.",
+        "Tác dụng phụ": "Nhức đầu, đau nhức hàm mặt, táo bón xen kẽ tiêu chảy do ăn uống, buồn nôn, mệt mỏi, đau mắt, nhiệt miệng khô môi.",
+        "Dặn dò": "Ăn uống đầy đủ, nghỉ ngơi, tập thể dục nhẹ nhàng vào sáng sớm. Hẹn tái khám đợt 4 ngày 11/10/2025."
+      },
+      "metrics": {
+        "weight_kg": 46
+      },
+      "pdf_file": "Scanned 26 Sep 2026 at 11:18:31.pdf",
+      "pdf_url": "/pdfs/rec_202508_202512_so_hoatri_6dot.pdf",
+      "documents": [
+        {
+          "name": "Sổ theo dõi Hóa chất Chu kỳ 3",
+          "category": "chemotherapy",
+          "icon": "📖",
+          "pdf_file": "Scanned 26 Sep 2026 at 11:18:31.pdf",
+          "pdf_url": "/pdfs/rec_202508_202512_so_hoatri_6dot.pdf",
+          "badge": "Sổ theo dõi hóa trị Đợt 3"
+        }
+      ]
+    },
+    {
+      "id": "rec_20250924",
+      "date": "2025-09-24",
+      "facility": "Trung tâm Y khoa Medic Hòa Hảo",
+      "doctor": "ThS.BS. Nguyễn Bảo Toàn (Khoa Xét nghiệm)",
+      "type": "lab",
+      "title": "Xét Nghiệm Máu & Sinh Hóa Đánh Giá Thiếu Máu & Chức Năng Thận Định Kỳ",
+      "summary": "WBC 7.8, Hb 9.2 g/dL (thiếu máu hồng cầu nhỏ), PLT 246, eGFR 55 mL/min (suy thận mạn giai đoạn 3a nhẹ, Cr 1.07), Men gan AST 23.4 / ALT 17.3 rất tốt.",
+      "details": {
+        "hematology": "Công thức máu: Bạch cầu WBC 7.8 x10^9/L bình thường (Neu% 54.7%, Lym% 41.8%). Hồng cầu RBC 4.07 x10^12/L, Hemoglobin Hb 9.2 g/dL (thấp), Hct 28.0% (thấp), MCV 68.8 fL (hồng cầu nhỏ nhược sắc), RDW 18.0% (tăng phân tán). Tiểu cầu PLT 246 x10^9/L bình thường.",
+        "biochemistry": "Urea máu 34.40 mg/dL bình thường. Creatinine huyết thanh 1.07 mg/dL, độ lọc cầu thận eGFR (CKD-EPI) 55 mL/min/1.73m2 (chức năng thận suy giảm nhẹ G3a). Men gan hoàn toàn trong giới hạn bình thường: SGOT (AST) 23.4 U/L, SGPT (ALT) 17.3 U/L, GGT 25.2 U/L."
+      },
+      "diagnosis": "Thiếu máu hồng cầu nhỏ nhược sắc (D50.0) - Suy thận mạn giai đoạn 3a nhẹ (N18.3) - Bệnh nhân K phổi đang theo dõi",
+      "metrics": {
+        "wbc": 7.8,
+        "neu_pct": 54.7,
+        "rbc": 4.07,
+        "hb": 9.2,
+        "hct": 28.0,
+        "mcv": 68.8,
+        "mch": 22.5,
+        "plt": 246,
+        "creatinine": 1.07,
+        "urea": 34.4,
+        "egfr": 55.0,
+        "ast": 23.4,
+        "alt": 17.3,
+        "ggt": 25.2
+      },
+      "lab_results": {
+        "WBC": {
+          "val": 7.8,
+          "unit": "10^9/L",
+          "ref": "4.0 - 10.5",
+          "status": "normal"
+        },
+        "NEU_pct": {
+          "val": 54.7,
+          "unit": "%",
+          "ref": "40 - 74",
+          "status": "normal"
+        },
+        "LYM_pct": {
+          "val": 41.8,
+          "unit": "%",
+          "ref": "19 - 48",
+          "status": "normal"
+        },
+        "RBC": {
+          "val": 4.07,
+          "unit": "10^12/L",
+          "ref": "3.80 - 5.60",
+          "status": "normal"
+        },
+        "Hb": {
+          "val": 9.2,
+          "unit": "g/dL",
+          "ref": "12.0 - 18.0",
+          "status": "low"
+        },
+        "Hct": {
+          "val": 28.0,
+          "unit": "%",
+          "ref": "35 - 52",
+          "status": "low"
+        },
+        "MCV": {
+          "val": 68.8,
+          "unit": "fL",
+          "ref": "80 - 100",
+          "status": "low"
+        },
+        "MCH": {
+          "val": 22.5,
+          "unit": "pg",
+          "ref": "26 - 32",
+          "status": "low"
+        },
+        "MCHC": {
+          "val": 32.7,
+          "unit": "g/dL",
+          "ref": "32 - 36",
+          "status": "normal"
+        },
+        "RDW": {
+          "val": 18.0,
+          "unit": "%",
+          "ref": "11.0 - 15.7",
+          "status": "high"
+        },
+        "PLT": {
+          "val": 246,
+          "unit": "10^9/L",
+          "ref": "150 - 400",
+          "status": "normal"
+        },
+        "Urea": {
+          "val": 34.4,
+          "unit": "mg/dL",
+          "ref": "15 - 49",
+          "status": "normal"
+        },
+        "Creatinine": {
+          "val": 1.07,
+          "unit": "mg/dL",
+          "ref": "0.5 - 1.1",
+          "status": "normal"
+        },
+        "eGFR": {
+          "val": 55.0,
+          "unit": "mL/min/1.73m²",
+          "ref": ">= 90",
+          "status": "mild_decrease"
+        },
+        "SGOT_AST": {
+          "val": 23.4,
+          "unit": "U/L",
+          "ref": "< 35",
+          "status": "normal"
+        },
+        "SGPT_ALT": {
+          "val": 17.3,
+          "unit": "U/L",
+          "ref": "< 30",
+          "status": "normal"
+        },
+        "GGT": {
+          "val": 25.2,
+          "unit": "U/L",
+          "ref": "< 36",
+          "status": "normal"
+        }
+      },
+      "pdf_file": "2260922143134_NGUYEN TUYET HANH_20250924.pdf",
+      "pdf_url": "/pdfs/2260922143134_NGUYEN%20TUYET%20HANH_20250924.pdf",
+      "gdrive_url": "",
+      "documents": [
+        {
+          "name": "Phiếu xét nghiệm Máu & Sinh hóa Gan Thận - Medic Hòa Hảo",
+          "category": "lab",
+          "icon": "🩸",
+          "pdf_file": "2260922143134_NGUYEN TUYET HANH_20250924.pdf",
+          "pdf_url": "/pdfs/2260922143134_NGUYEN%20TUYET%20HANH_20250924.pdf",
+          "badge": "Xét nghiệm máu Medic"
+        },
+        {
+          "name": "Tra Cứu Xét Nghiệm Máu Sau Hóa Trị Đợt 3 (24/09/2025) (Mã QR Tra Cứu Trực Tuyến)",
+          "category": "laboratory",
+          "icon": "🧪",
+          "pdf_file": "http://nthsoft.vn:88/H/?p=8373723/240925/XetNghiem&u=ggYtw9TZXwajp3tIUm/NlA==",
+          "pdf_url": "http://nthsoft.vn:88/H/?p=8373723/240925/XetNghiem&u=ggYtw9TZXwajp3tIUm/NlA==",
+          "is_qr_doc": true,
+          "badge": "LIS ONLINE QR",
+          "qr_code": "http://nthsoft.vn:88/H/?p=8373723/240925/XetNghiem&u=ggYtw9TZXwajp3tIUm/NlA==",
+          "qr_img": "/generated_qr/qr_xn_20250924.png"
+        }
+      ],
+      "qr_data": {
+        "qr_id": "qr_xn_20250924",
+        "title": "Tra Cứu Xét Nghiệm Trực Tuyến NTH Soft (24/09/2025)",
+        "url": "http://nthsoft.vn:88/H/?p=8373723/240925/XetNghiem&u=ggYtw9TZXwajp3tIUm/NlA==",
+        "qr_img": "/generated_qr/qr_xn_20250924.png",
+        "type": "laboratory"
+      }
+    },
+    {
+      "id": "rec_20251009",
+      "date": "2025-10-09",
+      "facility": "Trung tâm Y khoa Medic Hòa Hảo",
+      "doctor": "Khoa Xét nghiệm Medic",
+      "type": "lab",
+      "title": "Xét Nghiệm Máu & Sinh Hóa Gan Thận Định Kỳ",
+      "summary": "WBC tăng 10.8 (bạch cầu cao), Hb 9.6 g/dL, PLT 165, Creatinine 1.04 mg/dL, eGFR 57 mL/min (suy thận mạn 3a), Urea 32.50 mg/dL, Men gan tăng phản ứng: AST 46.60 U/L / ALT 51.00 U/L, GGT 32.70 U/L.",
+      "lab_results": {
+        "WBC": {
+          "val": 10.8,
+          "unit": "10^9/L",
+          "ref": "4.0 - 10.5",
+          "status": "high"
+        },
+        "NEU_pct": {
+          "val": 61.3,
+          "unit": "%",
+          "ref": "40 - 74",
+          "status": "normal"
+        },
+        "LYM_pct": {
+          "val": 31.6,
+          "unit": "%",
+          "ref": "19 - 48",
+          "status": "normal"
+        },
+        "MONO_pct": {
+          "val": 6.3,
+          "unit": "%",
+          "ref": "3 - 9",
+          "status": "normal"
+        },
+        "EOS_pct": {
+          "val": 0.4,
+          "unit": "%",
+          "ref": "0 - 7",
+          "status": "normal"
+        },
+        "BASO_pct": {
+          "val": 0.4,
+          "unit": "%",
+          "ref": "0 - 1.5",
+          "status": "normal"
+        },
+        "NEU_abs": {
+          "val": 6.6,
+          "unit": "10^9/L",
+          "ref": "1.7 - 7.0",
+          "status": "normal"
+        },
+        "LYM_abs": {
+          "val": 3.4,
+          "unit": "10^9/L",
+          "ref": "1.0 - 4.0",
+          "status": "normal"
+        },
+        "MONO_abs": {
+          "val": 0.7,
+          "unit": "10^9/L",
+          "ref": "0.1 - 1.0",
+          "status": "normal"
+        },
+        "EOS_abs": {
+          "val": 0.0,
+          "unit": "10^9/L",
+          "ref": "0 - 0.5",
+          "status": "normal"
+        },
+        "BASO_abs": {
+          "val": 0.0,
+          "unit": "10^9/L",
+          "ref": "0 - 0.2",
+          "status": "normal"
+        },
+        "RBC": {
+          "val": 4.19,
+          "unit": "10^12/L",
+          "ref": "3.80 - 5.60",
+          "status": "normal"
+        },
+        "Hb": {
+          "val": 9.6,
+          "unit": "g/dL",
+          "ref": "12.0 - 18.0",
+          "status": "low"
+        },
+        "Hct": {
+          "val": 29.5,
+          "unit": "%",
+          "ref": "35 - 52",
+          "status": "low"
+        },
+        "MCV": {
+          "val": 70.2,
+          "unit": "fL",
+          "ref": "80 - 100",
+          "status": "low"
+        },
+        "MCH": {
+          "val": 22.8,
+          "unit": "pg",
+          "ref": "26 - 32",
+          "status": "low"
+        },
+        "MCHC": {
+          "val": 32.5,
+          "unit": "g/dL",
+          "ref": "32 - 36",
+          "status": "normal"
+        },
+        "RDW": {
+          "val": 19.1,
+          "unit": "%",
+          "ref": "11.0 - 15.7",
+          "status": "high"
+        },
+        "PLT": {
+          "val": 165,
+          "unit": "10^9/L",
+          "ref": "150 - 400",
+          "status": "normal"
+        },
+        "MPV": {
+          "val": 7.8,
+          "unit": "fL",
+          "ref": "6.30 - 12.0",
+          "status": "normal"
+        },
+        "Total_Protein": {
+          "val": 6.52,
+          "unit": "g/dL",
+          "ref": "6 - 8",
+          "status": "normal"
+        },
+        "Albumin": {
+          "val": 4.06,
+          "unit": "g/dL",
+          "ref": "3.60 - 5.0",
+          "status": "normal"
+        },
+        "Urea": {
+          "val": 32.5,
+          "unit": "mg/dL",
+          "ref": "15 - 49",
+          "status": "normal"
+        },
+        "Creatinine": {
+          "val": 1.04,
+          "unit": "mg/dL",
+          "ref": "0.5 - 1.1",
+          "status": "normal"
+        },
+        "eGFR": {
+          "val": 57,
+          "unit": "mL/min/1.73m²",
+          "ref": ">= 90",
+          "status": "low"
+        },
+        "GGT": {
+          "val": 32.7,
+          "unit": "U/L",
+          "ref": "< 36",
+          "status": "normal"
+        },
+        "SGOT_AST": {
+          "val": 46.6,
+          "unit": "U/L",
+          "ref": "< 35",
+          "status": "high"
+        },
+        "SGPT_ALT": {
+          "val": 51.0,
+          "unit": "U/L",
+          "ref": "< 30",
+          "status": "high"
+        }
+      },
+      "pdf_file": "2251009143130_NGUYEN TUYET HANH_20251009.pdf",
+      "pdf_url": "/pdfs/2251009143130_NGUYEN%20TUYET%20HANH_20251009.pdf",
+      "gdrive_url": "",
+      "metrics": {
+        "egfr": 57,
+        "creatinine": 1.04,
+        "urea": 32.5,
+        "hb": 9.6,
+        "wbc": 10.8,
+        "plt": 165,
+        "ast": 46.6,
+        "alt": 51.0,
+        "ggt": 32.7
+      },
+      "documents": [
+        {
+          "name": "Phiếu xét nghiệm Máu & Sinh hóa Gan Thận - Medic Hòa Hảo",
+          "category": "lab",
+          "icon": "🩸",
+          "pdf_file": "2251009143130_NGUYEN TUYET HANH_20251009.pdf",
+          "pdf_url": "/pdfs/2251009143130_NGUYEN%20TUYET%20HANH_20251009.pdf",
+          "badge": "Xét nghiệm máu Medic"
+        },
+        {
+          "name": "Tra Cứu Xét Nghiệm Máu Tiền Hóa Trị Đợt 4 (09/10/2025) (Mã QR Tra Cứu Trực Tuyến)",
+          "category": "laboratory",
+          "icon": "🧪",
+          "pdf_file": "http://nthsoft.vn:88/H/?p=8373723/091025/XetNghiem&u=ggYtw9TZXwajp3tIUm/NlA==",
+          "pdf_url": "http://nthsoft.vn:88/H/?p=8373723/091025/XetNghiem&u=ggYtw9TZXwajp3tIUm/NlA==",
+          "is_qr_doc": true,
+          "badge": "LIS ONLINE QR",
+          "qr_code": "http://nthsoft.vn:88/H/?p=8373723/091025/XetNghiem&u=ggYtw9TZXwajp3tIUm/NlA==",
+          "qr_img": "/generated_qr/qr_xn_20251009.png"
+        }
+      ],
+      "qr_data": {
+        "qr_id": "qr_xn_20251009",
+        "title": "Tra Cứu Xét Nghiệm Trực Tuyến NTH Soft (09/10/2025)",
+        "url": "http://nthsoft.vn:88/H/?p=8373723/091025/XetNghiem&u=ggYtw9TZXwajp3tIUm/NlA==",
+        "qr_img": "/generated_qr/qr_xn_20251009.png",
+        "type": "laboratory"
+      }
+    },
+    {
+      "id": "rec_20251011_hoatri_dot4",
+      "date": "2025-10-11",
+      "facility": "Trung tâm Ung Bướu",
+      "doctor": "BS.CKII. Nguyễn Ngọc Anh",
+      "type": "chemotherapy",
+      "title": "Hóa Trị Chu Kỳ 4 (Bổ Sung Nhuận Tràng Forlax Do Táo Bón)",
+      "summary": "Truyền hóa trị chu kỳ 4 (Mvasi 400mg + Alimta 500mg + Carboplatin 300mg). Cân nặng: 47kg, HA: 120/70 mmHg, Mạch: 72 l/p. Bác sĩ kê bổ sung gói nhuận tràng Forlax do táo bón nhiều. Hẹn tái khám ngày 01/11/2025.",
+      "details": {
+        "Thể trạng & Sinh hiệu": "Cân nặng: 47 kg, Chiều cao: 150 cm, Huyết áp: 120/70 mmHg, Mạch: 72 lần/phút.",
+        "Phác đồ tiêm truyền tĩnh mạch": "1. Mvasi (Bevacizumab) 400mg inj\n2. Alimta (Pemetrexed) 500mg inj\n3. Carboplatin 300mg inj.",
+        "Tác dụng phụ ghi nhận": "Táo bón kéo dài (bác sĩ chỉ định kê đơn bổ sung thuốc nhuận tràng Forlax).",
+        "Dặn dò y khoa": "Ăn uống đầy đủ, nghỉ ngơi hợp lý, tập thể dục nhẹ nhàng vào sáng sớm. Hẹn tái khám đợt 5 ngày 01/11/2025 (thực tế kiểm tra xét nghiệm 04/11 và truyền đợt 5 ngày 05/11/2025)."
+      },
+      "metrics": {
+        "weight_kg": 47,
+        "bp_systolic": 120,
+        "bp_diastolic": 70,
+        "heart_rate": 72
+      },
+      "pdf_file": "Scanned 26 Sep 2026 at 11:18:31.pdf",
+      "pdf_url": "/pdfs/rec_202508_202512_so_hoatri_6dot.pdf",
+      "documents": [
+        {
+          "name": "Sổ theo dõi Hóa chất Chu kỳ 4 (Kê thêm Forlax)",
+          "category": "chemotherapy",
+          "icon": "📖",
+          "pdf_file": "Scanned 26 Sep 2026 at 11:18:31.pdf",
+          "pdf_url": "/pdfs/rec_202508_202512_so_hoatri_6dot.pdf",
+          "badge": "Sổ theo dõi hóa trị Đợt 4"
+        }
+      ]
+    },
+    {
+      "id": "rec_20251104",
+      "date": "2025-11-04",
+      "facility": "Trung tâm Y khoa Medic Hòa Hảo",
+      "doctor": "Khoa Xét nghiệm Medic",
+      "type": "lab",
+      "title": "Xét Nghiệm Máu - Dấu Hiệu Suy Giảm Chức Năng Thận Giai Đoạn 3a",
+      "summary": "WBC 7.0, Hb tụt còn 8.8 g/dL; Creatinine tăng lên 1.15 mg/dL (vượt ngưỡng), eGFR rớt xuống 51 mL/min (suy thận mạn độ 3a), PLT 181, Urea 46.10 mg/dL, Men gan AST 19.8 / ALT 11.4 U/L.",
+      "lab_results": {
+        "WBC": {
+          "val": 7.0,
+          "unit": "10^9/L",
+          "ref": "4.0 - 10.5",
+          "status": "normal"
+        },
+        "NEU_pct": {
+          "val": 53.7,
+          "unit": "%",
+          "ref": "40 - 74",
+          "status": "normal"
+        },
+        "LYM_pct": {
+          "val": 38.0,
+          "unit": "%",
+          "ref": "19 - 48",
+          "status": "normal"
+        },
+        "NEU_abs": {
+          "val": 3.8,
+          "unit": "10^9/L",
+          "ref": "1.7 - 7.0",
+          "status": "normal"
+        },
+        "LYM_abs": {
+          "val": 2.7,
+          "unit": "10^9/L",
+          "ref": "1.0 - 4.0",
+          "status": "normal"
+        },
+        "RBC": {
+          "val": 3.72,
+          "unit": "10^12/L",
+          "ref": "3.80 - 5.60",
+          "status": "low"
+        },
+        "Hb": {
+          "val": 8.8,
+          "unit": "g/dL",
+          "ref": "12.0 - 18.0",
+          "status": "low"
+        },
+        "Hct": {
+          "val": 27.3,
+          "unit": "%",
+          "ref": "35 - 52",
+          "status": "low"
+        },
+        "MCV": {
+          "val": 73.4,
+          "unit": "fL",
+          "ref": "80 - 100",
+          "status": "low"
+        },
+        "MCH": {
+          "val": 23.7,
+          "unit": "pg",
+          "ref": "26 - 32",
+          "status": "low"
+        },
+        "MCHC": {
+          "val": 32.2,
+          "unit": "g/dL",
+          "ref": "32 - 36",
+          "status": "normal"
+        },
+        "RDW": {
+          "val": 18.2,
+          "unit": "%",
+          "ref": "11.0 - 15.7",
+          "status": "high"
+        },
+        "PLT": {
+          "val": 181,
+          "unit": "10^9/L",
+          "ref": "150 - 400",
+          "status": "normal"
+        },
+        "Urea": {
+          "val": 46.1,
+          "unit": "mg/dL",
+          "ref": "15 - 49",
+          "status": "normal"
+        },
+        "Creatinine": {
+          "val": 1.15,
+          "unit": "mg/dL",
+          "ref": "0.5 - 1.1",
+          "status": "high"
+        },
+        "eGFR": {
+          "val": 51.0,
+          "unit": "mL/min/1.73m²",
+          "ref": ">= 90",
+          "status": "moderate_decrease"
+        },
+        "SGOT_AST": {
+          "val": 19.8,
+          "unit": "U/L",
+          "ref": "< 35",
+          "status": "normal"
+        },
+        "SGPT_ALT": {
+          "val": 11.4,
+          "unit": "U/L",
+          "ref": "< 30",
+          "status": "normal"
+        },
+        "GGT": {
+          "val": 28.7,
+          "unit": "U/L",
+          "ref": "< 36",
+          "status": "normal"
+        },
+        "Total_Protein": {
+          "val": 6.27,
+          "unit": "g/dL",
+          "ref": "6 - 8",
+          "status": "normal"
+        },
+        "Albumin": {
+          "val": 4.01,
+          "unit": "g/dL",
+          "ref": "3.6 - 5.0",
+          "status": "normal"
+        }
+      },
+      "pdf_file": "2251104143195_NGUYEN TUYET HANH_20250411.pdf",
+      "pdf_url": "/pdfs/2251104143195_NGUYEN%20TUYET%20HANH_20250411.pdf",
+      "gdrive_url": "",
+      "metrics": {
+        "egfr": 51.0,
+        "creatinine": 1.15,
+        "urea": 46.1,
+        "hb": 8.8,
+        "wbc": 7.0,
+        "plt": 181,
+        "ast": 19.8,
+        "alt": 11.4
+      },
+      "documents": [
+        {
+          "name": "Phiếu xét nghiệm Máu & Chức năng thận - Medic Hòa Hảo",
+          "category": "lab",
+          "icon": "🩸",
+          "pdf_file": "2251104143195_NGUYEN TUYET HANH_20250411.pdf",
+          "pdf_url": "/pdfs/2251104143195_NGUYEN%20TUYET%20HANH_20250411.pdf",
+          "badge": "Xét nghiệm máu Medic"
+        },
+        {
+          "name": "Tra Cứu Xét Nghiệm Máu Tiền Hóa Trị Đợt 5 (04/11/2025) (Mã QR Tra Cứu Trực Tuyến)",
+          "category": "laboratory",
+          "icon": "🧪",
+          "pdf_file": "http://nthsoft.vn:88/H/?p=8373723/041125/XetNghiem&u=ggYtw9TZXwajp3tIUm/NlA==",
+          "pdf_url": "http://nthsoft.vn:88/H/?p=8373723/041125/XetNghiem&u=ggYtw9TZXwajp3tIUm/NlA==",
+          "is_qr_doc": true,
+          "badge": "LIS ONLINE QR",
+          "qr_code": "http://nthsoft.vn:88/H/?p=8373723/041125/XetNghiem&u=ggYtw9TZXwajp3tIUm/NlA==",
+          "qr_img": "/generated_qr/qr_xn_20251104.png"
+        }
+      ]
+    },
+    {
+      "id": "rec_20251105_hoatri_dot5",
+      "date": "2025-11-05",
+      "facility": "Trung tâm Ung Bướu",
+      "doctor": "BS.CKII. Nguyễn Ngọc Anh",
+      "type": "chemotherapy",
+      "title": "Hóa Trị Chu Kỳ 5 (Đáy Thể Trạng 42kg & Độc Tính Nặng)",
+      "summary": "Truyền chu kỳ 5 + Zoledronic acid 4mg. Bệnh nhân sụt cân nghiêm trọng xuống 42kg (mất 8kg), hàm cứng, mắt mờ, đau nhức cơ xương toàn thân, eGFR suy giảm còn 46 mL/min.",
+      "details": {
+        "Thể trạng & Sinh hiệu": "Cân nặng 42kg (đáy sụt cân), HA 140/80 mmHg, Mạch 81 lần/phút.",
+        "Phác đồ truyền": "Mvasi 400mg + Alimta 500mg + Carboplatin 300mg + Zoledronic acid 4mg tiêm truyền.",
+        "Tác dụng phụ nặng nề": "Đau nhức cơ xương nhiều, tiêu chảy, buồn nôn, loét miệng, hàm cứng, mắt mờ, suy kiệt thể lực.",
+        "Dặn dò cấp thiết": "Tăng cường uống nước lọc, tập vật lý trị liệu cơ mặt, thể dục nhẹ nhàng. Hẹn đợt 6 ngày 18/12/2025."
+      },
+      "metrics": {
+        "weight_kg": 42
+      },
+      "pdf_file": "Scanned 26 Sep 2026 at 11:18:31.pdf",
+      "pdf_url": "/pdfs/rec_202508_202512_so_hoatri_6dot.pdf",
+      "documents": [
+        {
+          "name": "Sổ theo dõi Hóa chất Chu kỳ 5 & Zoledronic acid 4mg",
+          "category": "chemotherapy",
+          "icon": "📖",
+          "pdf_file": "Scanned 26 Sep 2026 at 11:18:31.pdf",
+          "pdf_url": "/pdfs/rec_202508_202512_so_hoatri_6dot.pdf",
+          "badge": "Sổ theo dõi hóa trị Đợt 5"
+        }
+      ]
+    },
+    {
+      "id": "rec_20251127",
+      "date": "2025-11-27",
+      "facility": "Trung tâm Y khoa Medic Hòa Hảo",
+      "doctor": "Khoa Xét nghiệm Medic",
+      "type": "lab",
+      "title": "Xét Nghiệm Máu Toàn Diện - Đáy Thiếu Máu & Giảm Tiểu Cầu",
+      "summary": "Hb rớt xuống 8.5 g/dL (đáy thấp nhất), PLT giảm còn 152 x10^9/L (sát ngưỡng dưới), Creatinine 0.935 mg/dL, eGFR 65 mL/min.",
+      "lab_results": {
+        "WBC": {
+          "val": 6.3,
+          "unit": "10^9/L",
+          "ref": "4.0 - 10.5",
+          "status": "normal"
+        },
+        "NEU_pct": {
+          "val": 49.3,
+          "unit": "%",
+          "ref": "40 - 74",
+          "status": "normal"
+        },
+        "LYM_pct": {
+          "val": 41.2,
+          "unit": "%",
+          "ref": "19 - 48",
+          "status": "normal"
+        },
+        "NEU_abs": {
+          "val": 3.1,
+          "unit": "10^9/L",
+          "ref": "1.7 - 7.0",
+          "status": "normal"
+        },
+        "LYM_abs": {
+          "val": 2.6,
+          "unit": "10^9/L",
+          "ref": "1.0 - 4.0",
+          "status": "normal"
+        },
+        "RBC": {
+          "val": 3.37,
+          "unit": "10^12/L",
+          "ref": "3.80 - 5.60",
+          "status": "low"
+        },
+        "Hb": {
+          "val": 8.5,
+          "unit": "g/dL",
+          "ref": "12.0 - 18.0",
+          "status": "low"
+        },
+        "Hct": {
+          "val": 25.9,
+          "unit": "%",
+          "ref": "35 - 52",
+          "status": "low"
+        },
+        "MCV": {
+          "val": 76.9,
+          "unit": "fL",
+          "ref": "80 - 100",
+          "status": "low"
+        },
+        "MCH": {
+          "val": 25.2,
+          "unit": "pg",
+          "ref": "26 - 32",
+          "status": "low"
+        },
+        "MCHC": {
+          "val": 32.8,
+          "unit": "g/dL",
+          "ref": "32 - 36",
+          "status": "normal"
+        },
+        "RDW": {
+          "val": 18.8,
+          "unit": "%",
+          "ref": "11.0 - 15.7",
+          "status": "high"
+        },
+        "PLT": {
+          "val": 152,
+          "unit": "10^9/L",
+          "ref": "150 - 400",
+          "status": "borderline_low"
+        },
+        "Urea": {
+          "val": 37.2,
+          "unit": "mg/dL",
+          "ref": "15 - 49",
+          "status": "normal"
+        },
+        "Creatinine": {
+          "val": 0.935,
+          "unit": "mg/dL",
+          "ref": "0.5 - 1.1",
+          "status": "normal"
+        },
+        "eGFR": {
+          "val": 65.0,
+          "unit": "mL/min/1.73m²",
+          "ref": ">= 90",
+          "status": "mild_decrease"
+        },
+        "SGOT_AST": {
+          "val": 23.4,
+          "unit": "U/L",
+          "ref": "< 35",
+          "status": "normal"
+        },
+        "SGPT_ALT": {
+          "val": 12.8,
+          "unit": "U/L",
+          "ref": "< 30",
+          "status": "normal"
+        },
+        "GGT": {
+          "val": 30.7,
+          "unit": "U/L",
+          "ref": "< 36",
+          "status": "normal"
+        },
+        "Total_Protein": {
+          "val": 6.34,
+          "unit": "g/dL",
+          "ref": "6 - 8",
+          "status": "normal"
+        },
+        "Albumin": {
+          "val": 4.08,
+          "unit": "g/dL",
+          "ref": "3.6 - 5.0",
+          "status": "normal"
+        }
+      },
+      "pdf_file": "2251127143094_NGUYEN TUYET HANH_20251127.pdf",
+      "pdf_url": "/pdfs/2251127143094_NGUYEN%20TUYET%20HANH_20251127.pdf",
+      "gdrive_url": "",
+      "metrics": {
+        "egfr": 65.0,
+        "creatinine": 0.935,
+        "urea": 37.2,
+        "hb": 8.5,
+        "wbc": 6.3,
+        "plt": 152,
+        "ast": 23.4,
+        "alt": 12.8
+      },
+      "documents": [
+        {
+          "name": "Phiếu xét nghiệm Máu Toàn Diện - Medic Hòa Hảo",
+          "category": "lab",
+          "icon": "🩸",
+          "pdf_file": "2251127143094_NGUYEN TUYET HANH_20251127.pdf",
+          "pdf_url": "/pdfs/2251127143094_NGUYEN%20TUYET%20HANH_20251127.pdf",
+          "badge": "Xét nghiệm máu Medic"
+        },
+        {
+          "name": "Tra Cứu Xét Nghiệm Máu & Chức Năng Gan Thận (27/11/2025) (Mã QR Tra Cứu Trực Tuyến)",
+          "category": "laboratory",
+          "icon": "🧪",
+          "pdf_file": "http://nthsoft.vn:88/H/?p=8373723/271125/XetNghiem&u=ggYtw9TZXwajp3tIUm/NlA==",
+          "pdf_url": "http://nthsoft.vn:88/H/?p=8373723/271125/XetNghiem&u=ggYtw9TZXwajp3tIUm/NlA==",
+          "is_qr_doc": true,
+          "badge": "LIS ONLINE QR",
+          "qr_code": "http://nthsoft.vn:88/H/?p=8373723/271125/XetNghiem&u=ggYtw9TZXwajp3tIUm/NlA==",
+          "qr_img": "/generated_qr/qr_xn_20251127.png"
+        }
+      ],
+      "qr_data": {
+        "qr_id": "qr_xn_20251127",
+        "title": "Tra Cứu Xét Nghiệm Trực Tuyến NTH Soft (27/11/2025)",
+        "url": "http://nthsoft.vn:88/H/?p=8373723/271125/XetNghiem&u=ggYtw9TZXwajp3tIUm/NlA==",
+        "qr_img": "/generated_qr/qr_xn_20251127.png",
+        "type": "laboratory"
+      }
+    },
+    {
+      "id": "rec_20251130",
+      "date": "2025-11-30",
+      "facility": "Phòng khám Đa Khoa Quốc Tế Việt Healthcare",
+      "doctor": "BS. CKII. Nguyễn Trí Dũng (BS chỉ định: BS.CKII. Nguyễn Ngọc Anh)",
+      "type": "imaging",
+      "title": "MSCT Lồng Ngực - Bụng Chậu Đánh Giá Sau 8 Tháng Điều Trị",
+      "summary": "U phổi S3 kích thước # 27mm ổn định, có hóa vôi và xơ hóa; Tràn dịch màng tim giảm xuống 16mm (so với 23mm); Di căn xương lan tỏa; Bệnh đáp ứng ổn định (Stable Disease).",
+      "details": {
+        "lungs": "Mảng tổn thương dạng xẹp phổi S3 phổi (T), kích thước # 27mm, có vùng nhỏ (kích thước # 15mm) bắt thuốc cản quang kém và đóng vôi bên trong kèm tổn thương xơ và dày vách gian tiểu thùy xung quanh. Vài nốt nhỏ đáy phổi (P) # 2-3mm. Tổn thương xơ đáy phổi hai bên.",
+        "pericardium": "Tràn dịch màng tim, chỗ dày nhất đo được # 16mm (đã giảm đáng kể so với 23mm ở phim 29/07/2025).",
+        "abdomen": "Vài ổ nhỏ tổn thương gan (P) d < 9mm, bắt thuốc cản quang kém (theo dõi di căn). Thận, tụy, lách, thượng thận bình thường. Xơ vữa động mạch chủ ngực, bụng.",
+        "bones": "Tổn thương đặc xương xương đòn, vai, 1/3 trên xương cánh tay, xương sườn 2 bên, xương ức, các đốt sống cổ thấp, ngực, thắt lưng cùng, chậu mu và 1/3 trên xương đùi hai bên -> Nghĩ di căn xương."
+      },
+      "conclusion": "Mảng tổn thương xẹp phổi S3 phổi T không thay đổi đáng kể so với phim chụp 12/3/2025 (U phổi đang điều trị - Stable Disease); Tràn dịch màng tim 16mm; Di căn xương đa ổ; Vài ổ nhỏ gan P theo dõi di căn.",
+      "metrics": {
+        "tumor_primary_size_mm": 27,
+        "pericardial_effusion_mm": 16
+      },
+      "pdf_file": "Medical Hạnh - CT Ngực Bụng - 20251130.pdf",
+      "pdf_url": "/pdfs/Medical%20Ha%CC%A3nh%20-%20CT%20Ngu%CC%9B%CC%A3c%20Bu%CC%A3ng%20-%2020251130.pdf",
+      "gdrive_url": "",
+      "documents": [
+        {
+          "name": "Phiếu kết quả MSCT Lồng ngực có cản quang (Có QR PACS) - PK Việt Healthcare",
+          "category": "imaging",
+          "icon": "🩻",
+          "pdf_file": "Scanned 26 Sep 2026 at 21:12:43.pdf",
+          "pdf_url": "/pdfs/rec_20251130_msct_nguc_viethealthcare.pdf",
+          "badge": "MSCT Ngực (Có QR PACS)"
+        },
+        {
+          "name": "Phiếu kết quả MSCT Bụng - Chậu có cản quang (Có QR PACS) - PK Việt Healthcare",
+          "category": "imaging",
+          "icon": "🩺",
+          "pdf_file": "Scanned 26 Sep 2026 at 21:12:01.pdf",
+          "pdf_url": "/pdfs/rec_20251130_ct_bungchau_viethealthcare.pdf",
+          "badge": "MSCT Bụng - Chậu (Có QR PACS)"
+        },
+        {
+          "name": "Tập kết quả MSCT Lồng ngực - Bụng chậu tổng hợp (2 trang) - PK Việt Healthcare",
+          "category": "imaging",
+          "icon": "📑",
+          "pdf_file": "Medical Hạnh - CT Ngực Bụng - 20251130.pdf",
+          "pdf_url": "/pdfs/Medical%20H%E1%BA%A1nh%20-%20CT%20Ng%E1%BB%B1c%20B%E1%BB%A5ng%20-%2020251130.pdf",
+          "badge": "Tập MSCT tổng hợp"
+        },
+        {
+          "name": "CT Scan Ngực Bụng Sau Đợt 5 Hóa Trị (30/11/2025) (Mã QR Tra Cứu Trực Tuyến)",
+          "category": "pacs",
+          "icon": "🩻",
+          "pdf_file": "https://bom.so/XbZU0m",
+          "pdf_url": "https://bom.so/XbZU0m",
+          "is_qr_doc": true,
+          "badge": "PACS DICOM QR",
+          "qr_code": "https://bom.so/XbZU0m",
+          "qr_img": "/generated_qr/qr_ct_20251130_medic.png"
+        }
+      ],
+      "qr_data": {
+        "type": "pacs",
+        "title": "Tra cứu phim MSCT Ngực & Bụng-Chậu (30/11/2025) trên PACS Việt Healthcare",
+        "url": "https://bom.so/XbZU0m"
+      }
+    },
+    {
+      "id": "rec_20251218_hoatri_dot6",
+      "date": "2025-12-18",
+      "facility": "Trung tâm Ung Bướu & BV Nhân Dân 115",
+      "doctor": "BS.CKII. Nguyễn Ngọc Anh, BS. Phạm Trần Minh Phước (BV 115)",
+      "type": "chemotherapy",
+      "title": "Hoàn Tất Chu Kỳ 6 & Đánh Giá Kết Thúc Hóa Trị Tấn Công",
+      "summary": "Hoàn tất chu kỳ thứ 6. Thể trạng hồi phục 49kg, u phổi gom nhỏ rõ rệt (từ 28mm xuống 20x17mm), tràn dịch màng ngoài tim giảm từ 23mm xuống 11mm. Khảo sát nội soi phế quản tại BV 115 không thấy tế bào ác tính. Bác sĩ chỉ định dừng hóa trị để bảo tồn chức năng thận và nâng đỡ thể trạng.",
+      "details": {
+        "Thể trạng & Sinh hiệu": "Cân nặng 49kg, HA 140/80 mmHg, Mạch 84 lần/phút.",
+        "Phác đồ truyền": "Mvasi 400mg + Alimta 500mg + Carboplatin 300mg (Hoàn tất 6 chu kỳ).",
+        "Nội soi PQ kiểm tra tại BV 115 (16-18/12/2025)": "Polyp nhỏ 2mm khí quản, sinh thiết phế quản B3 (T) kết quả mô xơ viêm, không thấy tế bào ác tính (GPB số 9751 & 9763/2025).",
+        "Đánh giá kết thúc giai đoạn": "Đáp ứng điều trị rất tốt (u phổi gom nhỏ 30%, dịch màng tim giảm hơn 50%). Tạm dừng hóa chất từ tháng 01/2026 để tránh độc tính thận không hồi phục. Dặn ăn uống đầy đủ dinh dưỡng, bổ máu, bổ sắt."
+      },
+      "metrics": {
+        "weight_kg": 49
+      },
+      "pdf_file": "Scanned 26 Sep 2026 at 11:18:31.pdf",
+      "pdf_url": "/pdfs/rec_202508_202512_so_hoatri_6dot.pdf",
+      "documents": [
+        {
+          "name": "Sổ theo dõi Hóa chất Chu kỳ 6 (Hoàn tất 6 đợt)",
+          "category": "chemotherapy",
+          "icon": "📖",
+          "pdf_file": "Scanned 26 Sep 2026 at 11:18:31.pdf",
+          "pdf_url": "/pdfs/rec_202508_202512_so_hoatri_6dot.pdf",
+          "badge": "Sổ theo dõi hóa trị Đợt 6"
+        },
+        {
+          "name": "Tường trình thủ thuật Nội soi phế quản kiểm tra - BV 115",
+          "category": "endoscopy",
+          "icon": "🫁",
+          "pdf_file": "Scanned 26 Sep 2026 at 10:52:50.pdf",
+          "pdf_url": "/pdfs/rec_20251218_tuongtrinh_noisoi_115.pdf",
+          "badge": "Tường trình nội soi 115"
+        },
+        {
+          "name": "Kết quả GPB sinh thiết phế quản kiểm tra (9751 & 9763) - BV 115",
+          "category": "pathology",
+          "icon": "🔬",
+          "pdf_file": "Scanned 26 Sep 2026 at 10:50:53.pdf",
+          "pdf_url": "/pdfs/rec_20251218_gpb_kiemtra_115.pdf",
+          "badge": "GPB kiểm tra BV 115"
+        }
+      ]
+    },
+    {
+      "id": "rec_20260114",
+      "date": "2026-01-14",
+      "facility": "Bệnh viện Thống Nhất (Khoa P202 Nội Tim Mạch)",
+      "doctor": "ThS. BS. Trần Thị Mỹ Liên, BS. Lê Quốc Tuấn",
+      "type": "cardiology",
+      "title": "Khám Tim Mạch, Bảo Tồn Thận & Siêu Âm Doppler Tim Định Kỳ",
+      "summary": "Đánh giá tim mạch và chức năng thận sau khi kết thúc hóa trị. Siêu âm tim cho thấy chức năng tâm thu rất tốt LVEF 76%, dịch màng ngoài tim giảm rõ rệt còn 6-10mm. Chức năng thận eGFR 46.84 mL/min (CKD giai đoạn 3b). Kê đơn Tolura, Forxiga và Vashasan MR.",
+      "details": {
+        "Siêu âm Doppler tim": "Chức năng tâm thu thất trái bảo tồn rất tốt LVEF 76%, PAPs 25 mmHg. Dịch màng ngoài tim lượng ít (thất trái 9mm, nhĩ phải 10mm, thất phải 6mm) - Cải thiện vượt bậc so với thời điểm 23mm trước hóa trị.",
+        "Siêu âm ổ bụng": "Chưa phát hiện bất thường, nhu mô gan đồng nhất, không sỏi, không dịch tự do ổ bụng.",
+        "X-quang ngực thẳng": "Bóng tim không lớn, mờ xơ vùng rốn nách phổi phải.",
+        "Điện tâm đồ": "Nhịp xoang đều, tần số 81 lần/phút.",
+        "Xét nghiệm máu": "WBC 8.13 K/uL, HGB 10.2 g/dL, Creatinine 106 umol/L, eGFR 46.84 mL/min, Urê 6.94 mmol/L, Glucose 4.95 mmol/L, Calci 2.52 mmol/L.",
+        "Toa thuốc bảo tồn": "1. Tolura (Telmisartan) 80mg (uống 1/2 viên = 40mg sáng);\n2. Forxiga (Dapagliflozin) 10mg (uống 1 viên sáng);\n3. Vashasan MR (Trimetazidin) 35mg (uống 1 viên sáng)."
+      },
+      "metrics": {
+        "creatinine_umol": 106,
+        "egfr": 46.84,
+        "hb": 10.2,
+        "pericardial_effusion_mm": 10,
+        "lvef_percent": 76
+      },
+      "pdf_file": "Scanned 26 Sep 2026 at 11:04:00.pdf",
+      "pdf_url": "/pdfs/rec_20260114_donthuoc_timmach_thongnhat.pdf",
+      "documents": [
+        {
+          "name": "Đơn thuốc Tim Mạch (Tolura 40mg, Forxiga, Vashasan MR) - BV Thống Nhất",
+          "category": "prescription",
+          "icon": "💊",
+          "pdf_file": "Scanned 26 Sep 2026 at 11:04:00.pdf",
+          "pdf_url": "/pdfs/rec_20260114_donthuoc_timmach_thongnhat.pdf",
+          "badge": "Đơn thuốc BV Thống Nhất",
+          "qr_code": "Mã BN: 15057791 | Tra cứu bvtn.org.vn",
+          "qr_url": "http://bvtn.org.vn"
+        },
+        {
+          "name": "Kết quả Siêu âm Doppler tim (LVEF 76%, dịch tim 6-10mm) - BV Thống Nhất",
+          "category": "ultrasound",
+          "icon": "🫀",
+          "pdf_file": "Scanned 26 Sep 2026 at 11:04:42.pdf",
+          "pdf_url": "/pdfs/rec_20260114_sieuamtim_thongnhat.pdf",
+          "badge": "Siêu âm tim Doppler"
+        },
+        {
+          "name": "Kết quả Điện tâm đồ thường - BV Thống Nhất",
+          "category": "ecg",
+          "icon": "📈",
+          "pdf_file": "Scanned 26 Sep 2026 at 11:06:10.pdf",
+          "pdf_url": "/pdfs/rec_20260114_ecg_thongnhat.pdf",
+          "badge": "Điện tâm đồ (ECG)"
+        },
+        {
+          "name": "Kết quả Siêu âm ổ bụng tổng quát - BV Thống Nhất",
+          "category": "ultrasound",
+          "icon": "🩺",
+          "pdf_file": "Scanned 26 Sep 2026 at 11:07:56.pdf",
+          "pdf_url": "/pdfs/rec_20260114_sieuambung_thongnhat.pdf",
+          "badge": "Siêu âm bụng"
+        },
+        {
+          "name": "Kết quả Chụp X-quang ngực thẳng - BV Thống Nhất",
+          "category": "imaging",
+          "icon": "🩻",
+          "pdf_file": "Scanned 26 Sep 2026 at 11:09:43.pdf",
+          "pdf_url": "/pdfs/rec_20260114_xquang_thongnhat.pdf",
+          "badge": "X-quang ngực thẳng",
+          "qr_code": "QR Xem hình ảnh X-quang BVTN",
+          "qr_url": "http://bvtn.org.vn"
+        },
+        {
+          "name": "Phiếu xét nghiệm Máu, Sinh hóa & Nước tiểu - BV Thống Nhất",
+          "category": "lab",
+          "icon": "🩸",
+          "pdf_file": "Scanned 26 Sep 2026 at 11:10:48.pdf",
+          "pdf_url": "/pdfs/rec_20260114_xetnghiem_mau_thongnhat.pdf",
+          "badge": "Xét nghiệm máu & Nước tiểu",
+          "qr_code": "QR Đánh giá nguy cơ tim mạch - thận BVTN"
+        },
+        {
+          "name": "Phiếu chỉ định Cận lâm sàng BV Thống Nhất",
+          "category": "appointment",
+          "icon": "📋",
+          "pdf_file": "Scanned 26 Sep 2026 at 11:09:08.pdf",
+          "pdf_url": "/pdfs/rec_20260114_chidin_cls_thongnhat.pdf",
+          "badge": "Chỉ định cận lâm sàng"
+        },
+        {
+          "name": "Chẩn Đoán Hình Ảnh & Siêu Âm Tim (14/01/2026) (Mã QR Tra Cứu Trực Tuyến)",
+          "category": "pacs",
+          "icon": "🫀",
+          "pdf_file": "https://qrpacs.bvtn.org.vn/QR/?token=uOFXEbxrM5w=",
+          "pdf_url": "https://qrpacs.bvtn.org.vn/QR/?token=uOFXEbxrM5w=",
+          "is_qr_doc": true,
+          "badge": "PACS DICOM QR",
+          "qr_code": "https://qrpacs.bvtn.org.vn/QR/?token=uOFXEbxrM5w=",
+          "qr_img": "/generated_qr/qr_pacs_20260114_bvtn.png"
+        }
+      ],
+      "qr_data": {
+        "qr_id": "qr_pacs_20260114_bvtn",
+        "title": "Tra Cứu PACS Chẩn Đoán Hình Ảnh (BV Thống Nhất)",
+        "url": "https://qrpacs.bvtn.org.vn/QR/?token=uOFXEbxrM5w=",
+        "qr_img": "/generated_qr/qr_pacs_20260114_bvtn.png",
+        "type": "pacs"
+      }
+    },
+    {
+      "id": "rec_20260513",
+      "date": "2026-05-13",
+      "facility": "Bệnh viện Thống Nhất",
+      "doctor": "BS. Phạm Minh Trí, ThS. BS. Nguyễn Hữu Đức, ThS. Đỗ Thị Thanh Đông, BS. Dương Thị Trang",
+      "type": "comprehensive",
+      "title": "Đợt Đánh Giá Toàn Thân Toàn Diện BV Thống Nhất (CT Scan, Siêu Âm Tim, Tumor Markers)",
+      "summary": "Kiểm tra toàn diện 1 năm phát hiện K phổi: Khối u S3 phổi trái duy trì ổn định 20x17mm; Di căn xương đa ổ; Không di căn não; Tràn dịch màng ngoài tim 11-12mm (EF 61%); Chỉ dấu khối u CEA 7.02 ng/mL, NSE 19.2 ng/mL (tăng nhẹ); D-Dimer 1533 ng/mL; eGFR 41.8 mL/min.",
+      "clinical_history": "K phổi giai đoạn 4 phát hiện cách 1 năm, đã hóa trị, ngưng từ tháng 1/2026. 1 tháng nay ho khan về đêm, ho có đàm lẫn màu hồng, mệt mỏi. Đau ngực, HA 150/90, Mạch 98. Bác sĩ tư vấn nguy cơ suy thận nặng hơn và hướng dẫn nhập viện nếu khó thở nhiều.",
+      "ct_scan": {
+        "brain": "Không thấy hình ảnh tổn thương nhu mô não trên và dưới lều trước và sau cản quang. Không thấy máu tụ nội sọ. Hệ thống não thất bình thường.",
+        "chest": "Tổn thương choán chỗ (20x17mm) ở S3 phổi trái, ngấm thuốc cản quang vừa. Không thấy hạch trung thất phì đại. Không tràn dịch màng phổi. Tràn dịch màng ngoài tim dày # 23mm.",
+        "abdomen": "Gan không to, mật độ bình thường. Không sỏi mật. Nhiều ổ đặc xương cột sống, xương ức, rải rác xương sườn, xương chậu hai bên và xương đùi trái."
+      },
+      "echocardiogram": {
+        "LVEF": "61% (chức năng tâm thu thất trái bảo tồn)",
+        "valves": "Hở van động mạch chủ 1/4",
+        "PAPs": "25 mmHg (không tăng áp ĐM phổi)",
+        "pericardial_fluid": "Dịch màng tim (+) lượng trung bình, thất phải 11mm, thất trái 11mm, nhĩ phải 12mm; chưa có dấu hiệu chèn ép tim."
+      },
+      "tumor_markers": {
+        "CEA": {
+          "val": 7.02,
+          "unit": "ng/mL",
+          "ref": "< 4.7",
+          "status": "high"
+        },
+        "NSE": {
+          "val": 19.2,
+          "unit": "ng/mL",
+          "ref": "15.7 - 17.0",
+          "status": "high"
+        },
+        "Cyfra_21_1": {
+          "val": 1.68,
+          "unit": "ng/mL",
+          "ref": "< 3.3",
+          "status": "normal"
+        }
+      },
+      "coagulation": {
+        "D_Dimer": {
+          "val": 1533,
+          "unit": "ng/mL",
+          "ref": "< 500",
+          "status": "critical_high"
+        },
+        "aPTT": {
+          "val": 37.9,
+          "unit": "giây",
+          "ref": "24.8 - 34.4",
+          "status": "high"
+        },
+        "PT_TQ": {
+          "val": 11.2,
+          "unit": "giây",
+          "ref": "9.4 - 12.5",
+          "status": "normal"
+        },
+        "INR": {
+          "val": 1.02,
+          "unit": "",
+          "ref": "0.84 - 1.21",
+          "status": "normal"
+        }
+      },
+      "blood_test": {
+        "WBC": {
+          "val": 8.36,
+          "unit": "10^9/L",
+          "ref": "4.01 - 11.42",
+          "status": "normal"
+        },
+        "Hb": {
+          "val": 10.5,
+          "unit": "g/dL",
+          "ref": "11.5 - 15.0",
+          "status": "mild_low"
+        },
+        "Hct": {
+          "val": 33.3,
+          "unit": "%",
+          "ref": "34.4 - 48.6",
+          "status": "mild_low"
+        },
+        "PLT": {
+          "val": 144,
+          "unit": "10^9/L",
+          "ref": "150 - 450",
+          "status": "borderline_low"
+        },
+        "Creatinine": {
+          "val": 117.0,
+          "unit": "µmol/L",
+          "ref": "44 - 80",
+          "status": "high"
+        },
+        "eGFR": {
+          "val": 41.8,
+          "unit": "mL/min/1.73m²",
+          "ref": ">= 60",
+          "status": "moderate_decrease"
+        },
+        "Urea": {
+          "val": 6.53,
+          "unit": "mmol/L",
+          "ref": "2.76 - 8.07",
+          "status": "normal"
+        },
+        "AST_GOT": {
+          "val": 27.0,
+          "unit": "U/L",
+          "ref": "10 - 35",
+          "status": "normal"
+        },
+        "ALT_GPT": {
+          "val": 12.7,
+          "unit": "U/L",
+          "ref": "10 - 35",
+          "status": "normal"
+        },
+        "Calci": {
+          "val": 2.4,
+          "unit": "mmol/L",
+          "ref": "2.15 - 2.5",
+          "status": "normal"
+        }
+      },
+      "prescription": [
+        {
+          "name": "Losartan Kali (Lostad T50)",
+          "dose": "50mg",
+          "qty": "28 viên",
+          "usage": "1 viên sáng"
+        },
+        {
+          "name": "Metoprolol (Betaloc ZOK)",
+          "dose": "25mg",
+          "qty": "28 viên",
+          "usage": "1 viên sáng"
+        },
+        {
+          "name": "Rosuvastatin Calcium",
+          "dose": "10mg",
+          "qty": "28 viên",
+          "usage": "1 viên chiều"
+        },
+        {
+          "name": "BidiFeron",
+          "dose": "50mg + 0.35mg",
+          "qty": "56 viên",
+          "usage": "1 viên x 2 lần/ngày sáng - chiều"
+        }
+      ],
+      "metrics": {
+        "tumor_primary_size_mm": 20,
+        "pericardial_effusion_mm": 12,
+        "cea": 7.02,
+        "nse": 19.2,
+        "d_dimer": 1533,
+        "egfr": 41.8,
+        "cea_ng_ml": 7.02,
+        "nse_ng_ml": 19.2,
+        "d_dimer_ng_ml": 1533,
+        "lvef_percent": 61
+      },
+      "pdf_file": "Medical Tuyết Hạnh 13 May 20260513.pdf",
+      "pdf_url": "/pdfs/Medical%20Tuye%CC%82%CC%81t%20Ha%CC%A3nh%2013%20May%2020260513.pdf",
+      "gdrive_url": "",
+      "details": {
+        "Chỉ dấu sinh học khối u (Tumor Markers)": "CEA: 7.02 ng/mL (tăng nhẹ, ngưỡng < 4.7); NSE: 19.2 ng/mL (tăng nhẹ, ngưỡng 15.7 - 17.0); Cyfra 21-1: 1.68 ng/mL (bình thường, ngưỡng < 3.3).",
+        "Đông máu": "D-Dimer: 1533 ng/mL (tăng cao, ngưỡng < 500 ng/mL) -> Cảnh báo nguy cơ huyết khối tĩnh mạch / thuyên tắc phổi tái phát; aPTT: 37.9s, INR: 1.02.",
+        "Toa thuốc chuyên khoa": "1. Lostad T50 (Losartan Kali 50mg): 1 viên sáng;\n2. Betaloc ZOK (Metoprolol 25mg): 1 viên sáng;\n3. Rosuvastatin 10mg: 1 viên chiều;\n4. BidiFeron (Sắt + Acid Folic): 1 viên x 2 lần/ngày sáng chiều.",
+        "Bác sĩ chỉ định & điều trị": "BS. Phạm Minh Trí, BS. Dương Thị Trang, ThS.BS. Nguyễn Hữu Đức (Khoa Chẩn đoán Hình ảnh), BS. Lê Quốc Tuấn (Siêu âm tim)."
+      },
+      "documents": [
+        {
+          "name": "Đơn thuốc BV Thống Nhất (Lostad T50, Betaloc ZOK, Rosuvastatin, BidiFeron)",
+          "category": "prescription",
+          "icon": "💊",
+          "pdf_file": "Scanned 26 Sep 2026 at 10:56:28.pdf",
+          "pdf_url": "/pdfs/rec_20260513_donthuoc_thongnhat.pdf",
+          "badge": "Đơn thuốc BV Thống Nhất",
+          "qr_code": "Mã đơn: 79025-c | Mã BN: 15057791 | Tra cứu bvtn.org.vn",
+          "qr_url": "http://bvtn.org.vn"
+        },
+        {
+          "name": "Kết quả Xét nghiệm Dấu ấn sinh học khối u (CEA, NSE, Cyfra 21-1) - BVTN",
+          "category": "lab",
+          "icon": "🧬",
+          "pdf_file": "Scanned 26 Sep 2026 at 10:56:45.pdf",
+          "pdf_url": "/pdfs/rec_20260513_tumormarkers_thongnhat.pdf",
+          "badge": "Dấu ấn khối u (CEA, NSE)",
+          "qr_code": "QR Đánh giá nguy cơ tim - thận BVTN"
+        },
+        {
+          "name": "Kết quả CT Scan Toàn Thân (Spectral CT 7500 Pro) - BV Thống Nhất",
+          "category": "imaging",
+          "icon": "🩻",
+          "pdf_file": "Scanned 26 Sep 2026 at 10:58:35.pdf",
+          "pdf_url": "/pdfs/rec_20260513_ctscan_thongnhat.pdf",
+          "badge": "CT Scan toàn thân",
+          "qr_code": "QR Xem hình ảnh phim cắt lớp BVTN",
+          "qr_url": "http://bvtn.org.vn"
+        },
+        {
+          "name": "Phiếu xét nghiệm Máu, Đông máu (D-Dimer 1533), Sinh hóa, Nước tiểu - BVTN",
+          "category": "lab",
+          "icon": "🩸",
+          "pdf_file": "Scanned 26 Sep 2026 at 10:59:26.pdf",
+          "pdf_url": "/pdfs/rec_20260513_lab_ddimer_thongnhat.pdf",
+          "badge": "Xét nghiệm máu & D-Dimer",
+          "qr_code": "QR Đánh giá nguy cơ BVTN"
+        },
+        {
+          "name": "Kết quả Siêu âm Doppler tim (LVEF 61%, dịch tim 11-12mm) - BV Thống Nhất",
+          "category": "ultrasound",
+          "icon": "🫀",
+          "pdf_file": "Scanned 26 Sep 2026 at 11:01:44.pdf",
+          "pdf_url": "/pdfs/rec_20260513_sieuamtim_thongnhat.pdf",
+          "badge": "Siêu âm tim Doppler"
+        },
+        {
+          "name": "Giấy cam kết đồng ý tiêm cản quang CT - BV Thống Nhất",
+          "category": "appointment",
+          "icon": "📄",
+          "pdf_file": "Scanned 26 Sep 2026 at 11:02:57.pdf",
+          "pdf_url": "/pdfs/rec_20260513_camket_ctscan_thongnhat.pdf",
+          "badge": "Cam kết chụp CT"
+        },
+        {
+          "name": "Tập hồ sơ đánh giá toàn thân tổng hợp (13 trang) - BV Thống Nhất",
+          "category": "comprehensive",
+          "icon": "📑",
+          "pdf_file": "Medical Tuyết Hạnh 13 May 20260513.pdf",
+          "pdf_url": "/pdfs/Medical%20Tuye%CC%82%CC%81t%20Ha%CC%A3nh%2013%20May%2020260513.pdf",
+          "badge": "Hồ sơ tổng hợp 13 trang"
+        },
+        {
+          "name": "CT Scan Toàn Thân (13/05/2026) (Mã QR Tra Cứu Trực Tuyến)",
+          "category": "pacs",
+          "icon": "🩻",
+          "pdf_file": "https://qrpacs.bvtn.org.vn/QR/?token=V6LK4We3RhI=",
+          "pdf_url": "https://qrpacs.bvtn.org.vn/QR/?token=V6LK4We3RhI=",
+          "is_qr_doc": true,
+          "badge": "PACS DICOM QR",
+          "qr_code": "https://qrpacs.bvtn.org.vn/QR/?token=V6LK4We3RhI=",
+          "qr_img": "/generated_qr/qr_ct_20260513_bvtn.png"
+        },
+        {
+          "name": "Cổng Chăm Sóc Bệnh Nhân Ung Thư (CareMe BVTN) (Mã QR Tra Cứu Trực Tuyến)",
+          "category": "portal",
+          "icon": "🎗️",
+          "pdf_file": "https://caremeyeulayminh.com?code=thongnhatQ",
+          "pdf_url": "https://caremeyeulayminh.com?code=thongnhatQ",
+          "is_qr_doc": true,
+          "badge": "LIS ONLINE QR",
+          "qr_code": "https://caremeyeulayminh.com?code=thongnhatQ",
+          "qr_img": "/generated_qr/qr_careme_bvtn.png"
+        }
+      ],
+      "qr_data": {
+        "qr_id": "qr_ct_20260513_bvtn",
+        "title": "Quét Mã / Xem Trực Tuyến Phim CT Scan Toàn Thân (PACS BVTN)",
+        "url": "https://qrpacs.bvtn.org.vn/QR/?token=V6LK4We3RhI=",
+        "qr_img": "/generated_qr/qr_ct_20260513_bvtn.png",
+        "type": "pacs"
+      }
+    },
+    {
+      "id": "rec_20260625",
+      "date": "2026-06-25",
+      "facility": "Bệnh viện Thống Nhất (Phòng khám Nội Thận P202B)",
+      "doctor": "BS. Trần Huỳnh Ngọc Diễm, BS. Trịnh Thị Kim Chi",
+      "type": "nephrology",
+      "title": "Khám Chuyên Khoa Thận BV Thống Nhất & Đánh Giá Đạm Niệu",
+      "summary": "Xét nghiệm phát hiện eGFR giảm xuống đáy 33.7 mL/min, Creatinine tăng vọt 141 umol/L; Xuất hiện đạm niệu rõ rệt (Protein niệu 0.77 g/L, Upro/Ucre 395.45 mg/g); Siêu âm phát hiện Polyp túi mật 3mm. Bác sĩ yêu cầu uống > 2L nước lọc/ngày và kiểm tra thận hàng tháng.",
+      "clinical_notes": "Chẩn đoán: Suy thận mạn, giai đoạn 3 - K phổi đang điều trị; Tăng lipid máu hỗn hợp. HA 130/80, mạch 89, cân nặng 50kg.",
+      "kidney_tests": {
+        "Urea": {
+          "val": 7.4,
+          "unit": "mmol/L",
+          "ref": "2.8 - 7.2",
+          "status": "high"
+        },
+        "Creatinine": {
+          "val": 141.0,
+          "unit": "µmol/L",
+          "ref": "58 - 96",
+          "status": "critical_high"
+        },
+        "eGFR": {
+          "val": 33.7,
+          "unit": "mL/min/1.73m²",
+          "ref": ">= 60",
+          "status": "severe_decrease"
+        },
+        "Na": {
+          "val": 144,
+          "unit": "mmol/L",
+          "ref": "135 - 145",
+          "status": "normal"
+        },
+        "K": {
+          "val": 4.1,
+          "unit": "mmol/L",
+          "ref": "3.5 - 5.0",
+          "status": "normal"
+        },
+        "Cl": {
+          "val": 112,
+          "unit": "mmol/L",
+          "ref": "98 - 106",
+          "status": "high"
+        }
+      },
+      "urine_tests": {
+        "Protein_urine": {
+          "val": 0.77,
+          "unit": "g/L",
+          "ref": "< 0.15",
+          "status": "high"
+        },
+        "Creatinine_urine": {
+          "val": 17212.63,
+          "unit": "µmol/L",
+          "ref": "",
+          "status": "normal"
+        },
+        "Upro_Ucre_ratio": {
+          "val": 395.45,
+          "unit": "mg/g",
+          "ref": "< 150",
+          "status": "proteinuria_high"
+        }
+      },
+      "ultrasound_abdomen": "Polyp túi mật kích thước 3mm. Gan bờ đều đồng nhất không sang thương khu trú. Thận kích thước bình thường, giới hạn vỏ tủy rõ, không sỏi, không ứ nước.",
+      "prescription": [
+        {
+          "name": "Bisoprolol",
+          "dose": "2.5mg",
+          "qty": "28 viên",
+          "usage": "1 viên sáng"
+        },
+        {
+          "name": "Rosuvastatin",
+          "dose": "10mg",
+          "qty": "28 viên",
+          "usage": "1 viên tối"
+        }
+      ],
+      "doctor_advice": "Uống > 2 lít nước / ngày. Tái khám hàng tháng xét nghiệm lại chức năng thận.",
+      "metrics": {
+        "creatinine_umol": 141.0,
+        "egfr": 33.7,
+        "upro_ucre": 395.45,
+        "upro_ucre_mg_g": 395.45
+      },
+      "pdf_file": "Medical Nguyễn Tuyết Hạnh 20260625.pdf",
+      "pdf_url": "/pdfs/Medical%20Nguye%CC%82%CC%83n%20Tuye%CC%82%CC%81t%20Ha%CC%A3nh%2020260625.pdf",
+      "gdrive_url": "",
+      "details": {
+        "Chức năng thận sinh hóa": "Creatinine: 141.0 umol/L (tăng cao, ngưỡng 58-96); eGFR: 33.7 mL/min (rơi xuống đáy CKD giai đoạn 3b nặng); Urê: 7.4 mmol/L; Na+: 144, K+: 4.1, Cl-: 112.",
+        "Xét nghiệm đạm niệu chuyên biệt": "Định lượng Protein niệu: 0.77 g/L; Định lượng Creatinin niệu: 17212.63 umol/L; Tỷ lệ Upro/Ucre: 395.45 mg/g (tăng cao, bình thường < 150 mg/g).",
+        "Siêu âm bụng": "Túi mật có khối echo dày d# 3mm không bóng lưng (Polyp túi mật 3mm). Nhu mô gan đồng nhất. Thận hai bên kích thước bình thường, giới hạn vỏ tủy rõ, không sỏi, không ứ nước.",
+        "Đơn thuốc & Dặn dò": "1. Bisoprolol 2.5mg (1 viên sáng);\n2. Rosuvastatin 10mg (1 viên tối).\nBác sĩ dặn viết tay: 'Uống > 2 lít nước lọc/ngày. Tái khám hàng tháng xét nghiệm chức năng thận'."
+      },
+      "documents": [
+        {
+          "name": "Đơn thuốc Chuyên khoa Thận (Bisoprolol, Rosuvastatin) - BV Thống Nhất",
+          "category": "prescription",
+          "icon": "💊",
+          "pdf_file": "Scanned 26 Sep 2026 at 11:15:53.pdf",
+          "pdf_url": "/pdfs/rec_20260625_bvthongnhat_than.pdf",
+          "badge": "Đơn thuốc khoa Thận",
+          "qr_code": "Mã đơn: 79025-c | Mã BN: 15057791 | Tra cứu bvtn.org.vn",
+          "qr_url": "http://bvtn.org.vn"
+        },
+        {
+          "name": "Phiếu xét nghiệm Đạm niệu chuyên biệt (Protein niệu 0.77 g/L, Upro/Ucre 395) - BVTN",
+          "category": "lab",
+          "icon": "🧪",
+          "pdf_file": "Scanned 26 Sep 2026 at 11:15:53.pdf",
+          "pdf_url": "/pdfs/rec_20260625_bvthongnhat_than.pdf",
+          "badge": "Xét nghiệm Đạm niệu",
+          "qr_code": "QR Đánh giá nguy cơ BVTN"
+        },
+        {
+          "name": "Phiếu xét nghiệm Máu & Chức năng thận (eGFR 33.7, Creatinine 141) - BVTN",
+          "category": "lab",
+          "icon": "🩸",
+          "pdf_file": "Scanned 26 Sep 2026 at 11:15:53.pdf",
+          "pdf_url": "/pdfs/rec_20260625_bvthongnhat_than.pdf",
+          "badge": "Chức năng thận eGFR"
+        },
+        {
+          "name": "Phiếu xét nghiệm Vi sinh cặn nước tiểu - BV Thống Nhất",
+          "category": "lab",
+          "icon": "🔬",
+          "pdf_file": "Scanned 26 Sep 2026 at 11:15:53.pdf",
+          "pdf_url": "/pdfs/rec_20260625_bvthongnhat_than.pdf",
+          "badge": "Vi sinh nước tiểu"
+        },
+        {
+          "name": "Kết quả Siêu âm ổ bụng (Polyp túi mật 3mm) - BV Thống Nhất",
+          "category": "ultrasound",
+          "icon": "🩺",
+          "pdf_file": "Scanned 26 Sep 2026 at 11:15:53.pdf",
+          "pdf_url": "/pdfs/rec_20260625_bvthongnhat_than.pdf",
+          "badge": "Siêu âm polyp túi mật"
+        },
+        {
+          "name": "Tập hồ sơ khám thận tổng hợp 5 trang - BV Thống Nhất",
+          "category": "comprehensive",
+          "icon": "📑",
+          "pdf_file": "Medical Nguyễn Tuyết Hạnh 20260625.pdf",
+          "pdf_url": "/pdfs/Medical%20Nguye%CC%82%CC%83n%20Tuye%CC%82%CC%81t%20Ha%CC%A3nh%2020260625.pdf",
+          "badge": "Hồ sơ khám thận 5 trang"
+        },
+        {
+          "name": "Cổng Đăng Ký Khám Chữa Bệnh Trực Tuyến BVTN (Mã QR Tra Cứu Trực Tuyến)",
+          "category": "portal",
+          "icon": "🏥",
+          "pdf_file": "https://dkkcb.bvtn.org.vn/",
+          "pdf_url": "https://dkkcb.bvtn.org.vn/",
+          "is_qr_doc": true,
+          "badge": "LIS ONLINE QR",
+          "qr_code": "https://dkkcb.bvtn.org.vn/",
+          "qr_img": "/generated_qr/qr_dkkcb_bvtn.png"
+        }
+      ],
+      "qr_data": {
+        "qr_id": "qr_dkkcb_bvtn",
+        "title": "Cổng Đăng Ký Khám BV Thống Nhất & CareMe",
+        "url": "https://caremeyeulayminh.com?code=thongnhatQ",
+        "qr_img": "/generated_qr/qr_careme_bvtn.png",
+        "type": "portal"
+      }
+    },
+    {
+      "id": "rec_20260812_yhct",
+      "date": "2026-08-12",
+      "facility": "Bệnh viện Y học cổ truyền TP.HCM",
+      "doctor": "Ths.Bs. Đặng Thanh Hồng An",
+      "type": "prescription",
+      "title": "Khám Điều Trị Dịch Vụ - Cấy Chỉ & Đơn Thuốc Y Học Cổ Truyền (14 Thang)",
+      "summary": "Khám điều trị dịch vụ Cấy chỉ và kê đơn 14 thang thuốc YHCT (Sài hồ, Bạch thược, Bạch truật, Đẳng sâm, Hoàng kỳ, Thục địa, Đan sâm...) hỗ trợ điều trị K phổi (C34.9), thuyên tắc phổi (I26.9) và Hội chứng Khí uất. Thể trạng cân nặng: 55 kg. Hẹn tái khám sáng 26/08/2026.",
+      "details": {
+        "Mã đơn thuốc & Số bệnh án": "Mã đơn: 794241210134-t | Số phiếu: 26026107 | Mã DTKCB: 1.18 | BHYT: HT3790100047288",
+        "Hình thức khám & Thủ thuật": "Khám Điều Trị Dịch Vụ - Cấy Chỉ (Bệnh viện Y học cổ truyền TP.HCM - Cơ sở 1: 179 Nam Kỳ Khởi Nghĩa, P. Xuân Hoà, TP.HCM)",
+        "Chẩn đoán y khoa (Mã ICD-10)": "C34.9 - U ác tính ở phế quản hoặc phổi, không xác định; I26.9 - Thuyên tắc mạch phổi không có tâm phế cấp tính; HC KHÍ UẤT (Hội chứng Khí uất)",
+        "Đơn thuốc thang cổ truyền (14 thang)": "1. Sài hồ chích rượu: 10g\n2. Bạch thược chích rượu: 12g\n3. Bạch truật sao cám mật ong: 08g\n4. Bạc hà sao vi: 08g\n5. Chi tử sao qua: 10g\n6. Ngũ vị tử chích mật: 08g\n7. Tử uyển chế mật: 08g\n8. Đẳng sâm chích gừng: 12g\n9. Cát cánh sao vàng: 10g\n10. Đan sâm chích rượu: 10g\n11. Hoàng kỳ (Bạch kỳ): 16g\n12. Thục địa: 08g",
+        "Hướng dẫn dùng thuốc": "Sử dụng từ ngày 12/08/2026 đến 25/08/2026 (14 thang). Sắc uống ngày 01 thang, chia 02 lần, uống sáng, chiều sau ăn.",
+        "Thể trạng khi khám": "Cân nặng: 55 kg",
+        "Bác sĩ kê đơn": "Ths.Bs. Đặng Thanh Hồng An (Kê đơn lúc 10:13 ngày 12/08/2026)",
+        "Kế hoạch & Tái khám": "Hẹn ngày tái khám: Sáng 26/08/2026 (Lưu ý: mang theo đơn này khi khám bệnh lại)"
+      },
+      "lab_results": {},
+      "metrics": {
+        "weight_kg": 55
+      },
+      "raw_text": "Bệnh viện Y học cổ truyền TP.HCM\nKhám Điều Trị Dịch Vụ - Cấy Chỉ\nĐƠN THUỐC (Dành cho kê đơn thuốc thang)\nMã đơn: 794241210134-t | Số phiếu: 26026107\nHọ tên: NGUYỄN TUYẾT HẠNH\nNgày sinh: 20/07/1953 - Cân nặng: 55 kg - Giới tính: Nữ\nBHYT: HT3790100047288\nChẩn đoán: U ác tính ở phế quản hoặc phổi, không xác định (C34.9); Thuyên tắc mạch phổi không có tâm phế cấp tính (I26.9); HC KHÍ UẤT\nThuốc sử dụng từ ngày: 12/08/2026 Đến ngày: 25/08/2026 - Số thang: 14\n1. Sài hồ chích rượu: 10g\n2. Bạch thược chích rượu: 12g\n3. Bạch truật sao cám mật ong: 08g\n4. Bạc hà sao vi: 08g\n5. Chi tử sao qua: 10g\n6. Ngũ vị tử chích mật: 08g\n7. Tử uyển chế mật: 08g\n8. Đẳng sâm chích gừng: 12g\n9. Cát cánh sao vàng: 10g\n10. Đan sâm chích rượu: 10g\n11. Hoàng kỳ (Bạch kỳ): 16g\n12. Thục địa: 08g\nSắc uống ngày 01 thang, chia 02 lần, uống sáng, chiều sau ăn.\nHẹn ngày khám lại: Tái khám : sáng 26/08/2026\nNgười kê đơn: Ths.Bs. Đặng Thanh Hồng An lúc 10:13 ngày 12/08/2026",
+      "pdf_file": "1K1QO2U7A_62PFKV.jpg",
+      "pdf_url": "/pdfs/1K1QO2U7A_62PFKV.jpg",
+      "documents": [
+        {
+          "name": "Đơn thuốc Y học cổ truyền (14 thang) & Cấy chỉ - Ths.Bs. Đặng Thanh Hồng An",
+          "category": "prescription",
+          "icon": "🌿",
+          "pdf_file": "1K1QO2U7A_62PFKV.jpg",
+          "pdf_url": "/pdfs/1K1QO2U7A_62PFKV.jpg",
+          "badge": "BV Y học cổ truyền TP.HCM"
+        }
+      ]
+    },
+    {
+      "id": "rec_20260922",
+      "date": "2026-09-22",
+      "facility": "Trung tâm Y khoa Medic Hòa Hảo",
+      "doctor": "Khoa Xét nghiệm Medic (ThS.BS. Nguyễn Bảo Toàn / DS. Trần Hoàng Nguyên)",
+      "type": "lab",
+      "title": "Xét Nghiệm Máu & Tổng Phân Tích Nước Tiểu Mới Nhất",
+      "summary": "Tín hiệu rất tích cực: Thận phục hồi eGFR từ 33.7 lên 43 mL/min (Creatinine 1.30 mg/dL), nước tiểu sạch đạm, tiểu cầu phục hồi 225 x10^9/L, Albumin 4.52 g/dL (thể trạng dinh dưỡng rất tốt), men gan bình thường.",
+      "lab_results": {
+        "WBC": {
+          "val": 7.3,
+          "unit": "10^9/L",
+          "ref": "4.0 - 10.5",
+          "status": "normal"
+        },
+        "NEU_pct": {
+          "val": 50.2,
+          "unit": "%",
+          "ref": "40 - 74",
+          "status": "normal"
+        },
+        "LYM_pct": {
+          "val": 39.3,
+          "unit": "%",
+          "ref": "19 - 48",
+          "status": "normal"
+        },
+        "NEU_abs": {
+          "val": 3.7,
+          "unit": "10^9/L",
+          "ref": "1.7 - 7.0",
+          "status": "normal"
+        },
+        "LYM_abs": {
+          "val": 2.9,
+          "unit": "10^9/L",
+          "ref": "1.0 - 4.0",
+          "status": "normal"
+        },
+        "RBC": {
+          "val": 4.49,
+          "unit": "10^12/L",
+          "ref": "3.80 - 5.60",
+          "status": "normal"
+        },
+        "Hb": {
+          "val": 9.9,
+          "unit": "g/dL",
+          "ref": "12.0 - 18.0",
+          "status": "mild_low"
+        },
+        "Hct": {
+          "val": 31.6,
+          "unit": "%",
+          "ref": "35 - 52",
+          "status": "mild_low"
+        },
+        "MCV": {
+          "val": 70.3,
+          "unit": "fL",
+          "ref": "80 - 100",
+          "status": "low"
+        },
+        "MCH": {
+          "val": 22.2,
+          "unit": "pg",
+          "ref": "26 - 32",
+          "status": "low"
+        },
+        "MCHC": {
+          "val": 31.5,
+          "unit": "g/dL",
+          "ref": "32 - 36",
+          "status": "low"
+        },
+        "RDW": {
+          "val": 16.6,
+          "unit": "%",
+          "ref": "11.0 - 15.7",
+          "status": "high"
+        },
+        "PLT": {
+          "val": 225,
+          "unit": "10^9/L",
+          "ref": "150 - 400",
+          "status": "normal"
+        },
+        "Total_Protein": {
+          "val": 7.46,
+          "unit": "g/dL",
+          "ref": "6 - 8",
+          "status": "normal"
+        },
+        "Albumin": {
+          "val": 4.52,
+          "unit": "g/dL",
+          "ref": "3.6 - 5.0",
+          "status": "normal_excellent"
+        },
+        "Creatinine": {
+          "val": 1.3,
+          "unit": "mg/dL",
+          "ref": "0.5 - 1.1",
+          "status": "elevated"
+        },
+        "eGFR": {
+          "val": 43.0,
+          "unit": "mL/min/1.73m²",
+          "ref": ">= 90",
+          "status": "moderate_decrease"
+        },
+        "SGOT_AST": {
+          "val": 22.94,
+          "unit": "U/L",
+          "ref": "< 35",
+          "status": "normal"
+        },
+        "SGPT_ALT": {
+          "val": 12.25,
+          "unit": "U/L",
+          "ref": "< 30",
+          "status": "normal"
+        },
+        "GGT": {
+          "val": 27.68,
+          "unit": "U/L",
+          "ref": "< 36",
+          "status": "normal"
+        }
+      },
+      "urine_analysis": {
+        "Glucose": "Âm tính",
+        "Ketone": "Âm tính",
+        "Bilirubin": "Âm tính",
+        "Protein": "Âm tính",
+        "Albumin": "Âm tính",
+        "Alb_Creat_ratio": "Bình thường (< 30 mg/gCr)",
+        "Pro_Creat_ratio": "Bình thường (< 150 mg/gCr)",
+        "Blood": "Âm tính",
+        "Leucocytes": "Âm tính",
+        "Sediment_RBC": "5 (0 - 15)",
+        "Sediment_WBC": "0 (0 - 15)",
+        "Bacteria": "0"
+      },
+      "metrics": {
+        "creatinine_mg": 1.3,
+        "egfr": 43.0,
+        "hb": 9.9,
+        "plt": 225,
+        "albumin": 4.52,
+        "creatinine": 1.3,
+        "wbc": 7.3,
+        "ast": 22.94,
+        "alt": 12.25
+      },
+      "pdf_file": "2260922143134_NGUYEN TUYET HANH_20260922.pdf",
+      "pdf_url": "/pdfs/2260922143134_NGUYEN%20TUYET%20HANH_20260922.pdf",
+      "gdrive_url": "",
+      "documents": [
+        {
+          "name": "Phiếu xét nghiệm Máu & Tổng phân tích nước tiểu Mới Nhất - Medic Hòa Hảo",
+          "category": "lab",
+          "icon": "🩸",
+          "pdf_file": "2260922143134_NGUYEN TUYET HANH_20260922.pdf",
+          "pdf_url": "/pdfs/2260922143134_NGUYEN%20TUYET%20HANH_20260922.pdf",
+          "badge": "Xét nghiệm máu & Nước tiểu Medic",
+          "qr_code": "PID: 8373723 | Tra cứu medic.com.vn",
+          "qr_url": "https://medic.com.vn"
+        },
+        {
+          "name": "Tra Cứu Xét Nghiệm Máu & Sinh Hóa (22/09/2026) (Mã QR Tra Cứu Trực Tuyến)",
+          "category": "laboratory",
+          "icon": "🧪",
+          "pdf_file": "http://nthsoft.vn:88/H/?p=8373723/220926/XetNghiem&u=ggYtw9TZXwajp3tIUm/NlA==",
+          "pdf_url": "http://nthsoft.vn:88/H/?p=8373723/220926/XetNghiem&u=ggYtw9TZXwajp3tIUm/NlA==",
+          "is_qr_doc": true,
+          "badge": "LIS ONLINE QR",
+          "qr_code": "http://nthsoft.vn:88/H/?p=8373723/220926/XetNghiem&u=ggYtw9TZXwajp3tIUm/NlA==",
+          "qr_img": "/generated_qr/qr_xn_20260922.png"
+        }
+      ],
+      "qr_data": {
+        "qr_id": "qr_xn_20260922",
+        "title": "Tra Cứu Xét Nghiệm Trực Tuyến NTH Soft (22/09/2026)",
+        "url": "http://nthsoft.vn:88/H/?p=8373723/220926/XetNghiem&u=ggYtw9TZXwajp3tIUm/NlA==",
+        "qr_img": "/generated_qr/qr_xn_20260922.png",
+        "type": "laboratory"
+      }
+    }
+  ],
+  "last_sync": "2026-09-26 22:56:41"
+}

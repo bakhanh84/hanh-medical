@@ -1,0 +1,5 @@
+*.bak*
+page_*.png
+verified_*.png
+row_ddimer_test.png
+.DS_Store

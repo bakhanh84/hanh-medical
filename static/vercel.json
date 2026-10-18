@@ -1,0 +1,9 @@
+{
+  "version": 2,
+  "cleanUrls": true,
+  "rewrites": [
+    { "source": "/api/data", "destination": "/records_data.json" },
+    { "source": "/api/pdf/:path*", "destination": "/pdfs/:path*" },
+    { "source": "/api/media/:path*", "destination": "/pdfs/:path*" }
+  ]
+}

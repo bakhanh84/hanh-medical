@@ -1,0 +1,40 @@
+{
+  "version": 2,
+  "name": "hanh-medical",
+  "builds": [
+    {
+      "src": "static/**",
+      "use": "@vercel/static"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/data",
+      "dest": "/static/records_data.json"
+    },
+    {
+      "src": "/api/pdf/(.*)",
+      "dest": "/static/pdfs/$1"
+    },
+    {
+      "src": "/records_data.json",
+      "dest": "/static/records_data.json"
+    },
+    {
+      "src": "/styles.css",
+      "dest": "/static/styles.css"
+    },
+    {
+      "src": "/app.js",
+      "dest": "/static/app.js"
+    },
+    {
+      "src": "/",
+      "dest": "/static/index.html"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/static/$1"
+    }
+  ]
+}

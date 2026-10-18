@@ -1,0 +1,145 @@
+[
+  {
+    "id": "qr_ct_20260513_bvtn",
+    "title": "CT Scan Toàn Thân (13/05/2026)",
+    "facility": "Bệnh Viện Thống Nhất",
+    "category": "pacs",
+    "icon": "🩻",
+    "url": "https://qrpacs.bvtn.org.vn/QR/?token=V6LK4We3RhI=",
+    "description": "Hệ thống PACS BVTN: Xem trực tuyến phim CT Lồng ngực, Ổ bụng & Vùng chậu có cản quang.",
+    "date": "2026-05-13",
+    "qr_img": "/generated_qr/qr_ct_20260513_bvtn.png"
+  },
+  {
+    "id": "qr_pacs_20260114_bvtn",
+    "title": "Chẩn Đoán Hình Ảnh & Siêu Âm Tim (14/01/2026)",
+    "facility": "Bệnh Viện Thống Nhất",
+    "category": "pacs",
+    "icon": "🫀",
+    "url": "https://qrpacs.bvtn.org.vn/QR/?token=uOFXEbxrM5w=",
+    "description": "Hệ thống PACS BVTN: Xem phim X-Quang phổi và kết quả Siêu âm tim (LVEF 76%, dịch tim 6-10mm).",
+    "date": "2026-01-14",
+    "qr_img": "/generated_qr/qr_pacs_20260114_bvtn.png"
+  },
+  {
+    "id": "qr_ct_20251130_medic",
+    "title": "CT Scan Ngực Bụng Sau Đợt 5 Hóa Trị (30/11/2025)",
+    "facility": "Trung Tâm Medic / BV Ung Bướu",
+    "category": "pacs",
+    "icon": "🩻",
+    "url": "https://bom.so/XbZU0m",
+    "description": "Xem trực tiếp kết quả CT Scan ngực bụng đánh giá u phổi thu nhỏ từ 28mm xuống 20x17mm.",
+    "date": "2025-11-30",
+    "qr_img": "/generated_qr/qr_ct_20251130_medic.png"
+  },
+  {
+    "id": "qr_ct_nguc_20250312",
+    "title": "CT Scan Lồng Ngực Phát Hiện Tổn Thương (12/03/2025)",
+    "facility": "Trung Tâm Medic",
+    "category": "pacs",
+    "icon": "🫁",
+    "url": "https://bom.so/GeA47x",
+    "description": "Xem trực tuyến phim CT phổi giai đoạn khởi phát phát hiện khối u phổi phải.",
+    "date": "2025-03-12",
+    "qr_img": "/generated_qr/qr_ct_nguc_20250312.png"
+  },
+  {
+    "id": "qr_ct_bung_20250312",
+    "title": "CT Scan Ổ Bụng (12/03/2025)",
+    "facility": "Trung Tâm Medic",
+    "category": "pacs",
+    "icon": "🩺",
+    "url": "https://bom.so/m4rh18",
+    "description": "Xem trực tuyến kết quả CT khảo sát bụng và các cơ quan nội tạng.",
+    "date": "2025-03-12",
+    "qr_img": "/generated_qr/qr_ct_bung_20250312.png"
+  },
+  {
+    "id": "qr_xn_20260922",
+    "title": "Tra Cứu Xét Nghiệm Máu & Sinh Hóa (22/09/2026)",
+    "facility": "Bệnh Viện Thống Nhất / NTH Soft",
+    "category": "laboratory",
+    "icon": "🧪",
+    "url": "http://nthsoft.vn:88/H/?p=8373723/220926/XetNghiem&u=ggYtw9TZXwajp3tIUm/NlA==",
+    "description": "Tra cứu kết quả LIS trực tuyến: eGFR hồi phục 55.0 mL/min, Creatinin 1.09, Hb 11.2.",
+    "date": "2026-09-22",
+    "qr_img": "/generated_qr/qr_xn_20260922.png"
+  },
+  {
+    "id": "qr_xn_20251127",
+    "title": "Tra Cứu Xét Nghiệm Máu & Chức Năng Gan Thận (27/11/2025)",
+    "facility": "Bệnh Viện Thống Nhất / NTH Soft",
+    "category": "laboratory",
+    "icon": "🧪",
+    "url": "http://nthsoft.vn:88/H/?p=8373723/271125/XetNghiem&u=ggYtw9TZXwajp3tIUm/NlA==",
+    "description": "Tra cứu kết quả xét nghiệm giữa đợt truyền hóa trị 5 và 6.",
+    "date": "2025-11-27",
+    "qr_img": "/generated_qr/qr_xn_20251127.png"
+  },
+  {
+    "id": "qr_xn_20251104",
+    "title": "Tra Cứu Xét Nghiệm Máu Tiền Hóa Trị Đợt 5 (04/11/2025)",
+    "facility": "Bệnh Viện Thống Nhất / NTH Soft",
+    "category": "laboratory",
+    "icon": "🧪",
+    "url": "http://nthsoft.vn:88/H/?p=8373723/041125/XetNghiem&u=ggYtw9TZXwajp3tIUm/NlA==",
+    "description": "Tra cứu kết quả xét nghiệm chuẩn bị truyền đợt 5: Hb 8.8, eGFR 51, Creatinin 1.15.",
+    "date": "2025-11-04",
+    "qr_img": "/generated_qr/qr_xn_20251104.png"
+  },
+  {
+    "id": "qr_xn_20251009",
+    "title": "Tra Cứu Xét Nghiệm Máu Tiền Hóa Trị Đợt 4 (09/10/2025)",
+    "facility": "Bệnh Viện Thống Nhất / NTH Soft",
+    "category": "laboratory",
+    "icon": "🧪",
+    "url": "http://nthsoft.vn:88/H/?p=8373723/091025/XetNghiem&u=ggYtw9TZXwajp3tIUm/NlA==",
+    "description": "Tra cứu kết quả xét nghiệm kiểm tra trước truyền hóa trị chu kỳ 4.",
+    "date": "2025-10-09",
+    "qr_img": "/generated_qr/qr_xn_20251009.png"
+  },
+  {
+    "id": "qr_xn_20250924",
+    "title": "Tra Cứu Xét Nghiệm Máu Sau Hóa Trị Đợt 3 (24/09/2025)",
+    "facility": "Bệnh Viện Thống Nhất / NTH Soft",
+    "category": "laboratory",
+    "icon": "🧪",
+    "url": "http://nthsoft.vn:88/H/?p=8373723/240925/XetNghiem&u=ggYtw9TZXwajp3tIUm/NlA==",
+    "description": "Tra cứu kết quả công thức máu và sinh hóa sau đợt truyền 3.",
+    "date": "2025-09-24",
+    "qr_img": "/generated_qr/qr_xn_20250924.png"
+  },
+  {
+    "id": "qr_xn_20250821",
+    "title": "Tra Cứu Xét Nghiệm Máu Sau Hóa Trị Đợt 1 (21/08/2025)",
+    "facility": "Bệnh Viện Thống Nhất / NTH Soft",
+    "category": "laboratory",
+    "icon": "🧪",
+    "url": "http://nthsoft.vn:88/H/?p=8373723/210825/XetNghiem&u=ggYtw9TZXwajp3tIUm/NlA==",
+    "description": "Tra cứu xét nghiệm máu đánh giá độc tính sau chu kỳ hóa trị đầu tiên.",
+    "date": "2025-08-21",
+    "qr_img": "/generated_qr/qr_xn_20250821.png"
+  },
+  {
+    "id": "qr_careme_bvtn",
+    "title": "Cổng Chăm Sóc Bệnh Nhân Ung Thư (CareMe BVTN)",
+    "facility": "Bệnh Viện Thống Nhất",
+    "category": "portal",
+    "icon": "🎗️",
+    "url": "https://caremeyeulayminh.com?code=thongnhatQ",
+    "description": "Chương trình đồng hành và hỗ trợ thuốc điều trị đích / miễn dịch / hóa trị cho bệnh nhân BVTN.",
+    "date": "2026-05-13",
+    "qr_img": "/generated_qr/qr_careme_bvtn.png"
+  },
+  {
+    "id": "qr_dkkcb_bvtn",
+    "title": "Cổng Đăng Ký Khám Chữa Bệnh Trực Tuyến BVTN",
+    "facility": "Bệnh Viện Thống Nhất",
+    "category": "portal",
+    "icon": "🏥",
+    "url": "https://dkkcb.bvtn.org.vn/",
+    "description": "Cổng đặt lịch hẹn và tra cứu thông tin khám bệnh ngoại trú BV Thống Nhất.",
+    "date": "2026-06-25",
+    "qr_img": "/generated_qr/qr_dkkcb_bvtn.png"
+  }
+]

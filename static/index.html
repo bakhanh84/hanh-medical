@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <title>HỒ SƠ Y KHOA — Sổ tay y khoa cá nhân thông minh</title>
+  <meta name="description" content="Sổ tay y khoa cá nhân thông minh - Hệ thống theo dõi lâm sàng, chỉ số xét nghiệm, chẩn đoán hình ảnh và hồ sơ bệnh án theo tiêu chuẩn quốc tế">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+  <!-- Chart.js CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+  <!-- PDF.js CDN for in-browser client-side medical PDF text & metric extraction -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+  <!-- Tesseract.js CDN for in-browser client-side OCR of scanned medical documents -->
+  <script src="https://cdn.jsdelivr.net/npm/tesseract.js@5/dist/tesseract.min.js"></script>
+  <script>
+    if (window.pdfjsLib) {
+      window.pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';
+    }
+  </script>
+</head>
+<body>
+
+  <div class="container">
+    <!-- Top Header (FV Hospital Style Header) -->
+    <header class="top-header">
+      <div class="logo-badge">
+        <div class="fv-brand-symbol">
+          <span class="fv-symbol-leaf">🌱</span>
+        </div>
+        <div>
+          <h1 class="main-system-title">HỒ SƠ Y KHOA</h1>
+          <div class="system-subtitle">Sổ tay y khoa cá nhân thông minh</div>
+        </div>
+      </div>
+      <div class="header-actions">
+        <button id="topToggleDesktopBtn" class="btn btn-secondary mobile-desktop-toggle-btn" title="Chuyển chế độ xem Bản Máy Tính (Desktop Site) / Bản Điện Thoại">
+          <span class="desktop-mode-btn-icon">🖥️</span> <span class="desktop-mode-btn-text">Bản Desktop</span>
+        </button>
+        <button id="headerSyncGdriveBtn" class="btn btn-sync-gdrive" title="Đồng bộ hồ sơ mới từ Google Drive">
+          <span class="sync-spin-icon">🔄</span> Đồng bộ Google Drive
+        </button>
+        <button id="openQrCatalogBtn" class="btn btn-secondary" style="background: rgba(0, 143, 93, 0.1); color: var(--fv-green-dark); border-color: rgba(0, 143, 93, 0.3);" title="Tra cứu toàn bộ mã QR kết quả CT Scan, xét nghiệm máu và dịch vụ trực tuyến">
+          <span class="btn-icon">📱</span> Tra cứu QR
+        </button>
+        <button id="openUploadBtn" class="btn btn-primary" title="Tải lên tài liệu, hình ảnh gallery, PDF hoặc link Google Drive">
+          <span class="btn-icon">📁</span> Tải hồ sơ
+        </button>
+        <button id="printBtn" class="btn btn-secondary" title="In hoặc lưu hồ sơ thành file PDF">
+          <span class="btn-icon">🖨️</span> Xuất PDF
+        </button>
+      </div>
+    </header>
+
+    <!-- SECTION 1: Personal Information -->
+    <div id="sec-overview" style="margin-bottom: 24px;">
+      <section class="patient-card fv-card-style">
+        <div class="patient-header">
+          <div class="patient-avatar-container">
+            <div class="patient-avatar-wrap" id="patientAvatarWrap" title="Nhấn để tải lên hoặc đổi hình đại diện">
+              <img id="patientAvatarImg" src="/api/avatar" alt="Avatar" onerror="this.style.display='none'; document.getElementById('patientAvatarFallback').style.display='flex';">
+              <div id="patientAvatarFallback" class="patient-avatar-fallback">TH</div>
+              <div class="avatar-edit-overlay">
+                <span>📷</span>
+              </div>
+            </div>
+            <input type="file" id="avatarFileInput" accept="image/*" style="display: none;">
+          </div>
+
+          <div class="patient-info-block">
+            <div class="patient-name-row">
+              <h2 id="patientName" class="patient-name">NGUYỄN TUYẾT HẠNH</h2>
+              <span class="patient-badge-gender" id="patientGenderBadge">Giới tính: Nữ</span>
+            </div>
+            
+            <div class="patient-meta-grid" id="patientMeta">
+              <div class="meta-item"><span class="meta-icon">🎂</span> <strong>1953 (73t)</strong></div>
+              <div class="meta-item"><span class="meta-icon">⚧</span> <span>Giới tính: <strong>Nữ</strong></span></div>
+              <div class="meta-item"><span class="meta-icon">📍</span> <span>Địa chỉ: <strong>343/15 Tô Hiến Thành, Hòa Hưng, TP.HCM</strong></span></div>
+              <div class="meta-item"><span class="meta-icon">✉️</span> <span>Email: <a href="mailto:tuyethanh.tonnu@gmail.com" class="meta-link">tuyethanh.tonnu@gmail.com</a></span></div>
+              <div class="meta-item"><span class="meta-icon">📞</span> <span>SĐT: <a href="tel:0908188364" class="meta-link"><strong>0908188364</strong></a></span></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div> <!-- End #sec-overview -->
+
+    <!-- SECTION 2: 1. BIỂU ĐỒ CHỈ SỐ LÂM SÀNG -->
+    <div id="sec-charts" class="page-section-block">
+      <div class="page-sticky-header">
+        <div class="page-title-wrap">
+          <span class="page-step-badge">1</span>
+          <h3 class="page-main-title">1. BIỂU ĐỒ LÂM SÀNG</h3>
+        </div>
+
+        <div class="chart-controls-wrapper">
+          <div class="tabs-nav" id="chartGroupTabs">
+            <button class="tab-btn active" data-tab="kidney">🧪 Chức Năng Thận</button>
+            <button class="tab-btn" data-tab="tumor">🫁 U Phổi & Màng Tim</button>
+            <button class="tab-btn" data-tab="blood">🩸 Huyết Học & Thể Trạng</button>
+            <button class="tab-btn" data-tab="tumor_markers">🧬 Dấu Ấn Khối U & Đông Máu</button>
+            <button class="tab-btn" data-tab="liver">🩺 Men Gan & Điện Giải</button>
+          </div>
+        </div>
+      </div>
+
+      <section class="card fv-card-style">
+        <!-- Resizable Chart Container with drag handle at bottom-right -->
+        <div class="chart-wrapper-outer">
+          <!-- Dual Y-Axis Units & Scale Legend Bar -->
+          <div class="chart-axis-legend-bar" id="chartAxisLegendBar">
+            <span id="chartLeftAxisLabel" class="chart-axis-label-left">
+              <span class="chart-axis-arrow">◀</span> <span>Trục Trái:</span> <span id="chartLeftAxisUnit" class="chart-axis-unit-val">eGFR (mL/min) & Urê (mg/dL)</span>
+            </span>
+            <span id="chartRightAxisLabel" class="chart-axis-label-right">
+              <span>Trục Phải:</span> <span id="chartRightAxisUnit" class="chart-axis-unit-val">Creatinine (mg/dL)</span> <span class="chart-axis-arrow">▶</span>
+            </span>
+          </div>
+          <div class="chart-container resizable-chart" id="chartContainer">
+            <canvas id="trendChart"></canvas>
+            
+            <!-- Custom HTML Tooltip with Close 'X' Button -->
+            <div id="chartCustomTooltip" class="chart-custom-tooltip" style="opacity: 0; pointer-events: none;">
+              <button type="button" class="tooltip-close-btn" id="closeTooltipBtn" title="Đóng bảng thông tin">✖</button>
+              <div id="tooltipContent"></div>
+            </div>
+
+            <!-- Resize handle indicator at bottom-right corner -->
+            <div class="chart-resize-handle" id="chartResizeHandle" title="Kéo lên/xuống ở góc này để điều chỉnh chiều cao biểu đồ">
+              <span>⇲</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div> <!-- End #sec-charts -->
+
+    <!-- SECTION 3: 2. CHỈ SỐ XÉT NGHIỆM -->
+    <div id="sec-table" class="page-section-block">
+      <div class="page-sticky-header page-2-sticky-container" id="page2StickyHeader">
+        <!-- Row 1: Title and Hint & Mobile Controls -->
+        <div class="page-sticky-header-row">
+          <div class="page-title-wrap">
+            <span class="page-step-badge">2</span>
+            <h3 class="page-main-title">2. CHỈ SỐ XÉT NGHIỆM</h3>
+          </div>
+          <div class="page-header-actions-wrap">
+            <button id="toggleDesktopModeBtn" type="button" class="btn-toggle-desktop" title="Chuyển chế độ hiển thị Máy tính (Desktop Site) hoặc Điện thoại">
+              <span class="btn-desktop-icon">🖥️</span>
+              <span class="btn-desktop-text">Bản Desktop</span>
+            </button>
+            <button id="toggleColCompactBtn" type="button" class="btn-toggle-compact" title="Thu gọn / Mở rộng hiển thị Đơn vị & Tham chiếu">
+              <span class="btn-compact-icon">🎛️</span>
+              <span class="btn-compact-text">Thu gọn cột</span>
+            </button>
+            <div class="page-header-hint">
+              <span class="hint-badge desktop-only-hint">↔️ Đã khóa cột đầu • Lăn sang để đối chiếu kết quả</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Row 2: Active Category Push Strip (I, II, III, IV, V with Push Effect) -->
+        <div class="sticky-group-push-strip" id="stickyGroupPushStrip">
+          <div class="group-push-track" id="groupPushTrack">
+            <div class="group-push-pane current" id="groupPushCurrent">
+              <span class="group-push-icon">🔬</span>
+              <span class="group-push-text" id="groupPushCurrentText">I. HÌNH ẢNH LÂM SÀNG & THỂ TRẠNG</span>
+            </div>
+            <div class="group-push-pane incoming" id="groupPushIncoming">
+              <span class="group-push-icon">🔬</span>
+              <span class="group-push-text" id="groupPushIncomingText"></span>
+            </div>
+          </div>
+          <div class="group-active-indicator">
+            <span class="pulse-indicator-dot"></span> <span id="groupIndicatorLabel">Phân mục đang xem</span>
+          </div>
+        </div>
+
+        <!-- Row 3: Dòng số 1 của bảng (Sticky Column Headers) -->
+        <div class="table-sticky-header-wrapper" id="stickyTableHeaderWrapper">
+          <!-- Rendered dynamically by JS with frozen 3 columns and dates -->
+        </div>
+      </div>
+
+      <div class="comparison-table-card-frame">
+        <div class="table-responsive" id="comparisonTableContainer">
+          <!-- Rendered dynamically by JS with frozen 3 columns and group headers -->
+        </div>
+      </div>
+    </div> <!-- End #sec-table -->
+
+    <!-- SECTION 4: 3. LỊCH SỬ Y KHOA -->
+    <div id="sec-timeline" class="page-section-block">
+      <div class="page-sticky-header">
+        <div class="page-title-wrap">
+          <span class="page-step-badge">3</span>
+          <h3 class="page-main-title">3. LỊCH SỬ Y KHOA</h3>
+        </div>
+
+        <div style="display: flex; gap: 10px; align-items: center; flex-wrap: wrap;">
+          <div style="position: relative; display: flex; align-items: center;">
+            <input type="text" id="searchInput" class="search-input" placeholder="🔍 Tìm kiếm không dấu, bệnh án, thuốc..." style="padding-right: 32px; min-width: 260px;">
+            <button type="button" id="clearSearchBtn" style="display: none; position: absolute; right: 8px; background: none; border: none; font-size: 0.9rem; cursor: pointer; color: var(--text-dim); padding: 4px;" title="Xóa từ khóa">✖</button>
+          </div>
+          <span id="searchResultCount" class="search-stat-badge" style="display: none;"></span>
+          <div class="filter-group">
+            <button class="filter-btn active" data-filter="all">Tất cả</button>
+            <button class="filter-btn" data-filter="imaging">CT / MRI / Xạ hình</button>
+            <button class="filter-btn" data-filter="lab">Xét nghiệm</button>
+            <button class="filter-btn" data-filter="chemotherapy">Hóa trị</button>
+            <button class="filter-btn" data-filter="prescription">Đơn thuốc</button>
+          </div>
+          <button id="timelineSyncGdriveBtn" class="btn-sync-timeline" title="Quét & đồng bộ hồ sơ y tế mới từ Google Drive">
+            <span class="sync-spin-icon">🔄</span> Đồng bộ Google Drive
+          </button>
+        </div>
+      </div>
+
+      <section class="card fv-card-style">
+        <div class="timeline-container" id="timelineStream">
+          <!-- Rendered dynamically by JS (grouped by date with document buttons & QR codes) -->
+        </div>
+      </section>
+    </div> <!-- End #sec-timeline -->
+
+  </div> <!-- End container -->
+
+  <!-- ==========================================================================
+       UPLOAD MODAL (Gallery Multiple Images, PDF & Google Drive)
+       ========================================================================== -->
+  <div id="uploadModal" class="modal-overlay">
+    <div class="modal-window" style="max-width: 780px;">
+      <div class="modal-header">
+        <div>
+          <h3 style="color: var(--fv-green); display: flex; align-items: center; gap: 8px;">
+            <span>📁</span> Tải Lên Hồ Sơ & Quét Tài Liệu Y Khoa
+          </h3>
+          <p style="font-size: 0.78rem; color: var(--text-dim); margin-top: 2px;">
+            Hỗ trợ tải nhiều ảnh từ Thư viện (Gallery), tệp PDF bệnh án, hoặc trỏ đường link đến thư mục Google Drive
+          </p>
+        </div>
+        <button id="closeUploadModal" class="modal-close">&times;</button>
+      </div>
+
+      <div class="modal-body">
+        <!-- Mode Tabs -->
+        <div class="scanner-tabs">
+          <button class="scanner-tab-btn active" data-mode="upload">
+            <span>🖼️ / 📄</span> Tải Ảnh & PDF
+          </button>
+          <button class="scanner-tab-btn" data-mode="camera">
+            <span>📷</span> Chụp Tài Liệu
+          </button>
+          <button class="scanner-tab-btn" data-mode="gdrive">
+            <span>☁️</span> Google Drive Folder / File
+          </button>
+        </div>
+
+        <!-- MODE 1: Multi-file Dropzone (Images & PDF) -->
+        <div id="scannerModeUpload" class="scanner-mode-panel">
+          <div class="dropzone" id="pdfDropzone">
+            <div style="font-size: 48px; margin-bottom: 8px; color: var(--fv-green);">📂</div>
+            <div style="font-weight: 700; font-size: 1.05rem; margin-bottom: 4px; color: var(--fv-navy);">
+              Kéo & Thả các tệp bệnh án vào đây, hoặc nhấn để chọn
+            </div>
+            <div style="font-size: 0.82rem; color: var(--text-muted); max-width: 520px; margin: 0 auto 14px;">
+              Hỗ trợ chọn <strong>nhiều ảnh cùng lúc từ Thư viện Gallery</strong> hoặc <strong>file PDF</strong> kết quả xét nghiệm, đơn thuốc, chẩn đoán hình ảnh
+            </div>
+            
+            <div style="display: flex; justify-content: center; gap: 10px; flex-wrap: wrap;">
+              <button type="button" class="btn btn-primary" onclick="document.getElementById('galleryInput').click();" style="padding: 8px 16px; font-size: 0.84rem;">
+                <span>🖼️</span> Chọn Nhiều Ảnh Từ Gallery
+              </button>
+              <button type="button" class="btn btn-secondary" onclick="document.getElementById('pdfInput').click();" style="padding: 8px 16px; font-size: 0.84rem;">
+                <span>📄</span> Chọn Tệp PDF
+              </button>
+            </div>
+
+            <!-- Hidden Inputs for Gallery (multiple) and PDF -->
+            <input type="file" id="galleryInput" accept="image/*" multiple style="display: none;">
+            <input type="file" id="pdfInput" accept=".pdf" style="display: none;">
+            <input type="file" id="pdfFileInput" accept=".pdf,image/*" multiple style="display: none;">
+          </div>
+          
+          <!-- Selected Files Queue Display -->
+          <div id="selectedFilesQueue" style="margin-top: 14px; display: none;">
+            <div style="font-size: 0.82rem; font-weight: 700; color: var(--fv-navy); margin-bottom: 6px;">Danh sách tệp đã chọn:</div>
+            <div id="fileQueueList" class="file-queue-list"></div>
+          </div>
+        </div>
+
+        <!-- MODE 2: Camera Viewfinder (Live Capture) -->
+        <div id="scannerModeCamera" class="scanner-mode-panel" style="display: none;">
+          <div class="camera-viewfinder">
+            <video id="cameraVideo" autoplay playsinline muted></video>
+            <div class="camera-overlay-frame"></div>
+          </div>
+          <div class="camera-controls-bar">
+            <button id="switchCameraBtn" class="btn btn-secondary" style="border-radius: 50%; width: 44px; height: 44px; padding: 0;" title="Đổi camera">
+              🔄
+            </button>
+            <button id="captureShutterBtn" class="shutter-btn" title="Chụp ảnh tài liệu"></button>
+            <button id="useNativeCameraBtn" class="btn btn-secondary" style="border-radius: 50%; width: 44px; height: 44px; padding: 0;" title="Dùng Camera gốc">
+              📱
+            </button>
+          </div>
+          <input type="file" id="mobileCameraInput" accept="image/*" capture="environment" style="display: none;">
+        </div>
+
+        <!-- MODE 3: Google Drive Import (Folder or File Link) -->
+        <div id="scannerModeGdrive" class="scanner-mode-panel" style="display: none;">
+          <div class="fv-alert-box" style="background: var(--fv-green-light); border: 1px solid #a7f3d0; border-radius: 10px; padding: 14px; margin-bottom: 16px;">
+            <div style="font-weight: 700; color: var(--fv-green-dark); font-size: 0.9rem; margin-bottom: 4px; display: flex; align-items: center; gap: 6px;">
+              <span>☁️</span> Liên Kết Đến Thư Mục Hoặc Tệp Google Drive
+            </div>
+            <p style="font-size: 0.8rem; color: #065f46; margin: 0; line-height: 1.45;">
+              Dán đường link chia sẻ từ <strong>Thư mục Google Drive</strong> hoặc <strong>tệp tài liệu</strong> của bạn. Bác sĩ và bệnh nhân có thể truy cập xem trực tiếp tài liệu gốc trên Drive bất cứ lúc nào.
+            </p>
+          </div>
+
+          <div style="margin-bottom: 14px;">
+            <label style="display: block; font-size: 0.82rem; font-weight: 700; color: var(--fv-navy); margin-bottom: 6px;">
+              Đường link Google Drive (Thư mục hoặc Tập tin)
+            </label>
+            <div style="display: flex; gap: 8px; flex-wrap: wrap;">
+              <input type="url" id="gdriveUrlInput" placeholder="Ví dụ: https://drive.google.com/drive/folders/... hoặc /file/d/..." style="flex: 1; min-width: 260px; padding: 10px 14px; border: 1px solid var(--border-color); border-radius: 8px; font-size: 0.85rem; background: #ffffff;">
+              <button type="button" id="gdriveParseBtn" class="btn btn-primary" style="padding: 10px 18px; font-size: 0.85rem; white-space: nowrap;">
+                <span>🔗</span> Liên Kết
+              </button>
+            </div>
+            <div style="font-size: 0.74rem; color: var(--text-dim); margin-top: 4px;">
+              💡 Lưu ý: Trên Google Drive, chọn <em>Chia sẻ</em> ➔ Quyền truy cập chung: <strong>"Bất kỳ ai có đường liên kết đều có thể xem"</strong>.
+            </div>
+          </div>
+
+          <div id="gdrivePreviewContainer" style="display: none; margin-bottom: 16px;">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px;">
+              <span style="font-size: 0.8rem; font-weight: 700; color: var(--fv-green);">✅ Đã liên kết thành công:</span>
+              <a id="gdriveDirectLink" href="#" target="_blank" style="font-size: 0.76rem; color: var(--fv-cyan); font-weight: 600;">Mở trên Google Drive ↗</a>
+            </div>
+            <div style="width: 100%; height: 320px; border: 1px solid var(--border-color); border-radius: 8px; overflow: hidden; background: #f8fafc;">
+              <iframe id="gdrivePreviewIframe" src="" style="width: 100%; height: 100%; border: none;"></iframe>
+            </div>
+          </div>
+        </div>
+
+        <!-- Upload Status Notification -->
+        <div id="uploadStatus" style="margin-top: 14px; font-size: 0.9rem;"></div>
+
+        <!-- Form for Data Review & Saving -->
+        <div id="recordFormContainer" style="display: none; margin-top: 20px; border-top: 1px solid var(--border-color); padding-top: 18px;">
+          <form id="recordForm">
+            <input type="hidden" id="formPdfFile">
+            <input type="hidden" id="formMetrics">
+            <input type="hidden" id="formDetails">
+            <input type="hidden" id="formLabResults">
+
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-bottom: 14px;">
+              <div>
+                <label style="display: block; font-size: 0.8rem; font-weight: 600; color: var(--text-muted); margin-bottom: 4px;">Ngày khám / Ngày xét nghiệm *</label>
+                <input type="date" id="formDate" required style="width: 100%; padding: 8px 12px; background: #ffffff; border: 1px solid var(--border-color); border-radius: 6px; color: var(--text-main);">
+              </div>
+              <div>
+                <label style="display: block; font-size: 0.8rem; font-weight: 600; color: var(--text-muted); margin-bottom: 4px;">Phân loại hồ sơ *</label>
+                <select id="formType" style="width: 100%; padding: 8px 12px; background: #ffffff; border: 1px solid var(--border-color); border-radius: 6px; color: var(--text-main);">
+                  <option value="lab">Xét nghiệm Máu / Nước tiểu</option>
+                  <option value="imaging">Chẩn đoán hình ảnh (CT / MRI / Siêu âm / Xạ hình)</option>
+                  <option value="chemotherapy">Hóa trị / Truyền thuốc</option>
+                  <option value="prescription">Đơn thuốc điều trị</option>
+                  <option value="discharge">Giấy ra viện / Giấy chuyển viện</option>
+                  <option value="comprehensive">Đợt khám toàn diện</option>
+                </select>
+              </div>
+            </div>
+
+            <div style="margin-bottom: 14px;">
+              <label style="display: block; font-size: 0.8rem; font-weight: 600; color: var(--text-muted); margin-bottom: 4px;">Tiêu đề hồ sơ *</label>
+              <input type="text" id="formTitle" required placeholder="VD: Xét nghiệm máu, CT scan ngực, Đơn thuốc..." style="width: 100%; padding: 8px 12px; background: #ffffff; border: 1px solid var(--border-color); border-radius: 6px; color: var(--text-main);">
+            </div>
+
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-bottom: 14px;">
+              <div>
+                <label style="display: block; font-size: 0.8rem; font-weight: 600; color: var(--text-muted); margin-bottom: 4px;">Cơ sở y tế</label>
+                <input type="text" id="formFacility" placeholder="VD: BV Thống Nhất, Medic Hòa Hảo..." style="width: 100%; padding: 8px 12px; background: #ffffff; border: 1px solid var(--border-color); border-radius: 6px; color: var(--text-main);">
+              </div>
+              <div>
+                <label style="display: block; font-size: 0.8rem; font-weight: 600; color: var(--text-muted); margin-bottom: 4px;">Bác sĩ thực hiện / chỉ định</label>
+                <input type="text" id="formDoctor" placeholder="VD: BS. Phạm Minh Trí..." style="width: 100%; padding: 8px 12px; background: #ffffff; border: 1px solid var(--border-color); border-radius: 6px; color: var(--text-main);">
+              </div>
+            </div>
+
+            <div style="margin-bottom: 18px;">
+              <label style="display: block; font-size: 0.8rem; font-weight: 600; color: var(--text-muted); margin-bottom: 4px;">Tóm tắt kết luận lâm sàng</label>
+              <textarea id="formSummary" rows="3" placeholder="Tóm tắt kết quả chính..." style="width: 100%; padding: 8px 12px; background: #ffffff; border: 1px solid var(--border-color); border-radius: 6px; color: var(--text-main);"></textarea>
+            </div>
+
+            <div style="display: flex; justify-content: flex-end; gap: 10px;">
+              <button type="submit" class="btn btn-primary">💾 Lưu Vào Hồ Sơ Y Khoa</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Detailed Medical Record Modal -->
+  <div id="detailModal" class="modal-overlay">
+    <div class="modal-window" style="max-width: 780px;">
+      <div class="modal-header">
+        <h3 id="detailModalTitle" style="font-size: 1.15rem; font-weight: 800; color: var(--fv-navy);">Chi Tiết Bệnh Án</h3>
+        <button id="closeDetailModal" class="modal-close">&times;</button>
+      </div>
+      <div id="detailModalBody" class="modal-body" style="max-height: 75vh; overflow-y: auto;">
+        <!-- Rendered by JS -->
+      </div>
+    </div>
+  </div>
+
+  <!-- GOOGLE DRIVE STYLE SMART DOCUMENT VIEWER (EDGE-TO-EDGE HORIZONTAL VIEWER) -->
+  <div id="docViewerModal" class="gdrive-viewer-overlay">
+    <div class="gdrive-viewer-window">
+      <!-- Top Google Drive App Bar -->
+      <div class="gdrive-viewer-topbar">
+        <div class="gdrive-topbar-left">
+          <button id="closeDocViewerModal" class="gdrive-icon-btn" title="Đóng trình xem (Esc)" aria-label="Đóng">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="18" y1="6" x2="6" y2="18"></line>
+              <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+          </button>
+          <div class="gdrive-file-meta-wrap">
+            <h3 id="docViewerTitle" class="gdrive-file-title" title="">Tên tài liệu gốc</h3>
+            <div id="docViewerMeta" class="gdrive-file-sub">Cơ sở y tế • Ngày thực hiện</div>
+          </div>
+        </div>
+
+        <div class="gdrive-topbar-right">
+          <!-- In-document Search Button (Google Drive Style) -->
+          <button id="docViewerSearchToggleBtn" class="gdrive-icon-btn" title="Tìm kiếm bên trong tài liệu này" aria-label="Tìm kiếm">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+          </button>
+
+          <!-- Quick Rotate Button -->
+          <button id="docViewerRotateBtn" class="gdrive-icon-btn desktop-only-icon" title="Xoay 90°" aria-label="Xoay">
+            <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-5.67"/>
+            </svg>
+          </button>
+
+          <!-- Three-dot Overflow Menu Button (Google Drive Style) -->
+          <button id="docViewerMenuBtn" class="gdrive-icon-btn" title="Menu tùy chọn thêm (...)" aria-label="Menu">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="1.5"></circle>
+              <circle cx="12" cy="5" r="1.5"></circle>
+              <circle cx="12" cy="19" r="1.5"></circle>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Google Drive Style In-Document Search Bar -->
+      <div id="docViewerSearchBar" class="gdrive-search-bar" style="display: none;">
+        <div class="gdrive-search-bar-inner">
+          <svg class="gdrive-search-input-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+          <input type="text" id="docViewerSearchInput" placeholder="Tìm kiếm thuốc, chẩn đoán, kết quả xét nghiệm trong tài liệu..." autocomplete="off">
+          <span id="docViewerSearchCount" class="gdrive-search-stat">0 kết quả</span>
+          <button id="docViewerSearchPrev" class="gdrive-search-arrow" title="Kết quả trước">▲</button>
+          <button id="docViewerSearchNext" class="gdrive-search-arrow" title="Kết quả tiếp">▼</button>
+          <button id="docViewerSearchClose" class="gdrive-search-arrow" title="Đóng tìm kiếm">✕</button>
+        </div>
+        <div id="docViewerSearchResultsList" class="gdrive-search-matches-dropdown" style="display: none;"></div>
+      </div>
+
+      <!-- Centered Highlighted Search Result Card (Requirement 2 & 3) -->
+      <div id="docViewerCenterResultCard" class="gdrive-center-result-card" style="display: none;">
+        <div class="center-result-header">
+          <span class="center-result-tag">🎯 ĐÃ TÌM THẤY TRONG HỒ SƠ GỐC</span>
+          <button type="button" id="closeCenterResultCardBtn" class="center-result-close" title="Đóng bảng kết quả">✕</button>
+        </div>
+        <div id="centerResultSnippet" class="center-result-snippet"></div>
+        <div id="centerResultMeta" class="center-result-meta"></div>
+      </div>
+
+      <!-- Full-Width Horizontal Document Viewport -->
+      <div class="gdrive-viewer-viewport" id="docViewerViewport">
+        <!-- Image Viewer (Edge-to-edge 100% horizontal view with zoom & pan) -->
+        <div id="docViewerImageContainer" class="gdrive-image-wrap" style="display: none;">
+          <img id="docViewerImage" src="" alt="Tài liệu y khoa gốc">
+        </div>
+
+        <!-- PDF Canvas & Text Highlight Layer Container (Requirement 2: Direct Yellow Highlight on Preview) -->
+        <div id="docViewerCanvasContainer" class="gdrive-canvas-wrap" style="display: none;"></div>
+
+        <!-- PDF / Document Iframe (Full width/height view) -->
+        <div id="docViewerIframeContainer" class="gdrive-iframe-wrap" style="display: none;">
+          <iframe id="docViewerIframe" src="about:blank" title="Trình xem tài liệu y khoa"></iframe>
+        </div>
+
+        <!-- Fallback Container -->
+        <div id="docViewerFallback" class="gdrive-fallback-wrap" style="display: none;"></div>
+      </div>
+
+      <!-- Quick Zoom & View Floating Pill -->
+      <div class="gdrive-floating-pill" id="docViewerFloatingPill">
+        <button id="docZoomOutBtn" title="Thu nhỏ (－)">－</button>
+        <span id="docZoomLevelText">100%</span>
+        <button id="docZoomInBtn" title="Phóng to (＋)">＋</button>
+        <button id="docZoomFitBtn" title="Vừa chiều ngang màn hình (Fit width)">⤢</button>
+        <button id="docRotateFloatingBtn" title="Xoay 90°">🔄</button>
+      </div>
+
+      <!-- Google Drive Three-Dot (...) Action Menu / Bottom Sheet -->
+      <div id="docViewerMenuSheet" class="gdrive-sheet-overlay" style="display: none;">
+        <div class="gdrive-sheet-backdrop" id="docViewerMenuBackdrop"></div>
+        <div class="gdrive-sheet-container">
+          <div class="gdrive-sheet-handle"></div>
+          <div class="gdrive-sheet-header">
+            <span class="gdrive-sheet-file-icon">📄</span>
+            <div class="gdrive-sheet-header-info">
+              <div id="sheetFileName" class="gdrive-sheet-title">Tên tập tin</div>
+              <div id="sheetFileMeta" class="gdrive-sheet-sub">Hồ sơ y tế gốc • Nguyễn Tuyết Hạnh</div>
+            </div>
+          </div>
+
+          <div class="gdrive-sheet-actions">
+            <a id="docViewerNewTabBtn" href="#" target="_blank" class="gdrive-sheet-action-item">
+              <span class="action-icon">↗️</span>
+              <div class="action-text">
+                <div class="action-title">Mở trong tab mới</div>
+                <div class="action-desc">Xem độc lập toàn màn hình trên trình duyệt</div>
+              </div>
+            </a>
+
+            <a id="docViewerDownloadBtn" href="#" download class="gdrive-sheet-action-item">
+              <span class="action-icon">📥</span>
+              <div class="action-text">
+                <div class="action-title">Tải về máy</div>
+                <div class="action-desc">Lưu tệp này về điện thoại hoặc máy tính</div>
+              </div>
+            </a>
+
+            <a id="docViewerGdriveBtn" href="#" target="_blank" class="gdrive-sheet-action-item" style="display: none;">
+              <span class="action-icon">☁️</span>
+              <div class="action-text">
+                <div class="action-title">Mở trong Google Drive</div>
+                <div class="action-desc">Truy cập trực tiếp trên ứng dụng Google Drive</div>
+              </div>
+            </a>
+
+            <button type="button" id="docMenuFitWidthBtn" class="gdrive-sheet-action-item">
+              <span class="action-icon">⤢</span>
+              <div class="action-text">
+                <div class="action-title">Căn vừa chiều ngang (Fit Width)</div>
+                <div class="action-desc">Tối ưu độ rộng tài liệu tràn viền ngang</div>
+              </div>
+            </button>
+
+            <button type="button" id="docMenuRotateBtn" class="gdrive-sheet-action-item">
+              <span class="action-icon">🔄</span>
+              <div class="action-text">
+                <div class="action-title">Xoay tài liệu 90°</div>
+                <div class="action-desc">Xoay chiều hiển thị tài liệu dễ đọc</div>
+              </div>
+            </button>
+
+            <button type="button" id="docMenuInfoBtn" class="gdrive-sheet-action-item">
+              <span class="action-icon">📋</span>
+              <div class="action-text">
+                <div class="action-title">Xem bóc tách chẩn đoán & thuốc</div>
+                <div class="action-desc">Đối chiếu thông tin y khoa trích xuất từ văn bản này</div>
+              </div>
+            </button>
+
+            <button type="button" id="docMenuPrintBtn" class="gdrive-sheet-action-item">
+              <span class="action-icon">🖨️</span>
+              <div class="action-text">
+                <div class="action-title">In tài liệu</div>
+                <div class="action-desc">Gửi lệnh in tài liệu này</div>
+              </div>
+            </button>
+          </div>
+
+          <button type="button" id="docMenuCloseBtn" class="gdrive-sheet-cancel-btn">Đóng</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Full QR Codes Catalog Modal -->
+  <div id="qrCatalogModal" class="modal-overlay">
+    <div class="modal-window" style="max-width: 920px; width: 95vw; max-height: 90vh; display: flex; flex-direction: column;">
+      <div class="modal-header" style="background: linear-gradient(135deg, #008f5d, #00734a); color: white; border-radius: 16px 16px 0 0; padding: 16px 24px;">
+        <div style="display: flex; align-items: center; gap: 12px;">
+          <span style="font-size: 1.5rem;">📱</span>
+          <div>
+            <h3 style="font-size: 1.15rem; font-weight: 800; margin: 0; color: white;">HỆ THỐNG TRA CỨU MÃ QR & KẾT QUẢ TRỰC TUYẾN</h3>
+            <p style="font-size: 0.8rem; margin: 2px 0 0 0; opacity: 0.9; color: white;">
+              Quét mã bằng Camera điện thoại hoặc bấm nút "Mở ngay" để xem phim CT, kết quả xét nghiệm và hồ sơ trực tiếp
+            </p>
+          </div>
+        </div>
+        <button id="closeQrCatalogModal" class="modal-close" style="color: white; font-size: 24px;">&times;</button>
+      </div>
+
+      <!-- Filter tabs -->
+      <div style="padding: 12px 24px; background: #f8fafc; border-bottom: 1px solid var(--border-color); display: flex; gap: 8px; flex-wrap: wrap;">
+        <button class="qr-cat-tab active" data-filter="all">Tất cả mã QR (<span id="qrCountAll">13</span>)</button>
+        <button class="qr-cat-tab" data-filter="pacs">🩻 PACS / Phim CT & X-Quang (<span id="qrCountPacs">5</span>)</button>
+        <button class="qr-cat-tab" data-filter="laboratory">🧪 Xét Nghiệm Trực Tuyến (<span id="qrCountLab">6</span>)</button>
+        <button class="qr-cat-tab" data-filter="portal">🏥 Cổng Bệnh Viện & BHYT (<span id="qrCountPortal">2</span>)</button>
+      </div>
+
+      <div class="modal-body" style="padding: 20px 24px; overflow-y: auto; flex: 1;">
+        <div id="qrCatalogGrid" class="qr-catalog-grid">
+          <!-- Rendered dynamically by JS -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- QR Single Viewer Modal -->
+  <div id="qrModal" class="modal-overlay">
+    <div class="modal-window" style="max-width: 480px; text-align: center;">
+      <div class="modal-header">
+        <h3 id="qrModalTitle" style="font-size: 1.05rem; font-weight: 800; color: var(--fv-navy);">Mã QR Cơ Sở Y Tế</h3>
+        <button id="closeQrModal" class="modal-close">&times;</button>
+      </div>
+      <div class="modal-body" id="qrModalBody" style="padding: 24px;">
+        <!-- Rendered by JS -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       GOOGLE DRIVE SYNC MODAL
+       ========================================================================== -->
+  <div id="gdriveSyncModal" class="modal-overlay">
+    <div class="modal-window" style="max-width: 620px; width: 95vw; border-radius: 16px; overflow: hidden; box-shadow: 0 20px 45px rgba(0, 0, 0, 0.25);">
+      <div class="modal-header" style="background: linear-gradient(135deg, #008f5d, #006642); color: white; padding: 18px 24px;">
+        <div style="display: flex; align-items: center; gap: 12px;">
+          <div style="width: 44px; height: 44px; border-radius: 12px; background: rgba(255, 255, 255, 0.2); display: flex; align-items: center; justify-content: center; font-size: 24px;">
+            🔄
+          </div>
+          <div>
+            <h3 style="font-size: 1.15rem; font-weight: 800; margin: 0; color: white;">ĐỒNG BỘ GOOGLE DRIVE</h3>
+            <p style="font-size: 0.8rem; margin: 3px 0 0 0; opacity: 0.9; color: white;">
+              Tự động quét tệp mới trong Google Drive & cập nhật Lịch Sử Y Khoa
+            </p>
+          </div>
+        </div>
+        <button id="closeGdriveSyncModal" class="modal-close" style="color: white; font-size: 24px;">&times;</button>
+      </div>
+
+      <div class="modal-body" style="padding: 24px;">
+        <!-- Status Info Card -->
+        <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 12px; padding: 14px 16px; margin-bottom: 18px;">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+            <div style="display: flex; align-items: center; gap: 6px; font-weight: 700; font-size: 0.88rem; color: var(--fv-navy);">
+              <span>📁</span> Thư mục kết nối:
+            </div>
+            <span class="gdrive-sync-badge">
+              <span class="gdrive-sync-pulse"></span>
+              <span id="syncStatusBadge">Sẵn sàng đồng bộ</span>
+            </span>
+          </div>
+          <div style="font-family: monospace; font-size: 0.82rem; color: #0284c7; background: #ffffff; padding: 6px 10px; border-radius: 6px; border: 1px dashed #cbd5e1; word-break: break-all;">
+            Google Drive: Medical / Má Hạnh
+          </div>
+          <div style="display: flex; justify-content: space-between; margin-top: 10px; font-size: 0.78rem; color: #64748b;">
+            <span>Lần đồng bộ gần nhất: <strong id="syncModalLastTime" style="color: #0f172a;">--</strong></span>
+            <span>Tổng hồ sơ hiện tại: <strong id="syncModalRecordCount" style="color: #008f5d;">28 đợt</strong></span>
+          </div>
+        </div>
+
+        <!-- Sync Progress Steps -->
+        <div id="syncProgressSteps" style="margin-bottom: 18px;">
+          <div class="sync-step-item" id="syncStep1">
+            <span class="step-icon">1️⃣</span>
+            <span class="step-text">Quét tệp PDF / hình ảnh mới trong thư mục Google Drive</span>
+          </div>
+          <div class="sync-step-item" id="syncStep2">
+            <span class="step-icon">2️⃣</span>
+            <span class="step-text">Bóc tách thông tin y khoa, chẩn đoán, bác sĩ và chỉ số xét nghiệm</span>
+          </div>
+          <div class="sync-step-item" id="syncStep3">
+            <span class="step-icon">3️⃣</span>
+            <span class="step-text">Cập nhật hồ sơ bệnh án và làm mới dòng thời gian</span>
+          </div>
+        </div>
+
+        <!-- Result / Notification Box -->
+        <div id="gdriveSyncResult" style="display: none; padding: 12px 16px; border-radius: 10px; font-size: 0.84rem; margin-bottom: 18px; line-height: 1.5;"></div>
+
+        <!-- Action Button Box -->
+        <div style="display: flex; flex-direction: column; gap: 10px;">
+          <button id="startSyncBtn" class="btn btn-primary" style="width: 100%; padding: 12px; font-size: 0.95rem; font-weight: 800; justify-content: center; background: linear-gradient(135deg, #008f5d, #006642); box-shadow: 0 4px 12px rgba(0, 143, 93, 0.25);">
+            <span class="sync-spin-icon">🔄</span> BẮT ĐẦU ĐỒNG BỘ DỮ LIỆU
+          </button>
+          <div style="display: flex; gap: 8px;">
+            <a href="https://drive.google.com/drive/my-drive" target="_blank" class="btn btn-secondary" style="flex: 1; justify-content: center; font-size: 0.82rem; padding: 8px 12px;">
+              <span>📂</span> Mở Google Drive ↗
+            </a>
+            <button id="manualRefreshBtn" type="button" class="btn btn-secondary" style="flex: 1; justify-content: center; font-size: 0.82rem; padding: 8px 12px;">
+              <span>⚡</span> Làm Mới Giao Diện
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mobile Bottom Navigation Bar -->
+  <nav class="mobile-bottom-nav">
+    <a href="#sec-overview" class="mobile-nav-item active">
+      <span class="icon">👤</span>
+      <span>Hồ sơ</span>
+    </a>
+    <a href="#sec-charts" class="mobile-nav-item">
+      <span class="icon">📈</span>
+      <span>Biểu đồ</span>
+    </a>
+    <div class="mobile-fab-scan" id="mobileScanFab" title="Tải hồ sơ">
+      <span>📁</span>
+    </div>
+    <a href="#sec-table" class="mobile-nav-item">
+      <span class="icon">📊</span>
+      <span>Chỉ số</span>
+    </a>
+    <a href="#sec-timeline" class="mobile-nav-item">
+      <span class="icon">🗓️</span>
+      <span>Lịch sử</span>
+    </a>
+  </nav>
+
+  <script src="/app.js"></script>
+</body>
+</html>
