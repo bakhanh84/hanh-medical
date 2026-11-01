@@ -9,11 +9,11 @@ let activeChartTab = 'kidney';
 let activeFilter = 'all';
 let searchQuery = '';
 
-// Month scale definition for Chart.js X-Axis (10/2024 to 10/2026)
+// Month scale definition for Chart.js X-Axis (10/2024 to 12/2026)
 const CHART_MONTH_LABELS = [
   '10/24', '11/24', '12/24',
   '01/25', '02/25', '03/25', '04/25', '05/25', '06/25', '07/25', '08/25', '09/25', '10/25', '11/25', '12/25',
-  '01/26', '02/26', '03/26', '04/26', '05/26', '06/26', '07/26', '08/26', '09/26', '10/26'
+  '01/26', '02/26', '03/26', '04/26', '05/26', '06/26', '07/26', '08/26', '09/26', '10/26', '11/26', '12/26'
 ];
 
 document.addEventListener('DOMContentLoaded', async () => {
@@ -476,7 +476,8 @@ function getDatasetsForActiveTab() {
             y: val,
             fullDate: fullDate,
             facility: r.facility || '',
-            title: r.title || ''
+            title: r.title || '',
+            record: r
           });
         }
       }
@@ -542,7 +543,7 @@ function getDatasetsForActiveTab() {
   } else if (activeChartTab === 'tumor') {
     return [
       {
-        label: 'Kích thước U phổi S3',
+        label: 'Kích thước U phổi S3 (Đường kính max)',
         unit: 'mm',
         yAxisID: 'y',
         borderColor: '#e11d48',
@@ -551,11 +552,27 @@ function getDatasetsForActiveTab() {
           if (r.metrics && r.metrics.tumor_primary_size_mm !== undefined) return r.metrics.tumor_primary_size_mm;
           return null;
         }),
-        fill: true,
+        fill: false,
         tension: 0.2,
         borderWidth: 3,
         pointRadius: 6,
         pointHoverRadius: 9
+      },
+      {
+        label: 'Thể tích Khối U S3',
+        unit: 'cm³',
+        yAxisID: 'y',
+        borderColor: '#f59e0b',
+        backgroundColor: 'rgba(245, 158, 11, 0.15)',
+        data: buildPoints(r => {
+          if (r.metrics && r.metrics.tumor_volume_cm3 !== undefined) return r.metrics.tumor_volume_cm3;
+          return null;
+        }),
+        fill: true,
+        tension: 0.2,
+        borderWidth: 3,
+        pointRadius: 7,
+        pointHoverRadius: 10
       },
       {
         label: 'Tràn dịch màng ngoài tim',
@@ -567,11 +584,11 @@ function getDatasetsForActiveTab() {
           if (r.metrics && r.metrics.pericardial_effusion_mm !== undefined) return r.metrics.pericardial_effusion_mm;
           return null;
         }),
-        fill: true,
+        fill: false,
         tension: 0.2,
-        borderWidth: 3,
-        pointRadius: 6,
-        pointHoverRadius: 9
+        borderWidth: 2.5,
+        pointRadius: 5,
+        pointHoverRadius: 8
       },
       {
         label: 'Phân suất tống máu LVEF',
@@ -801,7 +818,7 @@ function getYAxisConfigForActiveTab() {
       }
     };
   } else if (activeChartTab === 'tumor') {
-    if (leftUnitEl) leftUnitEl.textContent = 'Kích thước U & Tràn dịch (mm)';
+    if (leftUnitEl) leftUnitEl.textContent = 'Kích thước U (mm) & Thể tích (cm³)';
     if (rightUnitEl) rightUnitEl.textContent = 'Phân suất tống máu LVEF (%)';
     if (leftLabelEl) leftLabelEl.style.color = '#e11d48';
     if (rightLabelEl) rightLabelEl.style.color = '#0284c7';
@@ -812,14 +829,14 @@ function getYAxisConfigForActiveTab() {
         position: 'left',
         title: {
           display: true,
-          text: 'Kích thước U & Tràn dịch (mm)',
+          text: 'Kích thước U (mm) & Thể tích (cm³)',
           color: '#e11d48',
           font: { family: "'Inter', sans-serif", size: 12, weight: 700 }
         },
         grid: { color: '#f1f5f9' },
         ticks: { color: '#475569', font: { family: "'Inter', sans-serif", size: 11, weight: 600 } },
         min: 0,
-        max: 40
+        max: 100
       },
       y1: {
         type: 'linear',
@@ -1096,6 +1113,22 @@ function customHtmlTooltip(context) {
         </div>
       `;
     });
+
+    const rec = rawObj.record;
+    if (rec && rec.metrics && (rec.metrics.tumor_dim_str || rec.metrics.tumor_volume_cm3)) {
+      const tm = rec.metrics;
+      html += `
+        <div style="margin-top: 8px; padding-top: 6px; border-top: 1px dashed #cbd5e1; font-size: 0.76rem; color: #334155;">
+          <div style="font-weight: 700; color: #e11d48; margin-bottom: 3px;">
+            🫁 Chi Tiết U Phổi S3:
+          </div>
+          <div>• DxRxC: <strong>${tm.tumor_dim_str || (tm.tumor_primary_size_mm + ' mm')}</strong></div>
+          <div>• Thể tích: <strong>${tm.tumor_volume_cm3} cm³</strong> <span style="background: #fef3c7; color: #92400e; padding: 1px 6px; border-radius: 8px; font-weight: 700;">${tm.tumor_visual || ''}</span></div>
+          ${tm.tumor_reduction_pct ? `<div style="color: #059669; font-weight: 700;">• Co giảm: -${tm.tumor_reduction_pct}% thể tích</div>` : ''}
+        </div>
+      `;
+    }
+
     html += `</div>`;
 
     tooltipContent.innerHTML = html;
@@ -1151,7 +1184,10 @@ function renderComparisonTable() {
     {
       groupName: 'I. HÌNH ẢNH LÂM SÀNG & THỂ TRẠNG',
       params: [
-        { id: 'tumor_size', name: 'Kích thước U phổi S3', searchKey: 'U phổi', unit: 'mm', ref: 'Co nhỏ / Ổn định', extract: r => r.metrics ? r.metrics.tumor_primary_size_mm : null },
+        { id: 'tumor_size', name: 'Kích thước U phổi S3 (Max)', searchKey: 'U phổi', unit: 'mm', ref: 'Co nhỏ / Ổn định', extract: r => r.metrics ? r.metrics.tumor_primary_size_mm : null },
+        { id: 'tumor_dim', name: 'Kích thước 3 chiều (DxRxC)', searchKey: 'DxRxC', unit: 'mm', ref: 'Tự động tính C', extract: r => (r.metrics && r.metrics.tumor_dim_str) || null },
+        { id: 'tumor_vol', name: 'Thể tích Khối U S3', searchKey: 'Thể tích u', unit: 'cm³', ref: 'Thu nhỏ sâu', extract: r => (r.metrics && r.metrics.tumor_volume_cm3 !== undefined) ? r.metrics.tumor_volume_cm3 : null },
+        { id: 'tumor_visual', name: 'Mô hình so sánh trực quan', searchKey: 'Hình dạng', unit: '', ref: 'Dễ hình dung', extract: r => (r.metrics && r.metrics.tumor_visual) ? r.metrics.tumor_visual.split('(')[0].trim() : null },
         { id: 'pericardial', name: 'Bề dày dịch màng tim', searchKey: 'màng ngoài tim', unit: 'mm', ref: '< 5', extract: r => r.metrics ? r.metrics.pericardial_effusion_mm : null },
         { id: 'lvef', name: 'Phân suất tống máu LVEF', searchKey: 'LVEF', unit: '%', ref: '55 - 75', extract: r => r.metrics ? r.metrics.lvef_percent : null },
         { id: 'weight', name: 'Cân nặng thể trạng', searchKey: 'Cân nặng', unit: 'kg', ref: '48 - 52', extract: r => r.metrics ? r.metrics.weight_kg : null },
@@ -1203,7 +1239,7 @@ function renderComparisonTable() {
     {
       groupName: 'IV. DẤU ẤN KHỐI U & ĐÔNG MÁU',
       params: [
-        { id: 'ctdna_tf', name: 'Tồn dư khối u ctDNA (TF)', searchKey: 'ctDNA', unit: '%', ref: 'Âm tính (0%)', extract: r => (r.metrics && r.metrics.ctdna_tf_percent) || null },
+        { id: 'ctdna_tf', name: 'Tồn dư khối u ctDNA (TF)', searchKey: 'ctDNA', unit: '%', ref: 'Âm tính (0%)', extract: r => (r.metrics && (r.metrics.ctdna_tf_percent !== undefined ? r.metrics.ctdna_tf_percent : r.metrics.ctdna_tf_pct)) || null },
         { id: 'cea', name: 'Dấu ấn ung thư CEA', searchKey: 'CEA', unit: 'ng/mL', ref: '< 4.7', extract: r => (r.metrics && r.metrics.cea_ng_ml) || (r.lab_results && r.lab_results.CEA ? r.lab_results.CEA.val : null) },
         { id: 'nse', name: 'Dấu ấn thần kinh NSE', searchKey: 'NSE', unit: 'ng/mL', ref: '15.7 - 17.0', extract: r => (r.metrics && r.metrics.nse_ng_ml) || null },
         { id: 'cyfra', name: 'Dấu ấn Cyfra 21-1', searchKey: 'Cyfra', unit: 'ng/mL', ref: '< 3.3', extract: r => (r.metrics && r.metrics.cyfra_21_1) || null },
@@ -1989,6 +2025,38 @@ function renderTimeline() {
       `;
     }
 
+    // Check if any record in this day group has tumor size or volume metrics
+    let tumorCardHtml = '';
+    const tumorRec = dayGroup.records.find(r => r.metrics && (r.metrics.tumor_dim_str || r.metrics.tumor_volume_cm3));
+    if (tumorRec) {
+      const tm = tumorRec.metrics;
+      tumorCardHtml = `
+        <div class="timeline-tumor-highlight-box">
+          <div class="tumor-highlight-top">
+            <span class="tumor-highlight-icon">🫁</span>
+            <span class="tumor-highlight-title">KÍCH THƯỚC & THỂ TÍCH KHỐI U PHỔI S3</span>
+            <span class="tumor-visual-badge">${tm.tumor_visual || '🍋 Trái chanh nhỏ'}</span>
+          </div>
+          <div class="tumor-highlight-stats">
+            <div class="tumor-stat-item">
+              <span class="stat-label">3 Chiều (DxRxC):</span>
+              <strong class="stat-val">${tm.tumor_dim_str || (tm.tumor_primary_size_mm + ' mm')}</strong>
+            </div>
+            <div class="tumor-stat-item">
+              <span class="stat-label">Thể Tích Khối U:</span>
+              <strong class="stat-val highlight-vol">${tm.tumor_volume_cm3} cm³</strong>
+            </div>
+            ${tm.tumor_reduction_pct ? `
+              <div class="tumor-stat-item">
+                <span class="stat-label">So Với Ban Đầu:</span>
+                <strong class="stat-val text-success">Giảm -${tm.tumor_reduction_pct}% thể tích</strong>
+              </div>
+            ` : ''}
+          </div>
+        </div>
+      `;
+    }
+
     // Render Sub-Document pill buttons
     const docButtonsHtml = dayGroup.documents.map(doc => {
       const isQr = doc.is_qr_doc || (doc.badge && doc.badge.includes('QR'));
@@ -2016,6 +2084,8 @@ function renderTimeline() {
             ${hospitalQrBadge}
           </div>
         </div>
+
+        ${tumorCardHtml}
 
         ${auditBadgeHtml}
 

@@ -331,6 +331,51 @@ def parse_extracted_text(text, filename):
                     except:
                         pass
 
+    # Extract Tumor Dimensions & Volume if CT Scan or Imaging
+    # Automatically extracts d x r (or d x r x c), sets height c = max(d, r) if missing, and calculates volume in cm3
+    import math
+    tumor_match = re.search(r"(?:kt#?|d#?|kích thước|tổn thương[^\d\n]{1,40}|khối[^\d\n]{1,30})?\s*(\d{1,3}(?:[.,]\d+)?)\s*[xX*×]\s*(\d{1,3}(?:[.,]\d+)?)(?:\s*[xX*×]\s*(\d{1,3}(?:[.,]\d+)?))?\s*(mm|cm)", text, re.IGNORECASE)
+    if tumor_match:
+        try:
+            d_val = float(tumor_match.group(1).replace(',', '.'))
+            r_val = float(tumor_match.group(2).replace(',', '.'))
+            unit = tumor_match.group(4).lower()
+            if unit == 'cm':
+                d_val *= 10.0
+                r_val *= 10.0
+            c_val = float(tumor_match.group(3).replace(',', '.')) * (10.0 if unit == 'cm' else 1.0) if tumor_match.group(3) else max(d_val, r_val)
+            
+            d_cm = d_val / 10.0
+            r_cm = r_val / 10.0
+            c_cm = c_val / 10.0
+            vol_ellipsoid = (math.pi / 6.0) * d_cm * r_cm * c_cm
+            vol_box = d_cm * r_cm * c_cm
+            
+            if vol_ellipsoid >= 30:
+                visual = '🥚 Quả trứng gà/vịt (Ban đầu)'
+            elif vol_ellipsoid <= 2.0:
+                visual = '🍊 Trái tắc to (Sau 3 tháng thuốc đích)'
+            else:
+                visual = '🍋 Trái chanh nhỏ (Bệnh ổn định)'
+
+            baseline_vol = 90.57
+            pct_reduction = round((1.0 - (vol_ellipsoid / baseline_vol)) * 100.0, 1) if vol_ellipsoid < baseline_vol else 0.0
+
+            draft["metrics"]["tumor_primary_size_mm"] = max(d_val, r_val, c_val)
+            draft["metrics"]["tumor_d_mm"] = d_val
+            draft["metrics"]["tumor_r_mm"] = r_val
+            draft["metrics"]["tumor_c_mm"] = c_val
+            draft["metrics"]["tumor_d_cm"] = round(d_cm, 2)
+            draft["metrics"]["tumor_r_cm"] = round(r_cm, 2)
+            draft["metrics"]["tumor_c_cm"] = round(c_cm, 2)
+            draft["metrics"]["tumor_dim_str"] = f"{int(d_val) if d_val.is_integer() else d_val} x {int(r_val) if r_val.is_integer() else r_val} x {int(c_val) if c_val.is_integer() else c_val} mm"
+            draft["metrics"]["tumor_volume_cm3"] = round(vol_ellipsoid, 2)
+            draft["metrics"]["tumor_volume_box_cm3"] = round(vol_box, 2)
+            draft["metrics"]["tumor_visual"] = visual
+            draft["metrics"]["tumor_reduction_pct"] = pct_reduction
+        except Exception as ex:
+            print(f"Error parsing tumor size: {ex}")
+
     # Extract Conclusion
     kl_match = re.search(r"Kết luận\s*:\s*([^.\n]+(?:\n[^\n]+){1,6})", text, re.IGNORECASE)
     if kl_match:

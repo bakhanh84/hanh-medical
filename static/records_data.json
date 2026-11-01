@@ -199,12 +199,25 @@
         "Kết quả CT Scan ngực": "Khối choán chỗ thùy trên phổi trái nghĩ K (T4N3M1); vài nốt đặc rải rác hai phổi nghĩ thứ phát; nhiều nốt đặc xương rải rác cột sống ngực, xương sườn, xương ức, xương vai trái; Huyết khối bán phần ĐM phổi phải nhánh S9, S10; Tràn dịch màng ngoài tim; nhân giáp thùy trái.",
         "Kết quả CT Scan bụng": "Tổn thương gan đa ổ nghĩ thứ phát; nhiều hạch dọc động mạch chủ bụng theo dõi hạch thứ phát; thoái hóa + vẹo trái cột sống thắt lưng; nhiều ổ đặc xương rải rác đốt sống thắt lưng, xương chậu, xương đùi trái.",
         "Xử trí cấp cứu ban đầu": "Esomeprazol 40mg lọ tiêm TM, Glucose 10% 500ml chai truyền TM, Enoxaparin 6000 UI tiêm dưới da lúc 22h30 ngày 24/12/2024.",
-        "Bác sĩ điều trị & Khoa": "BS điều trị: ThS.BS. Nguyễn Thị Kim Ngân; TL Trưởng khoa: BS.CKI. Nguyễn Anh Kiệt (A21-094); Thủ trưởng: BS. Nguyễn Khánh Quang (A17-027)."
+        "Bác sĩ điều trị & Khoa": "BS điều trị: ThS.BS. Nguyễn Thị Kim Ngân; TL Trưởng khoa: BS.CKI. Nguyễn Anh Kiệt (A21-094); Thủ trưởng: BS. Nguyễn Khánh Quang (A17-027).",
+        "Kích thước & Thể tích Khối U S3": "62 x 45 x 62 mm • Thể tích: 90.57 cm³ (🥚 Quả trứng gà/vịt (Ban đầu))"
       },
       "diagnosis": "K phổi trái giai đoạn T4N3M1 di căn xương đa ổ, di căn gan đa ổ, hạch ổ bụng (C34.9) - Thuyên tắc bán phần động mạch phổi phải nhánh phân thùy S9, S10 (I26.9) - Tràn dịch màng ngoài tim trong bệnh ác tính (I31.3) - Thiếu máu hồng cầu nhỏ nhược sắc mức độ nhẹ (D50.0)",
       "metrics": {
         "tumor_primary_size_mm": 62,
-        "pericardial_effusion_mm": 8
+        "pericardial_effusion_mm": 8,
+        "tumor_d_mm": 62,
+        "tumor_r_mm": 45,
+        "tumor_c_mm": 62,
+        "tumor_d_cm": 6.2,
+        "tumor_r_cm": 4.5,
+        "tumor_c_cm": 6.2,
+        "tumor_dim_str": "62 x 45 x 62 mm",
+        "tumor_volume_cm3": 90.57,
+        "tumor_volume_box_cm3": 172.98,
+        "tumor_visual": "🥚 Quả trứng gà/vịt (Ban đầu)",
+        "tumor_reduction_pct": 0.0,
+        "tumor_calc_note": "Chiều cao c = 62mm (tự động lấy max(d=62, r=45))"
       },
       "medications": [
         {
@@ -565,12 +578,25 @@
         "lymph_nodes": "Vài hạch trung thất, rốn phổi hai bên < 7mm, bắt thuốc mạnh không đồng nhất. Hạch cạnh tâm vị d # 7mm.",
         "pericardium_pleura": "Tràn dịch màng ngoài tim d <= 13mm (dịch đậm độ thấp); ít dịch màng phổi (T).",
         "bones": "Tổn thương đặc xương rải rác xương vai, xương đòn, xương sườn hai bên, các đốt sống ngực, thắt lưng -> Di căn đặc xương.",
-        "abdomen": "Tổn thương gan hạ phân thùy V, VI d < 1.3cm bắt thuốc kém; Nhân giáp hai thùy d <= 6mm."
+        "abdomen": "Tổn thương gan hạ phân thùy V, VI d < 1.3cm bắt thuốc kém; Nhân giáp hai thùy d <= 6mm.",
+        "Kích thước & Thể tích Khối U S3": "15 x 10 x 15 mm • Thể tích: 1.18 cm³ (🍊 Trái tắc to (Sau 3 tháng thuốc đích)) - Giảm 98.7% thể tích so với ban đầu"
       },
       "conclusion": "Mảng xẹp phổi S3 phổi T nghĩ u phổi; Huyết khối bán phần ĐM phổi nhánh S3; Hạch trung thất, rốn phổi 2 bên, hạch cạnh tâm vị; Tổn thương gan, xương khả năng di căn; Tràn dịch màng ngoài tim; Ít dịch màng phổi T.",
       "metrics": {
         "tumor_primary_size_mm": 15,
-        "pericardial_effusion_mm": 13
+        "pericardial_effusion_mm": 13,
+        "tumor_d_mm": 15,
+        "tumor_r_mm": 10,
+        "tumor_c_mm": 15,
+        "tumor_d_cm": 1.5,
+        "tumor_r_cm": 1.0,
+        "tumor_c_cm": 1.5,
+        "tumor_dim_str": "15 x 10 x 15 mm",
+        "tumor_volume_cm3": 1.18,
+        "tumor_volume_box_cm3": 2.25,
+        "tumor_visual": "🍊 Trái tắc to (Sau 3 tháng thuốc đích)",
+        "tumor_reduction_pct": 98.7,
+        "tumor_calc_note": "Chiều cao c = 15mm (tự động lấy max(d=15, r=10))"
       },
       "pdf_file": "Medical Hạnh - CT Ngực bụng - 20250312.pdf",
       "pdf_url": "/pdfs/Medical%20Ha%CC%A3nh%20-%20CT%20Ngu%CC%9B%CC%A3c%20bu%CC%A3ng%20-%2020250312.pdf",
@@ -715,12 +741,25 @@
         "pericardium": "Tràn dịch màng ngoài tim lượng nhiều, bề dày dmax # 23mm (cảnh báo lâm sàng nguy cơ chèn ép tim).",
         "abdomen": "Ổ nhỏ đậm độ thấp gan HPT V d# 5mm, bắt thuốc kém rõ (quá nhỏ để xác định bản chất).",
         "bones": "Các ổ đặc xương rải rác đốt sống ngực, lưng - cùng, xương chậu, xương sườn, xương ức, bả vai, đầu xương cánh tay, đầu xương đùi (thứ phát).",
-        "brain": "Không thấy tổn thương bắt thuốc bất thường nhu mô não, màng não. Các ổ đặc xương sọ trán hai bên, chẩm (P) d <= 5mm."
+        "brain": "Không thấy tổn thương bắt thuốc bất thường nhu mô não, màng não. Các ổ đặc xương sọ trán hai bên, chẩm (P) d <= 5mm.",
+        "Kích thước & Thể tích Khối U S3": "28 x 22 x 15 mm • Thể tích: 4.84 cm³ (🍋 Trái chanh nhỏ (Bệnh ổn định))"
       },
       "conclusion": "Tổn thương nốt bờ tua gai S3 phổi T -> TD u phổi; Vài hạch nhỏ trung thất; Tràn dịch màng ngoài tim lượng nhiều (23mm); Tổn thương đặc xương rải rác xương sườn, cột sống ngực, thắt lưng, chậu, đùi, sọ -> thứ phát.",
       "metrics": {
         "tumor_primary_size_mm": 28,
-        "pericardial_effusion_mm": 23
+        "pericardial_effusion_mm": 23,
+        "tumor_d_mm": 28,
+        "tumor_r_mm": 22,
+        "tumor_c_mm": 15,
+        "tumor_d_cm": 2.8,
+        "tumor_r_cm": 2.2,
+        "tumor_c_cm": 1.5,
+        "tumor_dim_str": "28 x 22 x 15 mm",
+        "tumor_volume_cm3": 4.84,
+        "tumor_volume_box_cm3": 9.24,
+        "tumor_visual": "🍋 Trái chanh nhỏ (Bệnh ổn định)",
+        "tumor_reduction_pct": 94.7,
+        "tumor_calc_note": "Ghi nhận đủ 3 chiều DxRxC"
       },
       "pdf_file": "Medical Hạnh - CT Ngực bụng Mri não - 20250729.pdf",
       "pdf_url": "/pdfs/Medical%20Ha%CC%A3nh%20-%20CT%20Ngu%CC%9B%CC%A3c%20bu%CC%A3ng%20Mri%20na%CC%83o%20-%2020250729.pdf",
@@ -1881,12 +1920,25 @@
         "lungs": "Mảng tổn thương dạng xẹp phổi S3 phổi (T), kích thước # 27mm, có vùng nhỏ (kích thước # 15mm) bắt thuốc cản quang kém và đóng vôi bên trong kèm tổn thương xơ và dày vách gian tiểu thùy xung quanh. Vài nốt nhỏ đáy phổi (P) # 2-3mm. Tổn thương xơ đáy phổi hai bên.",
         "pericardium": "Tràn dịch màng tim, chỗ dày nhất đo được # 16mm (đã giảm đáng kể so với 23mm ở phim 29/07/2025).",
         "abdomen": "Vài ổ nhỏ tổn thương gan (P) d < 9mm, bắt thuốc cản quang kém (theo dõi di căn). Thận, tụy, lách, thượng thận bình thường. Xơ vữa động mạch chủ ngực, bụng.",
-        "bones": "Tổn thương đặc xương xương đòn, vai, 1/3 trên xương cánh tay, xương sườn 2 bên, xương ức, các đốt sống cổ thấp, ngực, thắt lưng cùng, chậu mu và 1/3 trên xương đùi hai bên -> Nghĩ di căn xương."
+        "bones": "Tổn thương đặc xương xương đòn, vai, 1/3 trên xương cánh tay, xương sườn 2 bên, xương ức, các đốt sống cổ thấp, ngực, thắt lưng cùng, chậu mu và 1/3 trên xương đùi hai bên -> Nghĩ di căn xương.",
+        "Kích thước & Thể tích Khối U S3": "27 x 15 x 27 mm • Thể tích: 5.73 cm³ (🍋 Trái chanh nhỏ (Bệnh ổn định)) - Đóng vôi & xơ hóa"
       },
       "conclusion": "Mảng tổn thương xẹp phổi S3 phổi T không thay đổi đáng kể so với phim chụp 12/3/2025 (U phổi đang điều trị - Stable Disease); Tràn dịch màng tim 16mm; Di căn xương đa ổ; Vài ổ nhỏ gan P theo dõi di căn.",
       "metrics": {
         "tumor_primary_size_mm": 27,
-        "pericardial_effusion_mm": 16
+        "pericardial_effusion_mm": 16,
+        "tumor_d_mm": 27,
+        "tumor_r_mm": 15,
+        "tumor_c_mm": 27,
+        "tumor_d_cm": 2.7,
+        "tumor_r_cm": 1.5,
+        "tumor_c_cm": 2.7,
+        "tumor_dim_str": "27 x 15 x 27 mm",
+        "tumor_volume_cm3": 5.73,
+        "tumor_volume_box_cm3": 10.94,
+        "tumor_visual": "🍋 Trái chanh nhỏ (Bệnh ổn định)",
+        "tumor_reduction_pct": 93.7,
+        "tumor_calc_note": "Chiều cao c = 27mm (tự động lấy max(d=27, r=15))"
       },
       "pdf_file": "Medical Hạnh - CT Ngực Bụng - 20251130.pdf",
       "pdf_url": "/pdfs/Medical%20Ha%CC%A3nh%20-%20CT%20Ngu%CC%9B%CC%A3c%20Bu%CC%A3ng%20-%2020251130.pdf",
@@ -2251,7 +2303,19 @@
         "cea_ng_ml": 7.02,
         "nse_ng_ml": 19.2,
         "d_dimer_ng_ml": 1533,
-        "lvef_percent": 61
+        "lvef_percent": 61,
+        "tumor_d_mm": 20,
+        "tumor_r_mm": 17,
+        "tumor_c_mm": 20,
+        "tumor_d_cm": 2.0,
+        "tumor_r_cm": 1.7,
+        "tumor_c_cm": 2.0,
+        "tumor_dim_str": "20 x 17 x 20 mm",
+        "tumor_volume_cm3": 3.56,
+        "tumor_volume_box_cm3": 6.8,
+        "tumor_visual": "🍋 Trái chanh nhỏ (Bệnh ổn định)",
+        "tumor_reduction_pct": 96.1,
+        "tumor_calc_note": "Chiều cao c = 20mm (tự động lấy max(d=20, r=17))"
       },
       "pdf_file": "Medical Tuyết Hạnh 13 May 20260513.pdf",
       "pdf_url": "/pdfs/Medical%20Tuye%CC%82%CC%81t%20Ha%CC%A3nh%2013%20May%2020260513.pdf",
@@ -2260,7 +2324,8 @@
         "Chỉ dấu sinh học khối u (Tumor Markers)": "CEA: 7.02 ng/mL (tăng nhẹ, ngưỡng < 4.7); NSE: 19.2 ng/mL (tăng nhẹ, ngưỡng 15.7 - 17.0); Cyfra 21-1: 1.68 ng/mL (bình thường, ngưỡng < 3.3).",
         "Đông máu": "D-Dimer: 1533 ng/mL (tăng cao, ngưỡng < 500 ng/mL) -> Cảnh báo nguy cơ huyết khối tĩnh mạch / thuyên tắc phổi tái phát; aPTT: 37.9s, INR: 1.02.",
         "Toa thuốc chuyên khoa": "1. Lostad T50 (Losartan Kali 50mg): 1 viên sáng;\n2. Betaloc ZOK (Metoprolol 25mg): 1 viên sáng;\n3. Rosuvastatin 10mg: 1 viên chiều;\n4. BidiFeron (Sắt + Acid Folic): 1 viên x 2 lần/ngày sáng chiều.",
-        "Bác sĩ chỉ định & điều trị": "BS. Phạm Minh Trí, BS. Dương Thị Trang, ThS.BS. Nguyễn Hữu Đức (Khoa Chẩn đoán Hình ảnh), BS. Lê Quốc Tuấn (Siêu âm tim)."
+        "Bác sĩ chỉ định & điều trị": "BS. Phạm Minh Trí, BS. Dương Thị Trang, ThS.BS. Nguyễn Hữu Đức (Khoa Chẩn đoán Hình ảnh), BS. Lê Quốc Tuấn (Siêu âm tim).",
+        "Kích thước & Thể tích Khối U S3": "20 x 17 x 20 mm • Thể tích: 3.56 cm³ (🍋 Trái chanh nhỏ (Bệnh ổn định)) - Gom nhỏ lại & ổn định"
       },
       "documents": [
         {
@@ -2750,7 +2815,307 @@
         "qr_img": "/generated_qr/qr_xn_20260922.png",
         "type": "laboratory"
       }
+    },
+    {
+      "id": "rec_20261006_bvtn_ct",
+      "date": "2026-10-06",
+      "facility": "Bệnh viện Thống Nhất",
+      "doctor": "BS. Trần Thị Hậu & BS.CKII. Trần Mạnh Hoàng",
+      "type": "imaging",
+      "title": "Chụp CT Scanner 512 Lát Cắt Toàn Thân (Sọ Não - Ngực - Bụng) & Bộ Siêu Âm Đa Vị Trí",
+      "summary": "U thùy trên phổi trái (S3) kt# 21x14mm (chiều cao tự động 21mm, thể tích 3.23 cm³, kích cỡ tương đương trái chanh nhỏ 🍋), kích thước duy trì ổn định không tăng so với phim cũ. Tràn dịch màng ngoài tim dmax 19mm. Di căn xương đa ổ rải rác cột sống ngực, sườn, xương ức. Sọ não và bụng không có tổn thương mới. Bộ siêu âm ghi nhận hạch nách trái 7mm mất rốn, nang tuyến vú phải 8mm lành tính, hạch cổ (-).",
+      "details": {
+        "Kích thước & Thể tích Khối U S3": "21 x 14 x 21 mm • Thể tích: 3.23 cm³ (🍋 Trái chanh nhỏ) - Giảm 96.4% thể tích so với ban đầu (90.57 cm³ 🥚), bệnh duy trì ỔN ĐỊNH BỀN VỮNG.",
+        "Kết quả CT Ngực": "Tổn thương phân thùy S3 phổi trái kt# 21x14mm (ổn định không tăng so với phim 20x17mm trước đó). Chiều cao tự động xác định = 21mm (max dài/rộng), thể tích khối u: 3.23 cm³ (bằng quả chanh nhỏ 🍋). Vài nốt tổn thương dạng kính mờ kèm dày kẽ tập trung phân thùy S2, S6 phổi trái. Không thấy hạch trung thất phì đại. Tràn dịch màng ngoài tim dmax #19mm. Đặc xương rải rác thân các đốt sống ngực, xương sườn hai bên, xương ức.",
+        "Kết quả CT Sọ não": "Khảo sát sọ não trên máy CT Philips Ingenuity 128: Không thấy hình ảnh tổn thương làm thay đổi đậm độ, hình dáng nhu mô não vùng trên và dưới lều trước và sau tiêm cản quang. Không thấy máu tụ nội sọ. Hệ thống não thất, bể não bình thường. Đường giữa không di lệch. Không phát hiện di căn não.",
+        "Kết quả CT Bụng": "Gan không to, bờ đều áp sát phúc mạc thành, mật độ nhu mô bình thường. Túi mật không lớn, đường mật không dãn. Lách, tụy, thận hai bên bình thường, không tổn thương choán chỗ.",
+        "Kết quả Siêu âm Hạch Nách & Hạch Cổ (05/10/2026)": "BS Hoàng Quang Huy thực hiện: Hạch nách bên trái hình tròn d# 7mm, mất rốn. Hạch cổ hai bên: Không thấy hạch phì đại, hạch thượng đòn hai bên (-).",
+        "Kết quả Siêu âm Tuyến Vú (05/10/2026)": "Vú phải vị trí 10h cách núm vú 2cm có khối echo trống d# 8mm -> Kết luận: Nang tuyến vú bên phải lành tính."
+      },
+      "diagnosis": "U ác tính ở phế quản hoặc phổi (C34.9) - Di căn xương đa ổ - Tràn dịch màng ngoài tim dmax 19mm - Nang tuyến vú phải 8mm - Hạch nách trái 7mm",
+      "metrics": {
+        "tumor_primary_size_mm": 21,
+        "tumor_d_mm": 21,
+        "tumor_r_mm": 14,
+        "tumor_c_mm": 21,
+        "tumor_d_cm": 2.1,
+        "tumor_r_cm": 1.4,
+        "tumor_c_cm": 2.1,
+        "tumor_dim_str": "21 x 14 x 21 mm",
+        "tumor_volume_cm3": 3.23,
+        "tumor_volume_box_cm3": 6.17,
+        "tumor_visual": "🍋 Trái chanh nhỏ (Bệnh ổn định)",
+        "tumor_reduction_pct": 96.4,
+        "pericardial_effusion_mm": 19
+      },
+      "pdf_file": "Scanned 19 Oct 2026 at 18:36:04.pdf",
+      "pdf_url": "/pdfs/Scanned%2019%20Oct%202026%20at%2018%3A36%3A04.pdf",
+      "documents": [
+        {
+          "name": "Phiếu Kết Quả CT Scan 512 Lát Cắt Sọ - Ngực - Bụng",
+          "category": "imaging",
+          "icon": "🩻",
+          "pdf_file": "Scanned 19 Oct 2026 at 18:36:04.pdf",
+          "pdf_url": "/pdfs/Scanned%2019%20Oct%202026%20at%2018%3A36%3A04.pdf",
+          "badge": "CT Scanner 512 Lát Cắt"
+        },
+        {
+          "name": "Kết Quả Siêu Âm Hạch Nách Trái (d# 7mm)",
+          "category": "ultrasound",
+          "icon": "🩺",
+          "pdf_file": "Scanned 19 Oct 2026 at 18:35:08.pdf",
+          "pdf_url": "/pdfs/Scanned%2019%20Oct%202026%20at%2018%3A35%3A08.pdf",
+          "badge": "Siêu âm hạch nách"
+        },
+        {
+          "name": "Kết Quả Siêu Âm Hạch Vùng Cổ & Thượng Đòn",
+          "category": "ultrasound",
+          "icon": "🩺",
+          "pdf_file": "Scanned 19 Oct 2026 at 18:35:24.pdf",
+          "pdf_url": "/pdfs/Scanned%2019%20Oct%202026%20at%2018%3A35%3A24.pdf",
+          "badge": "Siêu âm hạch cổ"
+        },
+        {
+          "name": "Kết Quả Siêu Âm Tuyến Vú Hai Bên (Nang vú phải 8mm)",
+          "category": "ultrasound",
+          "icon": "🩺",
+          "pdf_file": "Scanned 19 Oct 2026 at 18:35:42.pdf",
+          "pdf_url": "/pdfs/Scanned%2019%20Oct%202026%20at%2018%3A35%3A42.pdf",
+          "badge": "Siêu âm tuyến vú"
+        }
+      ]
+    },
+    {
+      "id": "rec_20261007_bv175_scintigraphy",
+      "date": "2026-10-07",
+      "facility": "Bệnh viện Quân Y 175 (Khoa Y Học Hạt Nhân A20.e)",
+      "doctor": "BS. Lê Xuân Thắng & BS. Cao Văn Khánh",
+      "type": "imaging",
+      "title": "Xạ Hình Xương Toàn Thân Spect Gamma (Tc99m-MDP) Tái Đánh Giá Sau 21 Tháng",
+      "summary": "Chụp xạ hình hệ thống xương toàn thân bằng máy Spect Gamma (20 mCi Tc99m-MDP) kiểm tra lại tình trạng di căn xương sau 21 tháng điều trị. Hình ảnh các ổ tăng hấp thu phóng xạ rải rác: xương ức, xương sườn, cột sống, xương chậu... Tổn thương xương dạng đặc xương thứ phát tiếp tục được kiểm soát nhờ duy trì thuốc chống hủy xương.",
+      "details": {
+        "Hồ sơ & Phiếu thực hiện": "Số BA: 25000425 | Số phiếu PT/TT: 26.T.0217589. Khoa thực hiện: A20.e - Khoa Y học hạt nhân - Bệnh viện Quân Y 175.",
+        "Kỹ thuật thực hiện": "Chụp xạ hình hệ thống xương toàn thân ở thời điểm 180 phút sau khi tiêm tĩnh mạch 20 mCi Tc99m-MDP, tư thế thẳng trước và thẳng sau bằng máy Spect Gamma, collimator LEHR.",
+        "Mô tả hình ảnh": "Các ổ tăng hấp thu phóng xạ bất thường rải rác: xương ức, xương sườn, cột sống, xương chậu. Tập trung phóng xạ tại mô mềm bình thường. Thấy rõ bóng thận hai bên trên xạ hình.",
+        "Kết luận": "Hình ảnh dạng di căn xương trên xạ hình xương toàn thân. Tổn thương xương ổn định, tiếp tục phác đồ bảo vệ xương."
+      },
+      "diagnosis": "Hình ảnh dạng di căn xương trên xạ hình xương toàn thân (K phổi di căn xương đa ổ)",
+      "metrics": {
+        "bone_scan_status": "Di căn xương ổn định"
+      },
+      "pdf_file": "Scanned 7 Oct 2026 at 15:22:10.pdf",
+      "pdf_url": "/pdfs/Scanned%207%20Oct%202026%20at%2015%3A22%3A10.pdf",
+      "documents": [
+        {
+          "name": "Phiếu Kết Quả Xạ Hình Xương Toàn Thân Spect Gamma - BV 175",
+          "category": "imaging",
+          "icon": "🦴",
+          "pdf_file": "Scanned 7 Oct 2026 at 15:22:10.pdf",
+          "pdf_url": "/pdfs/Scanned%207%20Oct%202026%20at%2015%3A22%3A10.pdf",
+          "badge": "Xạ hình xương 175"
+        }
+      ]
+    },
+    {
+      "id": "rec_20261008_bvtn_bronchoscopy",
+      "date": "2026-10-08",
+      "facility": "Bệnh viện Thống Nhất (Khoa Ung Bướu & Thăm Dò Chức Năng)",
+      "doctor": "BS. Tạ Tương Đề, BS. Lê Nguyễn Trọng Tín & BS.CKII. Trần Mạnh Hoàng",
+      "type": "endoscopy",
+      "title": "Nội Soi Phế Quản - Thanh Quản Ống Mềm Có Sinh Thiết & Xét Nghiệm Tế Bào Học Dịch Rửa",
+      "summary": "Nội soi phế quản ống mềm: Phế quản 2 bên thông thoáng, không có khối u nội phế quản gây bít tắc. Băng thanh thất có giả mạc dễ chảy máu đã được sinh thiết; viêm phế quản thùy dưới phải. Tế bào học dịch rửa phế quản: Không thấy tế bào ác tính. GPB sinh thiết u phổi N7097: Mô hoại tử, tỉ lệ u < 5%. Nội soi thanh quản: Loét sụn phễu 2 bên do trào ngược GERD.",
+      "details": {
+        "Nội soi phế quản ống mềm gây tê (08/10/2026, BS Tạ Tương Đề)": "Đặt ống soi ngách mũi: Hạ họng thoáng, 2 dây thanh khép mở bình thường. Băng thanh thất 2 bên có giả mạc dễ chảy máu. Khí quản thoáng, niêm mạc viêm sung huyết, không thấy u nội phế quản. Carina sắc nhọn. Phế quản phải thoáng, niêm mạc phế quản thùy dưới viêm sung huyết, đọng nhiều đàm đặc. Phế quản trái thoáng, niêm mạc trơn láng, không u sùi nội lòng. Bơm rửa phế quản 2 bên lấy dịch làm xét nghiệm. Sinh thiết băng thanh thất 2 bên và dây thanh phải.",
+        "Kết quả Tế bào học dịch rửa phế quản (09/10/2026, BS Nguyễn Thị Mai Hương)": "Dịch rửa phế quản 4.5ml ly tâm dàn tiêu bản. Kết luận: Hiện diện bạch cầu đa nhân trung tính, lympho bào, KHÔNG THẤY TẾ BÀO ÁC TÍNH TRONG MẪU THỬ.",
+        "Kết quả Giải phẫu bệnh sinh thiết u phổi N7097 (12/10/2026, BS Trần Huỳnh Hạnh Thảo)": "Bệnh phẩm u phổi, nhuộm HE. Kết luận: Mẫu sinh thiết chủ yếu là mô hoại tử, một vùng nhỏ mẫu mô hiện diện đám tế bào biểu mô tăng sắc không điển hình, hạt nhân rõ (tỉ lệ u < 5%). Đề nghị lâm sàng sinh thiết thêm.",
+        "Nội soi thanh quản ống mềm (12/10/2026, BS Lê Nguyễn Trọng Tín)": "Sụn phễu: Loét sụn phễu 2 bên, trơn láng, di động bình thường. Dây thanh không u sùi, sung huyết, di động tốt. Kết luận: Viêm họng thanh quản cấp / GERD - Loét sụn phễu 2 bên."
+      },
+      "diagnosis": "Viêm phế quản phổi phải - Giả mạc băng thanh thất - Viêm họng thanh quản cấp / GERD loét sụn phễu 2 bên - GPB dịch rửa: Âm tính ác tính - GPB u phổi N7097: Mô hoại tử, tỉ lệ u < 5%",
+      "metrics": {
+        "bronchial_patency": "Thông thoáng hai bên",
+        "wash_cytology_malignancy": "Âm tính (Không thấy tế bào ác tính)",
+        "biopsy_tumor_pct": "< 5%"
+      },
+      "pdf_file": "Scanned 19 Oct 2026 at 18:34:51.pdf",
+      "pdf_url": "/pdfs/Scanned%2019%20Oct%202026%20at%2018%3A34%3A51.pdf",
+      "documents": [
+        {
+          "name": "Phiếu Kết Quả Nội Soi Phế Quản Ống Mềm Gây Tê Có Sinh Thiết",
+          "category": "endoscopy",
+          "icon": "🫁",
+          "pdf_file": "Scanned 19 Oct 2026 at 18:34:51.pdf",
+          "pdf_url": "/pdfs/Scanned%2019%20Oct%202026%20at%2018%3A34%3A51.pdf",
+          "badge": "Nội soi phế quản"
+        },
+        {
+          "name": "Kết Quả Xét Nghiệm Tế Bào Học Dịch Rửa Phế Quản (Âm Tính Tế Bào Ác Tính)",
+          "category": "pathology",
+          "icon": "🔬",
+          "pdf_file": "Scanned 19 Oct 2026 at 18:36:33.pdf",
+          "pdf_url": "/pdfs/Scanned%2019%20Oct%202026%20at%2018%3A36%3A33.pdf",
+          "badge": "Tế bào học dịch rửa"
+        },
+        {
+          "name": "Phiếu Kết Quả Giải Phẫu Bệnh Sinh Thiết U Phổi N7097 (Mô hoại tử, u < 5%)",
+          "category": "pathology",
+          "icon": "🔬",
+          "pdf_file": "Scanned 19 Oct 2026 at 18:36:48.pdf",
+          "pdf_url": "/pdfs/Scanned%2019%20Oct%202026%20at%2018%3A36%3A48.pdf",
+          "badge": "GPB sinh thiết N7097"
+        },
+        {
+          "name": "Phiếu Kết Quả Nội Soi Thanh Quản Ống Mềm Chẩn Đoán (Loét Sụn Phễu GERD)",
+          "category": "endoscopy",
+          "icon": "🩺",
+          "pdf_file": "Scanned 19 Oct 2026 at 18:34:26.pdf",
+          "pdf_url": "/pdfs/Scanned%2019%20Oct%202026%20at%2018%3A34%3A26.pdf",
+          "badge": "Nội soi thanh quản"
+        }
+      ]
+    },
+    {
+      "id": "rec_20261019_bvtn_discharge",
+      "date": "2026-10-19",
+      "facility": "Bệnh viện Thống Nhất (Khoa Ung Bướu)",
+      "doctor": "BS.CKI. Trần Mạnh Hoàng",
+      "type": "prescription",
+      "title": "Hồ Sơ Xuất Viện Điều Trị Nội Trú Toàn Diện (05/10 - 19/10/2026) & Đơn Thuốc",
+      "summary": "Hoàn thành đợt điều trị nội trú 14 ngày tại Khoa Ung Bướu BV Thống Nhất (Số BA: 15057791). Bệnh nhân ổn định, hết ho ra máu, đường thở thông thoáng. Bác sĩ tư vấn tiêm chủng vaccine, dặn tái khám sau 1 tuần (hẹn khám lại 26/10/2026) và kê đơn thuốc xuất viện gồm thuốc cầm máu Cammic, men tiêu hóa Paneres, kháng acid Varogel, an thần Remeron, kháng sinh Cefuroxime.",
+      "details": {
+        "Thông tin đợt nội trú": "Số hồ sơ: 0057795/26 | Số BA: 15057791. Vào viện lúc 07:29 05/10/2026, ra viện lúc 09:00 19/10/2026 (14 ngày điều trị nội trú tại Khoa Ung Bướu).",
+        "Chẩn đoán xuất viện": "U ác tính ở phế quản hoặc phổi (C34.9); Bệnh trào ngược dạ dày thực quản (K21.9); Viêm dạ dày tá tràng (K29); Rối loạn tiêu hóa chức năng (K30); Ho ra máu (R04.2); Suy mòn (R64); Rối loạn lo âu (F41); Mất ngủ không thực tổn (F51); Viêm thanh quản mạn tính (J37.0).",
+        "Chế độ điều trị & dặn dò": "Bệnh nhân sau điều trị hiện ổn định. Ra viện. Cắt Cefazolin cử tối. Tư vấn tiêm phòng vaccine. Hẹn tái khám ngày 26/10/2026."
+      },
+      "diagnosis": "U ác tính ở phế quản hoặc phổi (C34.9) - Bệnh trào ngược dạ dày thực quản (K21.9) - Viêm dạ dày tá tràng (K29) - Ho ra máu (R04.2) - Suy mòn (R64) - Viêm thanh quản mạn tính (J37.0)",
+      "medications": [
+        {
+          "name": "Paneres (Amylase + Lipase + Protease)",
+          "dosage": "1 viên x 2 lần/ngày (8h - 20h) x 14 viên",
+          "purpose": "Hỗ trợ tiêu hóa, phân giải thức ăn"
+        },
+        {
+          "name": "Cammic 500mg (Acid Tranexamic)",
+          "dosage": "1 viên x 2 lần/ngày (8h - 20h) x 14 viên",
+          "purpose": "Thuốc cầm máu, dự phòng và điều trị ho ra máu"
+        },
+        {
+          "name": "Bromhexin 8mg",
+          "dosage": "1 viên x 2 lần/ngày (8h - 20h) x 14 viên",
+          "purpose": "Long đàm, làm loãng chất tiết phế quản"
+        },
+        {
+          "name": "Varogel 10ml (Magnesi hydroxyd + Nhôm hydroxyd + Simethicon)",
+          "dosage": "1 gói x 3 lần/ngày (8h - 14h - 20h) x 14 gói",
+          "purpose": "Kháng acid dạ dày, tráng niêm mạc thực quản do GERD"
+        },
+        {
+          "name": "Remeron 30mg (Mirtazapin)",
+          "dosage": "1/2 viên lúc 20h x 4 viên",
+          "purpose": "Hỗ trợ an thần, ngủ ngon sâu giấc và kích thích ăn uống, cải thiện thể trạng"
+        },
+        {
+          "name": "Cefuroxime STADA 500mg",
+          "dosage": "1 viên x 2 lần/ngày (8h - 20h) x 14 viên",
+          "purpose": "Kháng sinh Cephalosporin thế hệ 2 uống phòng ngừa nhiễm khuẩn hô hấp"
+        }
+      ],
+      "pdf_file": "Scanned 19 Oct 2026 at 18:28:59.pdf",
+      "pdf_url": "/pdfs/Scanned%2019%20Oct%202026%20at%2018%3A28%3A59.pdf",
+      "documents": [
+        {
+          "name": "Giấy Ra Viện BV Thống Nhất (05/10 - 19/10/2026)",
+          "category": "prescription",
+          "icon": "🏥",
+          "pdf_file": "Scanned 19 Oct 2026 at 18:28:59.pdf",
+          "pdf_url": "/pdfs/Scanned%2019%20Oct%202026%20at%2018%3A28%3A59.pdf",
+          "badge": "Giấy ra viện BV Thống Nhất"
+        },
+        {
+          "name": "Đơn Thuốc Xuất Viện - BS.CKI Trần Mạnh Hoàng",
+          "category": "prescription",
+          "icon": "💊",
+          "pdf_file": "Scanned 19 Oct 2026 at 18:34:06.pdf",
+          "pdf_url": "/pdfs/Scanned%2019%20Oct%202026%20at%2018%3A34%3A06.pdf",
+          "badge": "Đơn thuốc xuất viện"
+        },
+        {
+          "name": "Phiếu Hẹn Khám Lại Ngày 26/10/2026",
+          "category": "prescription",
+          "icon": "📋",
+          "pdf_file": "Scanned 19 Oct 2026 at 18:31:33.pdf",
+          "pdf_url": "/pdfs/Scanned%2019%20Oct%202026%20at%2018%3A31%3A33.pdf",
+          "badge": "Phiếu hẹn tái khám"
+        }
+      ],
+      "metrics": {}
+    },
+    {
+      "id": "rec_20261024_genesol_ktrack1",
+      "date": "2026-10-24",
+      "facility": "Phòng Xét Nghiệm Gene Solutions Lab",
+      "doctor": "BS Trần Mạnh Hoàng (Chỉ định) • TS. Nguyễn Hoài Nghĩa & PGS.TS.BS. Đỗ Thị Thanh Thủy",
+      "type": "molecular",
+      "title": "Xét Nghiệm Gen K-TRACK Toàn Diện NGS 164 Gen (Kết Quả 1): Đột Biến Đích & Kháng Thuốc",
+      "summary": "Xét nghiệm NGS chuyên sâu trên mẫu khối u mô học (Mã GPB: N7324) và mẫu máu toàn phần giải trình tự 164 gen mục tiêu. Phát hiện đột biến đích chủ lực EGFR Exon 19 In-frame deletion (E746_A750del) với tần số alen VAF 5.0% (mức chứng cứ cao nhất Level 1 FDA nhạy với thuốc Osimertinib / Tagrisso). Không phát hiện đột biến kháng thuốc T790M, C797S. Phát hiện đột biến TP53 p.G244A (VAF 2.8%). Vi vệ tinh MSS (4.33%).",
+      "details": {
+        "Thông tin mẫu & Lab": "Labcode ID: MCAABY20 | MRD ID: VNGSOUL1D82Y | Mã GPB mẫu mô: N7324 (FFPE). Nơi thu mẫu: Khách hàng lẻ. Bác sĩ chỉ định: BS Trần Mạnh Hoàng.",
+        "Đột biến đích EGFR (Mức 1 FDA)": "Gene EGFR: Thể đột biến E746_A750del (Exon 19 In-frame deletion c.2236_2250del). Tần số alen đột biến VAF: 5.0%. Khuyến nghị điều trị theo FDA/EMA/NCCN/ESMO: Nhạy bậc 1 với thuốc Osimertinib (Tagrisso) 80mg.",
+        "Đột biến phối hợp TP53": "Gene TP53: Đột biến p.G244A, VAF 2.8% (đột biến đồng hành thường gặp trong ung thư biểu mô tuyến phổi).",
+        "Khảo sát đột biến kháng thuốc Tagrisso": "Âm tính hoàn toàn: Không có đột biến kháng thuốc T790M, C797S, MET amplification, HER2 amplification, KRAS, BRAF, ALK fusion, RET fusion...",
+        "Chỉ dấu liệu pháp miễn dịch": "Tình trạng vi vệ tinh MSS (Microsatellite Stable 4.33% < ngưỡng 20%). Không khuyến cáo đơn trị liệu miễn dịch ICI."
+      },
+      "diagnosis": "K phổi đột biến nhạy thuốc EGFR Exon 19 del (E746_A750del, VAF 5%) - TP53 p.G244A (VAF 2.8%) - MSS (4.33%) - Không có đột biến kháng thuốc T790M / C797S",
+      "metrics": {
+        "egfr_vaf_pct": 5.0,
+        "tp53_vaf_pct": 2.8,
+        "msi_pct": 4.33,
+        "egfr_vaf_percent": 5.0,
+        "tp53_vaf_percent": 2.8
+      },
+      "pdf_file": "Nguyễn Tuyết Hạnh-MCAABY20.pdf",
+      "pdf_url": "/pdfs/Nguye%CC%82%CC%83n%20Tuye%CC%82%CC%81t%20Ha%CC%A3nh-MCAABY20.pdf",
+      "documents": [
+        {
+          "name": "Phiếu Kết Quả Xét Nghiệm Gen K-TRACK 1: Đột Biến Đích & Kháng Thuốc (MCAABY20)",
+          "category": "molecular",
+          "icon": "🧬",
+          "pdf_file": "Nguyễn Tuyết Hạnh-MCAABY20.pdf",
+          "pdf_url": "/pdfs/Nguye%CC%82%CC%83n%20Tuye%CC%82%CC%81t%20Ha%CC%A3nh-MCAABY20.pdf",
+          "badge": "K-TRACK NGS 164 Gen"
+        }
+      ]
+    },
+    {
+      "id": "rec_20261029_genesol_ktrack2",
+      "date": "2026-10-29",
+      "facility": "Phòng Xét Nghiệm Gene Solutions Lab",
+      "doctor": "BS Trần Mạnh Hoàng (Chỉ định)",
+      "type": "molecular",
+      "title": "Xét Nghiệm K-TRACK (Kết Quả 2): Theo Dõi Tồn Dư Tối Thiểu Khối U ctDNA-MRD & Động Học Phân Tử",
+      "summary": "Sinh thiết lỏng theo dõi tồn dư tối thiểu khối u ctDNA-MRD từ mẫu máu lấy ngày 20/10/2026: Kết quả DƯƠNG TÍNH với tỷ lệ Tumor Fraction (%TF) = 0.17%. Phát hiện đột biến soma lưu hành ở nồng độ vết. Cho thấy khối u vẫn còn tồn dư tối thiểu ở mức rất thấp (0.17%), giải thích sự cần thiết của việc tiếp tục duy trì thuốc đích Osimertinib 80mg hàng ngày.",
+      "details": {
+        "Thông tin mẫu máu": "Labcode ID: MDAABJ41 | MRD ID: VNGSOUL1D82Y. Ngày thu mẫu: 20/10/2026 lúc 17:20. Ngày trả kết quả: 29/10/2026.",
+        "Kết quả MRD / Động năng ctDNA": "DƯƠNG TÍNH. Tỷ lệ %TF (Tumor Fraction): 0.17%. Đột biến soma lưu hành: Phát hiện.",
+        "Diễn giải lâm sàng": "Kết quả ctDNA-MRD dương tính ở mức 0.17% (mức nồng độ vết cực thấp) phản ánh khối u vẫn còn tồn tại vi thể sau gần 2 năm điều trị, phù hợp với hình ảnh tổn thương xơ sẹo / khối u 21x14mm trên phim CT. Khuyến nghị phối hợp theo dõi định kỳ bằng hình ảnh học và duy trì phác đồ điều trị trúng đích."
+      },
+      "diagnosis": "Theo dõi MRD ctDNA: Dương tính (%TF = 0.17%) - Khối u còn tồn dư tối thiểu vi thể ở mức rất thấp",
+      "metrics": {
+        "ctdna_tf_pct": 0.17,
+        "ctdna_tf_percent": 0.17
+      },
+      "pdf_file": "Scanned 31 Oct 2026 at 15:57:46.pdf",
+      "pdf_url": "/pdfs/Scanned%2031%20Oct%202026%20at%2015%3A57%3A46.pdf",
+      "documents": [
+        {
+          "name": "Phiếu Kết Quả K-TRACK 2: Theo Dõi Tồn Dư Tối Thiểu Khối U ctDNA-MRD (MDAABJ41)",
+          "category": "molecular",
+          "icon": "🧬",
+          "pdf_file": "Scanned 31 Oct 2026 at 15:57:46.pdf",
+          "pdf_url": "/pdfs/Scanned%2031%20Oct%202026%20at%2015%3A57%3A46.pdf",
+          "badge": "K-TRACK ctDNA-MRD"
+        }
+      ]
     }
   ],
-  "last_sync": "2026-09-26 22:56:41"
+  "last_sync": "2026-11-01 13:40:00"
 }
