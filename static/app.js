@@ -1403,7 +1403,48 @@ function renderComparisonTable() {
 
           const cellClass = isWarning ? 'font-weight: 700; color: #dc2626; background: #fef2f2;' : 'color: #0f172a;';
           const safeVal = String(matchedVal).replace(/'/g, "\\'");
-          html += `<td class="col-date-cell clickable-metric-cell ${isWarning ? 'metric-val-warning' : ''}" style="white-space: nowrap; ${cellClass}" title="Nhấn để xem hồ sơ gốc ngày ${d.fullDate}: ${param.name} = ${matchedVal} ${param.unit}" onclick="window.viewMetricOriginalDocument({ recId: '${matchedRec.id}', paramId: '${param.id}', searchKey: '${safeSearchKey}', metricVal: '${safeVal}', cellEl: this, paramName: '${safeParamName}' })">${matchedVal}</td>`;
+          let cellDisplayHtml = matchedVal;
+          let nowrapStyle = 'white-space: nowrap;';
+          let extraTdStyle = '';
+
+          // Hiển thị dạng dọc cho các thông số dài theo yêu cầu để vừa vặn ô dữ liệu
+          if (param.id === 'tumor_dim') {
+            const dimParts = String(matchedVal).replace(/mm/gi, '').trim().split(/\s*[xX*×]\s*/);
+            if (dimParts.length >= 3) {
+              cellDisplayHtml = `
+                <div class="col-cell-vertical-dim">
+                  <span class="dim-top">${dimParts[0]}×${dimParts[1]}</span>
+                  <span class="dim-bot">×${dimParts[2]}</span>
+                </div>
+              `;
+              nowrapStyle = '';
+              extraTdStyle = 'padding: 3px 1px !important;';
+            }
+          } else if (param.id === 'tumor_visual') {
+            let icon = '🍋';
+            let label = 'Quả chanh';
+            const tStr = String(matchedVal).trim();
+            if (tStr.includes('🥚') || tStr.toLowerCase().includes('trứng')) {
+              icon = '🥚';
+              label = 'Trứng vịt';
+            } else if (tStr.includes('🍊') || tStr.toLowerCase().includes('tắc') || tStr.toLowerCase().includes('quất')) {
+              icon = '🍊';
+              label = 'Quả tắc';
+            } else if (tStr.includes('🍋') || tStr.toLowerCase().includes('chanh')) {
+              icon = '🍋';
+              label = 'Quả chanh';
+            }
+            cellDisplayHtml = `
+              <div class="col-cell-vertical-visual">
+                <span class="vis-icon">${icon}</span>
+                <span class="vis-text">${label}</span>
+              </div>
+            `;
+            nowrapStyle = '';
+            extraTdStyle = 'padding: 2px 1px !important;';
+          }
+
+          html += `<td class="col-date-cell clickable-metric-cell ${isWarning ? 'metric-val-warning' : ''}" style="${nowrapStyle} ${cellClass} ${extraTdStyle}" title="Nhấn để xem hồ sơ gốc ngày ${d.fullDate}: ${param.name} = ${matchedVal} ${param.unit}" onclick="window.viewMetricOriginalDocument({ recId: '${matchedRec.id}', paramId: '${param.id}', searchKey: '${safeSearchKey}', metricVal: '${safeVal}', cellEl: this, paramName: '${safeParamName}' })">${cellDisplayHtml}</td>`;
         } else {
           html += `<td class="col-date-cell" style="color: #cbd5e1;">-</td>`;
         }
@@ -2035,7 +2076,7 @@ function renderTimeline() {
           <div class="tumor-highlight-top">
             <span class="tumor-highlight-icon">🫁</span>
             <span class="tumor-highlight-title">KÍCH THƯỚC & THỂ TÍCH KHỐI U PHỔI S3</span>
-            <span class="tumor-visual-badge">${tm.tumor_visual || '🍋 Trái chanh nhỏ'}</span>
+            <span class="tumor-visual-badge">${tm.tumor_visual || '🍋 Quả chanh'}</span>
           </div>
           <div class="tumor-highlight-stats">
             <div class="tumor-stat-item">

@@ -200,7 +200,7 @@
         "Kết quả CT Scan bụng": "Tổn thương gan đa ổ nghĩ thứ phát; nhiều hạch dọc động mạch chủ bụng theo dõi hạch thứ phát; thoái hóa + vẹo trái cột sống thắt lưng; nhiều ổ đặc xương rải rác đốt sống thắt lưng, xương chậu, xương đùi trái.",
         "Xử trí cấp cứu ban đầu": "Esomeprazol 40mg lọ tiêm TM, Glucose 10% 500ml chai truyền TM, Enoxaparin 6000 UI tiêm dưới da lúc 22h30 ngày 24/12/2024.",
         "Bác sĩ điều trị & Khoa": "BS điều trị: ThS.BS. Nguyễn Thị Kim Ngân; TL Trưởng khoa: BS.CKI. Nguyễn Anh Kiệt (A21-094); Thủ trưởng: BS. Nguyễn Khánh Quang (A17-027).",
-        "Kích thước & Thể tích Khối U S3": "62 x 45 x 62 mm • Thể tích: 90.57 cm³ (🥚 Quả trứng gà/vịt (Ban đầu))"
+        "Kích thước & Thể tích Khối U S3": "62 x 45 x 62 mm • Thể tích: 90.57 cm³ (🥚 Trứng vịt)"
       },
       "diagnosis": "K phổi trái giai đoạn T4N3M1 di căn xương đa ổ, di căn gan đa ổ, hạch ổ bụng (C34.9) - Thuyên tắc bán phần động mạch phổi phải nhánh phân thùy S9, S10 (I26.9) - Tràn dịch màng ngoài tim trong bệnh ác tính (I31.3) - Thiếu máu hồng cầu nhỏ nhược sắc mức độ nhẹ (D50.0)",
       "metrics": {
@@ -215,7 +215,7 @@
         "tumor_dim_str": "62 x 45 x 62 mm",
         "tumor_volume_cm3": 90.57,
         "tumor_volume_box_cm3": 172.98,
-        "tumor_visual": "🥚 Quả trứng gà/vịt (Ban đầu)",
+        "tumor_visual": "🥚 Trứng vịt",
         "tumor_reduction_pct": 0.0,
         "tumor_calc_note": "Chiều cao c = 62mm (tự động lấy max(d=62, r=45))"
       },
@@ -579,7 +579,7 @@
         "pericardium_pleura": "Tràn dịch màng ngoài tim d <= 13mm (dịch đậm độ thấp); ít dịch màng phổi (T).",
         "bones": "Tổn thương đặc xương rải rác xương vai, xương đòn, xương sườn hai bên, các đốt sống ngực, thắt lưng -> Di căn đặc xương.",
         "abdomen": "Tổn thương gan hạ phân thùy V, VI d < 1.3cm bắt thuốc kém; Nhân giáp hai thùy d <= 6mm.",
-        "Kích thước & Thể tích Khối U S3": "15 x 10 x 15 mm • Thể tích: 1.18 cm³ (🍊 Trái tắc to (Sau 3 tháng thuốc đích)) - Giảm 98.7% thể tích so với ban đầu"
+        "Kích thước & Thể tích Khối U S3": "15 x 10 x 15 mm • Thể tích: 1.18 cm³ (🍊 Quả tắc) - Giảm 98.7% thể tích so với ban đầu"
       },
       "conclusion": "Mảng xẹp phổi S3 phổi T nghĩ u phổi; Huyết khối bán phần ĐM phổi nhánh S3; Hạch trung thất, rốn phổi 2 bên, hạch cạnh tâm vị; Tổn thương gan, xương khả năng di căn; Tràn dịch màng ngoài tim; Ít dịch màng phổi T.",
       "metrics": {
@@ -594,7 +594,7 @@
         "tumor_dim_str": "15 x 10 x 15 mm",
         "tumor_volume_cm3": 1.18,
         "tumor_volume_box_cm3": 2.25,
-        "tumor_visual": "🍊 Trái tắc to (Sau 3 tháng thuốc đích)",
+        "tumor_visual": "🍊 Quả tắc",
         "tumor_reduction_pct": 98.7,
         "tumor_calc_note": "Chiều cao c = 15mm (tự động lấy max(d=15, r=10))"
       },
@@ -742,7 +742,7 @@
         "abdomen": "Ổ nhỏ đậm độ thấp gan HPT V d# 5mm, bắt thuốc kém rõ (quá nhỏ để xác định bản chất).",
         "bones": "Các ổ đặc xương rải rác đốt sống ngực, lưng - cùng, xương chậu, xương sườn, xương ức, bả vai, đầu xương cánh tay, đầu xương đùi (thứ phát).",
         "brain": "Không thấy tổn thương bắt thuốc bất thường nhu mô não, màng não. Các ổ đặc xương sọ trán hai bên, chẩm (P) d <= 5mm.",
-        "Kích thước & Thể tích Khối U S3": "28 x 22 x 15 mm • Thể tích: 4.84 cm³ (🍋 Trái chanh nhỏ (Bệnh ổn định))"
+        "Kích thước & Thể tích Khối U S3": "28 x 22 x 15 mm • Thể tích: 4.84 cm³ (🍋 Quả chanh)"
       },
       "conclusion": "Tổn thương nốt bờ tua gai S3 phổi T -> TD u phổi; Vài hạch nhỏ trung thất; Tràn dịch màng ngoài tim lượng nhiều (23mm); Tổn thương đặc xương rải rác xương sườn, cột sống ngực, thắt lưng, chậu, đùi, sọ -> thứ phát.",
       "metrics": {
@@ -757,7 +757,7 @@
         "tumor_dim_str": "28 x 22 x 15 mm",
         "tumor_volume_cm3": 4.84,
         "tumor_volume_box_cm3": 9.24,
-        "tumor_visual": "🍋 Trái chanh nhỏ (Bệnh ổn định)",
+        "tumor_visual": "🍋 Quả chanh",
         "tumor_reduction_pct": 94.7,
         "tumor_calc_note": "Ghi nhận đủ 3 chiều DxRxC"
       },
@@ -1921,7 +1921,7 @@
         "pericardium": "Tràn dịch màng tim, chỗ dày nhất đo được # 16mm (đã giảm đáng kể so với 23mm ở phim 29/07/2025).",
         "abdomen": "Vài ổ nhỏ tổn thương gan (P) d < 9mm, bắt thuốc cản quang kém (theo dõi di căn). Thận, tụy, lách, thượng thận bình thường. Xơ vữa động mạch chủ ngực, bụng.",
         "bones": "Tổn thương đặc xương xương đòn, vai, 1/3 trên xương cánh tay, xương sườn 2 bên, xương ức, các đốt sống cổ thấp, ngực, thắt lưng cùng, chậu mu và 1/3 trên xương đùi hai bên -> Nghĩ di căn xương.",
-        "Kích thước & Thể tích Khối U S3": "27 x 15 x 27 mm • Thể tích: 5.73 cm³ (🍋 Trái chanh nhỏ (Bệnh ổn định)) - Đóng vôi & xơ hóa"
+        "Kích thước & Thể tích Khối U S3": "27 x 15 x 27 mm • Thể tích: 5.73 cm³ (🍋 Quả chanh) - Đóng vôi & xơ hóa"
       },
       "conclusion": "Mảng tổn thương xẹp phổi S3 phổi T không thay đổi đáng kể so với phim chụp 12/3/2025 (U phổi đang điều trị - Stable Disease); Tràn dịch màng tim 16mm; Di căn xương đa ổ; Vài ổ nhỏ gan P theo dõi di căn.",
       "metrics": {
@@ -1936,7 +1936,7 @@
         "tumor_dim_str": "27 x 15 x 27 mm",
         "tumor_volume_cm3": 5.73,
         "tumor_volume_box_cm3": 10.94,
-        "tumor_visual": "🍋 Trái chanh nhỏ (Bệnh ổn định)",
+        "tumor_visual": "🍋 Quả chanh",
         "tumor_reduction_pct": 93.7,
         "tumor_calc_note": "Chiều cao c = 27mm (tự động lấy max(d=27, r=15))"
       },
@@ -2313,7 +2313,7 @@
         "tumor_dim_str": "20 x 17 x 20 mm",
         "tumor_volume_cm3": 3.56,
         "tumor_volume_box_cm3": 6.8,
-        "tumor_visual": "🍋 Trái chanh nhỏ (Bệnh ổn định)",
+        "tumor_visual": "🍋 Quả chanh",
         "tumor_reduction_pct": 96.1,
         "tumor_calc_note": "Chiều cao c = 20mm (tự động lấy max(d=20, r=17))"
       },
@@ -2325,7 +2325,7 @@
         "Đông máu": "D-Dimer: 1533 ng/mL (tăng cao, ngưỡng < 500 ng/mL) -> Cảnh báo nguy cơ huyết khối tĩnh mạch / thuyên tắc phổi tái phát; aPTT: 37.9s, INR: 1.02.",
         "Toa thuốc chuyên khoa": "1. Lostad T50 (Losartan Kali 50mg): 1 viên sáng;\n2. Betaloc ZOK (Metoprolol 25mg): 1 viên sáng;\n3. Rosuvastatin 10mg: 1 viên chiều;\n4. BidiFeron (Sắt + Acid Folic): 1 viên x 2 lần/ngày sáng chiều.",
         "Bác sĩ chỉ định & điều trị": "BS. Phạm Minh Trí, BS. Dương Thị Trang, ThS.BS. Nguyễn Hữu Đức (Khoa Chẩn đoán Hình ảnh), BS. Lê Quốc Tuấn (Siêu âm tim).",
-        "Kích thước & Thể tích Khối U S3": "20 x 17 x 20 mm • Thể tích: 3.56 cm³ (🍋 Trái chanh nhỏ (Bệnh ổn định)) - Gom nhỏ lại & ổn định"
+        "Kích thước & Thể tích Khối U S3": "20 x 17 x 20 mm • Thể tích: 3.56 cm³ (🍋 Quả chanh) - Gom nhỏ lại & ổn định"
       },
       "documents": [
         {
@@ -2825,7 +2825,7 @@
       "title": "Chụp CT Scanner 512 Lát Cắt Toàn Thân (Sọ Não - Ngực - Bụng) & Bộ Siêu Âm Đa Vị Trí",
       "summary": "U thùy trên phổi trái (S3) kt# 21x14mm (chiều cao tự động 21mm, thể tích 3.23 cm³, kích cỡ tương đương trái chanh nhỏ 🍋), kích thước duy trì ổn định không tăng so với phim cũ. Tràn dịch màng ngoài tim dmax 19mm. Di căn xương đa ổ rải rác cột sống ngực, sườn, xương ức. Sọ não và bụng không có tổn thương mới. Bộ siêu âm ghi nhận hạch nách trái 7mm mất rốn, nang tuyến vú phải 8mm lành tính, hạch cổ (-).",
       "details": {
-        "Kích thước & Thể tích Khối U S3": "21 x 14 x 21 mm • Thể tích: 3.23 cm³ (🍋 Trái chanh nhỏ) - Giảm 96.4% thể tích so với ban đầu (90.57 cm³ 🥚), bệnh duy trì ỔN ĐỊNH BỀN VỮNG.",
+        "Kích thước & Thể tích Khối U S3": "21 x 14 x 21 mm • Thể tích: 3.23 cm³ (🍋 Quả chanh) - Giảm 96.4% thể tích so với ban đầu (90.57 cm³ 🥚), bệnh duy trì ỔN ĐỊNH BỀN VỮNG.",
         "Kết quả CT Ngực": "Tổn thương phân thùy S3 phổi trái kt# 21x14mm (ổn định không tăng so với phim 20x17mm trước đó). Chiều cao tự động xác định = 21mm (max dài/rộng), thể tích khối u: 3.23 cm³ (bằng quả chanh nhỏ 🍋). Vài nốt tổn thương dạng kính mờ kèm dày kẽ tập trung phân thùy S2, S6 phổi trái. Không thấy hạch trung thất phì đại. Tràn dịch màng ngoài tim dmax #19mm. Đặc xương rải rác thân các đốt sống ngực, xương sườn hai bên, xương ức.",
         "Kết quả CT Sọ não": "Khảo sát sọ não trên máy CT Philips Ingenuity 128: Không thấy hình ảnh tổn thương làm thay đổi đậm độ, hình dáng nhu mô não vùng trên và dưới lều trước và sau tiêm cản quang. Không thấy máu tụ nội sọ. Hệ thống não thất, bể não bình thường. Đường giữa không di lệch. Không phát hiện di căn não.",
         "Kết quả CT Bụng": "Gan không to, bờ đều áp sát phúc mạc thành, mật độ nhu mô bình thường. Túi mật không lớn, đường mật không dãn. Lách, tụy, thận hai bên bình thường, không tổn thương choán chỗ.",
@@ -2844,7 +2844,7 @@
         "tumor_dim_str": "21 x 14 x 21 mm",
         "tumor_volume_cm3": 3.23,
         "tumor_volume_box_cm3": 6.17,
-        "tumor_visual": "🍋 Trái chanh nhỏ (Bệnh ổn định)",
+        "tumor_visual": "🍋 Quả chanh",
         "tumor_reduction_pct": 96.4,
         "pericardial_effusion_mm": 19
       },
@@ -3086,6 +3086,175 @@
       ]
     },
     {
+      "id": "rec_20261026_bvtn_ungbuou_ngoaitru",
+      "date": "2026-10-26",
+      "facility": "Bệnh viện Thống Nhất (Khoa Ung Bướu Ngoại Trú)",
+      "doctor": "Khoa Ung Bướu - BV Thống Nhất",
+      "type": "laboratory",
+      "title": "Tái Khám Ngoại Trú, Truyền Chống Hủy Xương Zoledronic Acid & Tổng Phân Tích Tế Bào Máu",
+      "summary": "Tái khám theo hẹn sau xuất viện tại Khoa Ung Bướu Ngoại Trú BV Thống Nhất (Mã BN: 15057791). Thực hiện truyền thuốc chống hủy xương Zolexati 4mg (Zoledronic acid), bổ sung Canxi D3 (Ronaum), men tiêu hóa (Panc-es). Xét nghiệm máu ngoại vi ghi nhận bạch cầu 6.98 K/uL và tiểu cầu 260 K/uL trong giới hạn bình thường; Hb 9.5 g/dL (thiếu máu nhẹ). Siêu âm hạch cổ và siêu âm bụng kiểm tra.",
+      "details": {
+        "Thông tin khám": "Số hồ sơ / Mã BN: 15057791 | NGUYỄN TUYẾT HẠNH (SN 1953). Khám tại Khoa Ung bướu (Điều trị Ngoại trú) ngày 26/10/2026.",
+        "Chẩn đoán": "U ác tính ở phế quản và phổi (C34); U ác tính thứ phát ở xương và/hoặc tủy xương (C79.5); Rối loạn giấc ngủ không thực tổn; Thiếu calci do chế độ ăn.",
+        "Thuốc & Can thiệp": "Lãnh thuốc 09:46: Zolexati 4mg/100ml (Zoledronic acid tiêm truyền tĩnh mạch chống hủy xương) + Sodium chloride 0.9%; Ronaum 1250mg+250UI (Canxi Carbonat + Vitamin D3); Panc-es (Men tiêu hóa tụy).",
+        "Cận lâm sàng thực hiện": "Siêu âm hạch vùng cổ (10:06); Siêu âm ổ bụng (10:07); Tổng phân tích tế bào máu ngoại vi bằng máy đếm laser (10:00)."
+      },
+      "diagnosis": "U ác tính ở phế quản và phổi (C34) - U ác tính thứ phát ở xương (C79.5) - Thiếu calci do chế độ ăn - Rối loạn giấc ngủ",
+      "medications": [
+        {
+          "name": "Zolexati 4mg/100ml (Zoledronic Acid)",
+          "dosage": "Truyền tĩnh mạch chậm kết hợp Natri Clorid 0.9%",
+          "purpose": "Thuốc chống hủy xương, phòng ngừa biến cố xương và bảo vệ cấu trúc xương do di căn"
+        },
+        {
+          "name": "Ronaum 1250mg + 250UI (Calcium Carbonat + Cholecalciferol)",
+          "dosage": "Uống bổ sung calci và vitamin D3 hàng ngày",
+          "purpose": "Bù đắp calci máu, ngăn ngừa hạ calci máu khi truyền Zoledronic acid"
+        },
+        {
+          "name": "Panc-es 238IU + 3400IU + 400IU (Pancreatin)",
+          "dosage": "Uống trong bữa ăn",
+          "purpose": "Hỗ trợ men tụy phân giải chất béo, protein và tinh bột, cải thiện khả năng tiêu hóa"
+        }
+      ],
+      "metrics": {
+        "wbc": 6.98,
+        "rbc": 4.34,
+        "hb": 9.5,
+        "hct": 30.1,
+        "mcv": 69.3,
+        "mch": 22.0,
+        "mchc": 31.6,
+        "rdw": 15.3,
+        "plt": 260.0,
+        "mpv": 10.1,
+        "neu_pct": 52.5,
+        "lym_pct": 36.9,
+        "mono_pct": 8.7,
+        "eos_pct": 1.5,
+        "baso_pct": 0.4,
+        "neu_abs": 3.66,
+        "lym_abs": 2.58,
+        "mono_abs": 0.61,
+        "eos_abs": 0.1,
+        "baso_abs": 0.03
+      },
+      "lab_results": {
+        "WBC": {
+          "val": 6.98,
+          "unit": "10^9/L",
+          "ref": "4.01 - 11.42"
+        },
+        "NEU_pct": {
+          "val": 52.5,
+          "unit": "%",
+          "ref": "40 - 74"
+        },
+        "LYM_pct": {
+          "val": 36.9,
+          "unit": "%",
+          "ref": "19 - 48"
+        },
+        "MONO_pct": {
+          "val": 8.7,
+          "unit": "%",
+          "ref": "3.4 - 9.0"
+        },
+        "EOS_pct": {
+          "val": 1.5,
+          "unit": "%",
+          "ref": "0.0 - 7.0"
+        },
+        "BASO_pct": {
+          "val": 0.4,
+          "unit": "%",
+          "ref": "0.0 - 1.5"
+        },
+        "NEU_abs": {
+          "val": 3.66,
+          "unit": "10^9/L",
+          "ref": "1.7 - 7.5"
+        },
+        "LYM_abs": {
+          "val": 2.58,
+          "unit": "10^9/L",
+          "ref": "1.2 - 4.0"
+        },
+        "MONO_abs": {
+          "val": 0.61,
+          "unit": "10^9/L",
+          "ref": "0.2 - 0.8"
+        },
+        "EOS_abs": {
+          "val": 0.1,
+          "unit": "10^9/L",
+          "ref": "0.0 - 0.6"
+        },
+        "BASO_abs": {
+          "val": 0.03,
+          "unit": "10^9/L",
+          "ref": "0.0 - 0.1"
+        },
+        "RBC": {
+          "val": 4.34,
+          "unit": "10^12/L",
+          "ref": "4.01 - 5.79"
+        },
+        "Hb": {
+          "val": 9.5,
+          "unit": "g/dL",
+          "ref": "11.5 - 15.0"
+        },
+        "Hct": {
+          "val": 30.1,
+          "unit": "%",
+          "ref": "34.4 - 48.5"
+        },
+        "MCV": {
+          "val": 69.3,
+          "unit": "fL",
+          "ref": "80 - 99"
+        },
+        "MCH": {
+          "val": 22.0,
+          "unit": "pg",
+          "ref": "27 - 33"
+        },
+        "MCHC": {
+          "val": 31.6,
+          "unit": "g/dL",
+          "ref": "32 - 36"
+        },
+        "RDW": {
+          "val": 15.3,
+          "unit": "%",
+          "ref": "11.5 - 15.5"
+        },
+        "PLT": {
+          "val": 260.0,
+          "unit": "10^9/L",
+          "ref": "150 - 450"
+        },
+        "MPV": {
+          "val": 10.1,
+          "unit": "fL",
+          "ref": "7.4 - 10.9"
+        }
+      },
+      "pdf_file": "IMG_6727.JPG",
+      "pdf_url": "/pdfs/rec_20261026_bvthongnhat_ungbuou_ngoaitru.jpg",
+      "documents": [
+        {
+          "name": "Hồ Sơ Ngoại Trú & Xét Nghiệm Máu BV Thống Nhất (26/10/2026)",
+          "category": "laboratory",
+          "icon": "📸",
+          "pdf_file": "IMG_6727.JPG",
+          "pdf_url": "/pdfs/rec_20261026_bvthongnhat_ungbuou_ngoaitru.jpg",
+          "badge": "Ảnh chụp màn hình Hồ sơ BA điện tử"
+        }
+      ]
+    },
+    {
       "id": "rec_20261029_genesol_ktrack2",
       "date": "2026-10-29",
       "facility": "Phòng Xét Nghiệm Gene Solutions Lab",
@@ -3117,5 +3286,5 @@
       ]
     }
   ],
-  "last_sync": "2026-11-01 13:40:00"
+  "last_sync": "2026-11-02 21:30:00"
 }

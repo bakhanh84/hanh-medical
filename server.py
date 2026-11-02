@@ -352,11 +352,11 @@ def parse_extracted_text(text, filename):
             vol_box = d_cm * r_cm * c_cm
             
             if vol_ellipsoid >= 30:
-                visual = '🥚 Quả trứng gà/vịt (Ban đầu)'
+                visual = '🥚 Trứng vịt'
             elif vol_ellipsoid <= 2.0:
-                visual = '🍊 Trái tắc to (Sau 3 tháng thuốc đích)'
+                visual = '🍊 Quả tắc'
             else:
-                visual = '🍋 Trái chanh nhỏ (Bệnh ổn định)'
+                visual = '🍋 Quả chanh'
 
             baseline_vol = 90.57
             pct_reduction = round((1.0 - (vol_ellipsoid / baseline_vol)) * 100.0, 1) if vol_ellipsoid < baseline_vol else 0.0
