@@ -3309,8 +3309,6 @@ async function renderPdfToCanvas(pdfUrl, initialQuery, activeParamId) {
       if (dpr !== 1) {
         ctx.scale(dpr, dpr);
       }
-        ctx.scale(window.devicePixelRatio, window.devicePixelRatio);
-      }
 
       const highlightLayer = document.createElement('div');
       highlightLayer.className = 'pdf-page-highlight-layer';
