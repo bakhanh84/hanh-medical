@@ -1036,34 +1036,48 @@ function renderChart() {
         x: {
           type: 'linear',
           min: 0,
-          max: CHART_MONTH_LABELS.length,
+          max: CHART_MONTH_LABELS.length - 1,
+          title: {
+            display: true,
+            text: 'Mốc thời gian (Tháng/Năm)',
+            color: '#475569',
+            font: {
+              family: "'Inter', sans-serif",
+              size: 11,
+              weight: 700
+            },
+            padding: { top: 8, bottom: 2 }
+          },
           ticks: {
-            stepSize: 0.5,
-            color: '#334155',
+            stepSize: 1,
+            autoSkip: true,
+            autoSkipPadding: 12,
+            maxRotation: 0,
+            color: '#0f172a',
             font: {
               family: "'Inter', sans-serif",
               size: 11,
               weight: 700
             },
             callback: function(val) {
-              // Centered label inside each month cell (val = 0.5, 1.5, 2.5...)
-              const monthIdx = Math.floor(val);
-              if (Math.abs(val - (monthIdx + 0.5)) < 0.05 && monthIdx >= 0 && monthIdx < CHART_MONTH_LABELS.length) {
-                return CHART_MONTH_LABELS[monthIdx];
+              const idx = Math.round(val);
+              if (Math.abs(val - idx) < 0.05 && idx >= 0 && idx < CHART_MONTH_LABELS.length) {
+                return CHART_MONTH_LABELS[idx];
               }
               return '';
             }
           },
           grid: {
             color: function(context) {
-              // Draw clear month boundary grid lines ONLY at integers (0, 1, 2, ...)
               const val = context.tick ? context.tick.value : 0;
               if (Math.abs(val - Math.round(val)) < 0.05) {
                 return '#cbd5e1';
               }
               return 'transparent';
             },
-            drawTicks: false
+            drawTicks: true,
+            tickLength: 6,
+            tickColor: '#94a3b8'
           }
         },
         ...yScales
@@ -2604,13 +2618,42 @@ function initGoogleDriveDocViewer() {
     }, { passive: false });
   }
 
-  // Apply Image Transform (Zoom & Rotate)
+  // Apply Document Transform (Zoom & Rotate) for both Image and PDF Canvas
   function applyTransform() {
     const img = document.getElementById('docViewerImage');
+    const canvasWrap = document.getElementById('docViewerCanvasContainer');
     const zoomText = document.getElementById('docZoomLevelText');
     if (zoomText) zoomText.textContent = `${Math.round(currentDocZoom * 100)}%`;
+
     if (img) {
       img.style.transform = `scale(${currentDocZoom}) rotate(${currentDocRotation}deg)`;
+      img.style.transformOrigin = 'top left';
+      const origW = parseFloat(img.getAttribute('data-orig-width') || img.offsetWidth || window.innerWidth);
+      const origH = parseFloat(img.getAttribute('data-orig-height') || img.offsetHeight || 800);
+      if (currentDocZoom > 1.0) {
+        img.style.marginBottom = `${Math.round((currentDocZoom - 1.0) * origH + 20)}px`;
+        img.style.marginRight = `${Math.round((currentDocZoom - 1.0) * origW + 20)}px`;
+      } else {
+        img.style.marginBottom = '0';
+        img.style.marginRight = '0';
+      }
+    }
+
+    if (canvasWrap) {
+      const pageCards = canvasWrap.querySelectorAll('.pdf-page-card');
+      pageCards.forEach(card => {
+        card.style.transform = `scale(${currentDocZoom}) rotate(${currentDocRotation}deg)`;
+        card.style.transformOrigin = 'top left';
+        const origW = parseFloat(card.getAttribute('data-orig-width') || card.offsetWidth || window.innerWidth);
+        const origH = parseFloat(card.getAttribute('data-orig-height') || card.offsetHeight || 1000);
+        if (currentDocZoom > 1.0) {
+          card.style.marginBottom = `${Math.round((currentDocZoom - 1.0) * origH + 20)}px`;
+          card.style.marginRight = `${Math.round((currentDocZoom - 1.0) * origW + 20)}px`;
+        } else {
+          card.style.marginBottom = '12px';
+          card.style.marginRight = '0';
+        }
+      });
     }
   }
 
@@ -3212,7 +3255,7 @@ async function renderPdfToCanvas(pdfUrl, initialQuery, activeParamId) {
     canvasWrap.innerHTML = '';
     currentDocPdfPages = [];
 
-    const viewportContainerWidth = Math.min(window.innerWidth, 1020);
+    const viewportContainerWidth = window.innerWidth;
     const lowerDoc = (pdfUrl + ' ' + (currentDocItem ? (currentDocItem.pdf_file || currentDocItem.name) : '')).toLowerCase();
 
     // Determine initial target page for multi-page documents
@@ -3242,24 +3285,30 @@ async function renderPdfToCanvas(pdfUrl, initialQuery, activeParamId) {
     for (let pNum = 1; pNum <= pdf.numPages; pNum++) {
       const page = await pdf.getPage(pNum);
       const unscaledViewport = page.getViewport({ scale: 1.0 });
-      const scale = Math.max(1.0, (viewportContainerWidth - 36) / unscaledViewport.width);
+      // Full edge-to-edge width across screen
+      const scale = window.innerWidth / unscaledViewport.width;
       const viewport = page.getViewport({ scale: scale });
 
       const pageCard = document.createElement('div');
       pageCard.className = 'pdf-page-card';
       pageCard.id = `pdf-page-card-${pNum}`;
       pageCard.setAttribute('data-page', pNum);
+      pageCard.setAttribute('data-orig-width', Math.floor(viewport.width));
+      pageCard.setAttribute('data-orig-height', Math.floor(viewport.height));
       pageCard.style.width = `${Math.floor(viewport.width)}px`;
       pageCard.style.height = `${Math.floor(viewport.height)}px`;
 
       const canvas = document.createElement('canvas');
-      canvas.width = Math.floor(viewport.width * (window.devicePixelRatio || 1));
-      canvas.height = Math.floor(viewport.height * (window.devicePixelRatio || 1));
+      const dpr = Math.min(window.devicePixelRatio || 1, 2.5);
+      canvas.width = Math.floor(viewport.width * dpr);
+      canvas.height = Math.floor(viewport.height * dpr);
       canvas.style.width = `${Math.floor(viewport.width)}px`;
       canvas.style.height = `${Math.floor(viewport.height)}px`;
 
       const ctx = canvas.getContext('2d');
-      if (window.devicePixelRatio && window.devicePixelRatio !== 1) {
+      if (dpr !== 1) {
+        ctx.scale(dpr, dpr);
+      }
         ctx.scale(window.devicePixelRatio, window.devicePixelRatio);
       }
 
@@ -3965,10 +4014,17 @@ function renderQrCatalogGrid(filterCategory = 'all') {
   const grid = document.getElementById('qrCatalogGrid');
   if (!grid) return;
 
-  let list = qrCatalogData;
+  let list = [...qrCatalogData];
   if (filterCategory !== 'all') {
     list = list.filter(item => item.category === filterCategory);
   }
+
+  // Sắp xếp các mã QR theo trình tự thời gian mới > cũ
+  list.sort((a, b) => {
+    const da = a.date ? new Date(a.date).getTime() : 0;
+    const db = b.date ? new Date(b.date).getTime() : 0;
+    return db - da;
+  });
 
   if (list.length === 0) {
     grid.innerHTML = '<div style="grid-column: 1/-1; text-align: center; padding: 40px; color: #64748b;">Không có mã QR nào trong danh mục này.</div>';
@@ -4196,7 +4252,7 @@ function setupGoogleDriveSync() {
 
       if (lastTimeEl) lastTimeEl.textContent = data.last_sync;
       if (countEl) countEl.textContent = `${medicalData.records.length} đợt`;
-      if (statusBadge) statusBadge.textContent = 'Đã đồng bộ xong';
+      if (statusBadge) statusBadge.textContent = 'Đã đồng bộ & deploy xong';
 
       if (resultBox) {
         resultBox.style.display = 'block';
@@ -4220,10 +4276,13 @@ function setupGoogleDriveSync() {
 
         resultBox.innerHTML = `
           <div style="display: flex; align-items: center; gap: 8px; font-weight: 700;">
-            <span>✅</span> Đồng bộ Google Drive thành công!
+            <span>✅</span> Đồng bộ Google Drive & Deploy thành công!
           </div>
           <div style="margin-top: 4px;">
             Tổng cộng <strong>${data.total_files_in_drive}</strong> tệp trong Google Drive. Hệ thống hiện có <strong>${data.total_records}</strong> đợt khám/xét nghiệm.
+          </div>
+          <div style="margin-top: 4px; font-size: 0.8rem; color: #047857;">
+            🚀 Đã tự động cập nhật cơ sở dữ liệu và kích hoạt deploy lên Vercel Dashboard!
           </div>
           ${newDocsHtml}
         `;

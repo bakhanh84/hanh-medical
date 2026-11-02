@@ -1,5 +1,27 @@
 [
   {
+    "id": "qr_xn_20260922",
+    "title": "Tra Cứu Xét Nghiệm Máu & Sinh Hóa (22/09/2026)",
+    "facility": "Bệnh Viện Thống Nhất / NTH Soft",
+    "category": "laboratory",
+    "icon": "🧪",
+    "url": "http://nthsoft.vn:88/H/?p=8373723/220926/XetNghiem&u=ggYtw9TZXwajp3tIUm/NlA==",
+    "description": "Tra cứu kết quả LIS trực tuyến: eGFR hồi phục 55.0 mL/min, Creatinin 1.09, Hb 11.2.",
+    "date": "2026-09-22",
+    "qr_img": "/generated_qr/qr_xn_20260922.png"
+  },
+  {
+    "id": "qr_dkkcb_bvtn",
+    "title": "Cổng Đăng Ký Khám Chữa Bệnh Trực Tuyến BVTN",
+    "facility": "Bệnh Viện Thống Nhất",
+    "category": "portal",
+    "icon": "🏥",
+    "url": "https://dkkcb.bvtn.org.vn/",
+    "description": "Cổng đặt lịch hẹn và tra cứu thông tin khám bệnh ngoại trú BV Thống Nhất.",
+    "date": "2026-06-25",
+    "qr_img": "/generated_qr/qr_dkkcb_bvtn.png"
+  },
+  {
     "id": "qr_ct_20260513_bvtn",
     "title": "CT Scan Toàn Thân (13/05/2026)",
     "facility": "Bệnh Viện Thống Nhất",
@@ -9,6 +31,17 @@
     "description": "Hệ thống PACS BVTN: Xem trực tuyến phim CT Lồng ngực, Ổ bụng & Vùng chậu có cản quang.",
     "date": "2026-05-13",
     "qr_img": "/generated_qr/qr_ct_20260513_bvtn.png"
+  },
+  {
+    "id": "qr_careme_bvtn",
+    "title": "Cổng Chăm Sóc Bệnh Nhân Ung Thư (CareMe BVTN)",
+    "facility": "Bệnh Viện Thống Nhất",
+    "category": "portal",
+    "icon": "🎗️",
+    "url": "https://caremeyeulayminh.com?code=thongnhatQ",
+    "description": "Chương trình đồng hành và hỗ trợ thuốc điều trị đích / miễn dịch / hóa trị cho bệnh nhân BVTN.",
+    "date": "2026-05-13",
+    "qr_img": "/generated_qr/qr_careme_bvtn.png"
   },
   {
     "id": "qr_pacs_20260114_bvtn",
@@ -31,39 +64,6 @@
     "description": "Xem trực tiếp kết quả CT Scan ngực bụng đánh giá u phổi thu nhỏ từ 28mm xuống 20x17mm.",
     "date": "2025-11-30",
     "qr_img": "/generated_qr/qr_ct_20251130_medic.png"
-  },
-  {
-    "id": "qr_ct_nguc_20250312",
-    "title": "CT Scan Lồng Ngực Phát Hiện Tổn Thương (12/03/2025)",
-    "facility": "Trung Tâm Medic",
-    "category": "pacs",
-    "icon": "🫁",
-    "url": "https://bom.so/GeA47x",
-    "description": "Xem trực tuyến phim CT phổi giai đoạn khởi phát phát hiện khối u phổi phải.",
-    "date": "2025-03-12",
-    "qr_img": "/generated_qr/qr_ct_nguc_20250312.png"
-  },
-  {
-    "id": "qr_ct_bung_20250312",
-    "title": "CT Scan Ổ Bụng (12/03/2025)",
-    "facility": "Trung Tâm Medic",
-    "category": "pacs",
-    "icon": "🩺",
-    "url": "https://bom.so/m4rh18",
-    "description": "Xem trực tuyến kết quả CT khảo sát bụng và các cơ quan nội tạng.",
-    "date": "2025-03-12",
-    "qr_img": "/generated_qr/qr_ct_bung_20250312.png"
-  },
-  {
-    "id": "qr_xn_20260922",
-    "title": "Tra Cứu Xét Nghiệm Máu & Sinh Hóa (22/09/2026)",
-    "facility": "Bệnh Viện Thống Nhất / NTH Soft",
-    "category": "laboratory",
-    "icon": "🧪",
-    "url": "http://nthsoft.vn:88/H/?p=8373723/220926/XetNghiem&u=ggYtw9TZXwajp3tIUm/NlA==",
-    "description": "Tra cứu kết quả LIS trực tuyến: eGFR hồi phục 55.0 mL/min, Creatinin 1.09, Hb 11.2.",
-    "date": "2026-09-22",
-    "qr_img": "/generated_qr/qr_xn_20260922.png"
   },
   {
     "id": "qr_xn_20251127",
@@ -121,25 +121,25 @@
     "qr_img": "/generated_qr/qr_xn_20250821.png"
   },
   {
-    "id": "qr_careme_bvtn",
-    "title": "Cổng Chăm Sóc Bệnh Nhân Ung Thư (CareMe BVTN)",
-    "facility": "Bệnh Viện Thống Nhất",
-    "category": "portal",
-    "icon": "🎗️",
-    "url": "https://caremeyeulayminh.com?code=thongnhatQ",
-    "description": "Chương trình đồng hành và hỗ trợ thuốc điều trị đích / miễn dịch / hóa trị cho bệnh nhân BVTN.",
-    "date": "2026-05-13",
-    "qr_img": "/generated_qr/qr_careme_bvtn.png"
+    "id": "qr_ct_nguc_20250312",
+    "title": "CT Scan Lồng Ngực Phát Hiện Tổn Thương (12/03/2025)",
+    "facility": "Trung Tâm Medic",
+    "category": "pacs",
+    "icon": "🫁",
+    "url": "https://bom.so/GeA47x",
+    "description": "Xem trực tuyến phim CT phổi giai đoạn khởi phát phát hiện khối u phổi phải.",
+    "date": "2025-03-12",
+    "qr_img": "/generated_qr/qr_ct_nguc_20250312.png"
   },
   {
-    "id": "qr_dkkcb_bvtn",
-    "title": "Cổng Đăng Ký Khám Chữa Bệnh Trực Tuyến BVTN",
-    "facility": "Bệnh Viện Thống Nhất",
-    "category": "portal",
-    "icon": "🏥",
-    "url": "https://dkkcb.bvtn.org.vn/",
-    "description": "Cổng đặt lịch hẹn và tra cứu thông tin khám bệnh ngoại trú BV Thống Nhất.",
-    "date": "2026-06-25",
-    "qr_img": "/generated_qr/qr_dkkcb_bvtn.png"
+    "id": "qr_ct_bung_20250312",
+    "title": "CT Scan Ổ Bụng (12/03/2025)",
+    "facility": "Trung Tâm Medic",
+    "category": "pacs",
+    "icon": "🩺",
+    "url": "https://bom.so/m4rh18",
+    "description": "Xem trực tuyến kết quả CT khảo sát bụng và các cơ quan nội tạng.",
+    "date": "2025-03-12",
+    "qr_img": "/generated_qr/qr_ct_bung_20250312.png"
   }
 ]

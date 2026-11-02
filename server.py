@@ -190,18 +190,35 @@ def sync_gdrive():
         
         save_data(data)
         
-        # Auto-trigger Vercel production deploy in background if new records were added
-        if new_records_added:
-            def _async_deploy():
-                try:
-                    import subprocess
-                    print(f"Auto-deploying {len(new_records_added)} new records to Vercel production...")
-                    subprocess.run(["npx", "vercel", "--prod", "--yes"], cwd=BASE_DIR, capture_output=True, text=True)
-                    print("Auto-deploy to Vercel finished successfully.")
-                except Exception as ex:
-                    print(f"Auto-deploy to Vercel error: {ex}")
-            import threading
-            threading.Thread(target=_async_deploy, daemon=True).start()
+        # Auto-trigger Vercel production deploy in background
+        def _async_deploy():
+            try:
+                import subprocess
+                env = os.environ.copy()
+                nvm_bin = os.path.expanduser("~/.nvm/versions/node/v22.23.1/bin")
+                if os.path.exists(nvm_bin):
+                    env["PATH"] = f"{nvm_bin}:{env.get('PATH', '')}"
+                
+                print("Running git commit and push...")
+                subprocess.run(["git", "add", "-A"], cwd=BASE_DIR, env=env, capture_output=True)
+                subprocess.run(["git", "commit", "-m", "Auto-sync Google Drive data & deploy"], cwd=BASE_DIR, env=env, capture_output=True)
+                subprocess.run(["git", "push", "origin", "main"], cwd=BASE_DIR, env=env, capture_output=True)
+                
+                print(f"Auto-deploying to Vercel production from {STATIC_FOLDER}...")
+                proc = subprocess.run(
+                    ["npx", "vercel", "deploy", "--prod", "--yes", "--non-interactive"],
+                    cwd=STATIC_FOLDER,
+                    env=env,
+                    capture_output=True,
+                    text=True
+                )
+                print(f"Auto-deploy to Vercel completed. Return code: {proc.returncode}")
+                if proc.stdout:
+                    print(proc.stdout)
+            except Exception as ex:
+                print(f"Auto-deploy to Vercel error: {ex}")
+        import threading
+        threading.Thread(target=_async_deploy, daemon=True).start()
             
         return jsonify({
             "success": True,
