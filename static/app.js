@@ -19,6 +19,7 @@ const CHART_MONTH_LABELS = [
 document.addEventListener('DOMContentLoaded', async () => {
   initEventListeners();
   setupAvatarUpload();
+  setupPrivacyToggle();
   setupChartResizeHandle();
   setupMultiUpload();
   setupGoogleDriveSync();
@@ -3641,6 +3642,45 @@ function showRecordDetailModal(rec) {
   `;
 
   modal.classList.add('active');
+}
+
+// ==========================================================================
+// PRIVACY MODE TOGGLE (BLUR SENSITIVE PATIENT INFO)
+// ==========================================================================
+function setupPrivacyToggle() {
+  const toggleBtn = document.getElementById('togglePrivacyBtn');
+  const patientCard = document.getElementById('patientCard');
+  const privacyIcon = document.getElementById('privacyIcon');
+  const privacyLabel = document.getElementById('privacyLabel');
+
+  if (!toggleBtn || !patientCard) return;
+
+  const STORAGE_KEY = 'patient_privacy_mode';
+
+  function applyPrivacyState(isBlurred) {
+    if (isBlurred) {
+      patientCard.classList.add('privacy-active');
+      if (privacyIcon) privacyIcon.textContent = '🙈';
+      if (privacyLabel) privacyLabel.textContent = 'Hiện thông tin';
+      toggleBtn.setAttribute('title', 'Nhấn để hiện lại thông tin cá nhân');
+    } else {
+      patientCard.classList.remove('privacy-active');
+      if (privacyIcon) privacyIcon.textContent = '👁️';
+      if (privacyLabel) privacyLabel.textContent = 'Ẩn thông tin';
+      toggleBtn.setAttribute('title', 'Nhấn để làm mờ toàn bộ thông tin cá nhân (Bảo mật riêng tư)');
+    }
+  }
+
+  // Initial state from localStorage (default: visible / false)
+  const savedState = localStorage.getItem(STORAGE_KEY) === 'true';
+  applyPrivacyState(savedState);
+
+  toggleBtn.addEventListener('click', () => {
+    const isCurrentlyActive = patientCard.classList.contains('privacy-active');
+    const newState = !isCurrentlyActive;
+    localStorage.setItem(STORAGE_KEY, newState ? 'true' : 'false');
+    applyPrivacyState(newState);
+  });
 }
 
 // ==========================================================================

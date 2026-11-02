@@ -2941,9 +2941,83 @@ th.sticky-col-1, th.sticky-col-2, th.sticky-col-3 {
 .patient-name-row {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   gap: 12px;
   margin-bottom: 8px;
   flex-wrap: wrap;
+}
+
+.patient-title-group {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.privacy-toggle-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 12px;
+  border-radius: 20px;
+  border: 1px solid #cbd5e1;
+  background: #f8fafc;
+  color: #475569;
+  font-size: 0.82rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  user-select: none;
+  -webkit-user-select: none;
+  margin-left: auto;
+}
+
+.privacy-toggle-btn:hover {
+  background: #f1f5f9;
+  border-color: #94a3b8;
+  color: #0f172a;
+  transform: translateY(-1px);
+}
+
+.privacy-toggle-btn:active {
+  transform: translateY(0);
+}
+
+.privacy-toggle-btn .privacy-icon {
+  font-size: 1rem;
+  line-height: 1;
+}
+
+/* Privacy Mode Active */
+.patient-card.privacy-active .privacy-toggle-btn {
+  background: #fef2f2;
+  border-color: #fca5a5;
+  color: #dc2626;
+}
+
+.patient-card.privacy-active .privacy-toggle-btn:hover {
+  background: #fee2e2;
+  border-color: #f87171;
+}
+
+/* Smooth blur of sensitive patient elements */
+.patient-card .patient-avatar-wrap,
+.patient-card .patient-name,
+.patient-card .patient-badge-gender,
+.patient-card #patientMeta {
+  transition: filter 0.25s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.25s ease;
+}
+
+.patient-card.privacy-active .patient-avatar-wrap,
+.patient-card.privacy-active .patient-name,
+.patient-card.privacy-active .patient-badge-gender,
+.patient-card.privacy-active #patientMeta {
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+  user-select: none;
+  -webkit-user-select: none;
+  pointer-events: none;
+  opacity: 0.55;
 }
 
 .patient-name {

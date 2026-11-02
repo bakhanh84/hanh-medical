@@ -56,7 +56,7 @@
 
     <!-- SECTION 1: Personal Information -->
     <div id="sec-overview" style="margin-bottom: 24px;">
-      <section class="patient-card fv-card-style">
+      <section class="patient-card fv-card-style" id="patientCard">
         <div class="patient-header">
           <div class="patient-avatar-container">
             <div class="patient-avatar-wrap" id="patientAvatarWrap" title="Nhấn để tải lên hoặc đổi hình đại diện">
@@ -71,8 +71,14 @@
 
           <div class="patient-info-block">
             <div class="patient-name-row">
-              <h2 id="patientName" class="patient-name">NGUYỄN TUYẾT HẠNH</h2>
-              <span class="patient-badge-gender" id="patientGenderBadge">Giới tính: Nữ</span>
+              <div class="patient-title-group">
+                <h2 id="patientName" class="patient-name">NGUYỄN TUYẾT HẠNH</h2>
+                <span class="patient-badge-gender" id="patientGenderBadge">Giới tính: Nữ</span>
+              </div>
+              <button type="button" id="togglePrivacyBtn" class="privacy-toggle-btn" title="Bật/tắt chế độ bảo mật làm mờ thông tin cá nhân" aria-label="Ẩn hoặc hiện thông tin cá nhân">
+                <span class="privacy-icon" id="privacyIcon">👁️</span>
+                <span class="privacy-label" id="privacyLabel">Ẩn thông tin</span>
+              </button>
             </div>
             
             <div class="patient-meta-grid" id="patientMeta">
